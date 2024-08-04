@@ -445,7 +445,7 @@ display:
         options:
           grouping: {  }
           columns: 3
-          cell_min_width: 100
+          cell_min_width: 300
           grid_gutter: 30
           alignment: horizontal
       row:

@@ -412,7 +412,7 @@ content:
       feature_properties:
         values: ''
       geocoder:
-        control: true
+        control: false
         settings:
           autocomplete:
             placeholder: 'Search Address'

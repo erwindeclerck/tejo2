@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.aankondiging.field_hero
     - field.field.node.aankondiging.field_waar
     - field.field.node.aankondiging.field_wanneer
+    - image.style.letterbox_1600x800
     - node.type.aankondiging
   module:
     - datetime
@@ -18,25 +19,88 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: bs_2col_bricked
+      library: null
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          top:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          top_left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          top_right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          middle:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+          bottom_left:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          bottom_right:
+            wrapper: div
+            classes:
+              col-sm-6: col-sm-6
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
     regions:
-      content:
-        - node_title
+      top:
         - field_hero
+        - node_title
         - body
+      top_left:
         - field_waar
+      top_right:
         - field_wanneer
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: h1
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 id: node.aankondiging.full
 targetEntityType: node
 bundle: aankondiging
@@ -48,25 +112,32 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
-    region: content
+    region: top
   field_hero:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: letterbox_1600x800
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
-    weight: 1
-    region: content
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 0
+    region: top
   field_waar:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 3
-    region: content
+    region: top_left
   field_wanneer:
     type: datetime_default
     label: above
@@ -75,7 +146,7 @@ content:
       format_type: medium
     third_party_settings: {  }
     weight: 4
-    region: content
+    region: top_right
 hidden:
   langcode: true
   links: true

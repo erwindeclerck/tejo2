@@ -7,11 +7,11 @@ dependencies:
     - field.field.node.aankondiging.field_hero
     - field.field.node.aankondiging.field_waar
     - field.field.node.aankondiging.field_wanneer
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.aankondiging
   module:
     - datetime
-    - image
+    - focal_point
     - path
     - text
 id: node.aankondiging.default
@@ -36,12 +36,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_hero:
-    type: image_image
+    type: image_focal_point
     weight: 1
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_waar:
     type: text_textarea
@@ -56,13 +58,6 @@ content:
     weight: 4
     region: content
     settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -85,7 +80,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
+  langcode: true
   promote: true
   sticky: true
-  uid: true

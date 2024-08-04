@@ -12,4 +12,5 @@ admin: false
 scope: outsider
 global_role: authenticated
 group_type: tejo_huis
-permissions: {  }
+permissions:
+  - 'view group'

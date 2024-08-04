@@ -9,10 +9,10 @@ dependencies:
     - field.field.node.oproep.field_kort
     - field.field.node.oproep.field_links
     - field.field.node.oproep.field_omschrijving
-    - image.style.thumbnail
+    - image.style.medium
     - node.type.oproep
   module:
-    - image
+    - focal_point
     - link
     - path
     - text
@@ -30,12 +30,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_hero:
-    type: image_image
+    type: image_focal_point
     weight: 1
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_kort:
     type: text_textarea

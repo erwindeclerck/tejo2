@@ -12658,11 +12658,14 @@ P03 drie KEER FOTO/TEKST
 
 .group-front-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem; }
+  @media (min-width: 992px) {
+    .group-front-group {
+      flex-direction: row; } }
   .group-front-group > * {
     width: 100%; }
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       .group-front-group > * {
         width: 50%; } }
   .group-front-group .waar-en-wanneer {

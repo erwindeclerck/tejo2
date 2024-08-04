@@ -403,7 +403,7 @@ display:
             value: label
             options: '{"permanent":false,"direction":"center"}'
           leaflet_popup:
-            value: ''
+            value: label
             options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
             view_mode: token
           leaflet_map: 'OSM Mapnik'
@@ -417,40 +417,40 @@ display:
             control: false
             options: '{"position":"topleft","title":"Reset View"}'
           map_scale:
-            control: false
+            control: true
             options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
           locate:
             control: true
             options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
             automatic: true
           map_position:
-            force: false
+            force: true
             center:
               lat: 51.525834
               lon: 4.644823
             zoomControlPosition: topleft
-            zoom: 2
+            zoom: 8
             minZoom: 1
             maxZoom: 18
             zoomFiner: 0
           weight: ''
           icon:
-            iconType: html
-            iconUrl: ''
-            shadowUrl: ''
+            iconType: marker
+            iconUrl: /themes/custom/b5tejothema/resources/bol.png
+            shadowUrl: /themes/custom/b5tejothema/resources/bolshadow.png
             className: ''
             iconSize:
-              x: '20'
-              'y': '40'
+              x: ''
+              'y': ''
             iconAnchor:
-              x: ''
-              'y': ''
+              x: 23px
+              'y': 76px
             shadowSize:
-              x: ''
-              'y': ''
+              x: 64px
+              'y': 72px
             shadowAnchor:
-              x: ''
-              'y': ''
+              x: 18px
+              'y': 72px
             popupAnchor:
               x: ''
               'y': ''
@@ -684,6 +684,219 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      fields:
+        label:
+          id: label
+          table: groups_field_data
+          field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: label
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_locatie:
+          id: field_locatie
+          table: group__field_locatie
+          field: field_locatie
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: leaflet_formatter_default
+          settings:
+            multiple_map: false
+            leaflet_map: 'OSM Mapnik'
+            height: 500
+            height_unit: px
+            hide_empty_map: false
+            disable_wheel: false
+            gesture_handling: false
+            fitbounds_options: '{"padding":[0,0]}'
+            reset_map:
+              control: false
+              options: '{"position":"topleft","title":"Reset View"}'
+            map_scale:
+              control: false
+              options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+            locate:
+              control: true
+              options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+              automatic: true
+            leaflet_tooltip:
+              value: ''
+              options: '{"permanent":false,"direction":"center"}'
+            leaflet_popup:
+              control: '1'
+              content: ''
+              options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
+            map_position:
+              force: false
+              center:
+                lat: 0.0
+                lon: 0.0
+              zoomControlPosition: topleft
+              zoom: 10
+              minZoom: 1
+              maxZoom: 18
+              zoomFiner: 0
+            icon:
+              iconType: marker
+              iconUrl: ''
+              shadowUrl: ''
+              className: ''
+              iconSize:
+                x: ''
+                'y': ''
+              iconAnchor:
+                x: ''
+                'y': ''
+              shadowSize:
+                x: ''
+                'y': ''
+              shadowAnchor:
+                x: ''
+                'y': ''
+              popupAnchor:
+                x: ''
+                'y': ''
+              html: '<div></div>'
+              html_class: leaflet-map-divicon
+              circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+            fullscreen:
+              control: false
+              options: '{"position":"topleft","pseudoFullscreen":false}'
+            path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+            feature_properties:
+              values: ''
+            geocoder:
+              control: false
+              settings:
+                autocomplete:
+                  placeholder: 'Search Address'
+                  title: 'Search an Address on the Map'
+                position: topright
+                input_size: 20
+                providers:
+                  mapbox:
+                    weight: 0
+                    checked: false
+                min_terms: 4
+                delay: 800
+                zoom: 16
+                popup: false
+                options: ''
+            map_lazy_load:
+              lazy_load: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      defaults:
+        fields: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
