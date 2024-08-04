@@ -1,0 +1,63 @@
+uuid: df9d197a-ba07-4f10-b1fd-f42933a0a5c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.homepagina.body
+    - field.field.node.homepagina.field_blokken
+    - field.field.node.homepagina.field_blokken_2
+    - field.field.node.homepagina.field_breedte
+    - field.field.node.homepagina.field_brood_links
+    - field.field.node.homepagina.field_brood_midden
+    - field.field.node.homepagina.field_brood_rechts
+    - field.field.node.homepagina.field_hero
+    - field.field.node.homepagina.field_hero_overlay
+    - field.field.node.homepagina.field_herolinks
+    - field.field.node.homepagina.field_kop_linksboven
+    - field.field.node.homepagina.field_kop_middenboven
+    - field.field.node.homepagina.field_kop_rechtsboven
+    - field.field.node.homepagina.field_link_links
+    - field.field.node.homepagina.field_link_rechts
+    - field.field.node.homepagina.field_llink_midden
+    - field.field.node.homepagina.field_nieuws
+    - node.type.homepagina
+  module:
+    - text
+    - user
+id: node.homepagina.teaser
+targetEntityType: node
+bundle: homepagina
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_blokken: true
+  field_blokken_2: true
+  field_breedte: true
+  field_brood_links: true
+  field_brood_midden: true
+  field_brood_rechts: true
+  field_hero: true
+  field_hero_overlay: true
+  field_herolinks: true
+  field_kop_linksboven: true
+  field_kop_middenboven: true
+  field_kop_rechtsboven: true
+  field_link_links: true
+  field_link_rechts: true
+  field_llink_midden: true
+  field_nieuws: true
+  langcode: true

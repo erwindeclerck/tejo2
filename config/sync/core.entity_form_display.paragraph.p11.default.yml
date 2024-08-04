@@ -1,0 +1,34 @@
+uuid: 6c4a3b47-074b-46ee-9712-0cbfdee93b4d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p11.field_body
+    - field.field.paragraph.p11.field_sectie_titel
+    - paragraphs.paragraphs_type.p11
+  module:
+    - text
+id: paragraph.p11.default
+targetEntityType: paragraph
+bundle: p11
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_sectie_titel:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

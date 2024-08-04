@@ -1,0 +1,25 @@
+uuid: da08db7c-0485-43fb-a9ec-7e6eb65a9c09
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5tejothema
+_core:
+  default_config_hash: jExg3bN2FT_CdzywhWjUuRPHeUO99D-_TC-7ra8XDyM
+id: b5tejothema_branding
+theme: b5tejothema
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding van de website'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

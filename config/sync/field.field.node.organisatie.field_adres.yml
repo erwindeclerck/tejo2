@@ -1,0 +1,25 @@
+uuid: e40c6b34-3827-4c3d-85cf-b7f43aacdc7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adres
+    - node.type.organisatie
+  module:
+    - address
+id: node.organisatie.field_adres
+field_name: field_adres
+entity_type: node
+bundle: organisatie
+label: Adres
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

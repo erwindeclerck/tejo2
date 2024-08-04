@@ -1,0 +1,24 @@
+uuid: 34d39c38-c2c0-4c8b-9300-add55242e66d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio_en_expertise
+    - filter.format.basic_html
+    - node.type.persoon
+  module:
+    - text
+id: node.persoon.field_bio_en_expertise
+field_name: field_bio_en_expertise
+entity_type: node
+bundle: persoon
+label: 'Bio en expertise'
+description: 'Beschrijf de meest relevante trivia en expertisegebieden van deze persoon en mogelijk waarom deze voor de organisatie zo waardevol kunnen zijn.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

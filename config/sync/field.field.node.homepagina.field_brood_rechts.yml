@@ -1,0 +1,24 @@
+uuid: fc0086d8-d8d6-4c1b-abe5-53c3e0e30420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brood_rechts
+    - filter.format.basic_html
+    - node.type.homepagina
+  module:
+    - text
+id: node.homepagina.field_brood_rechts
+field_name: field_brood_rechts
+entity_type: node
+bundle: homepagina
+label: 'Brood rechts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -1,0 +1,18 @@
+uuid: 87760048-6b08-4548-bc36-997ec3124fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+id: group.tejo_huis.label
+field_name: label
+entity_type: group
+bundle: tejo_huis
+label: Naam
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

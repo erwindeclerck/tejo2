@@ -1,0 +1,19 @@
+uuid: 0cd4a999-0e5b-4ec6-9b97-c3a48ff9397d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_e_mail
+    - group.type.tejo_huis
+id: group.tejo_huis.field_e_mail
+field_name: field_e_mail
+entity_type: group
+bundle: tejo_huis
+label: E-mail
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

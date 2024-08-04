@@ -1,0 +1,29 @@
+uuid: 81ee4d27-1f9c-468e-97fb-af479ae99a35
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.tejohuislocaties
+  module:
+    - system
+    - views
+  theme:
+    - b5tejothema
+id: b5tejothema_views_block__tejohuislocaties_block_1
+theme: b5tejothema
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:tejohuislocaties-block_1'
+settings:
+  id: 'views_block:tejohuislocaties-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/24

@@ -1,0 +1,19 @@
+uuid: 47b65a6a-6721-449b-ac17-a8efeec3bf2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kop_linksboven
+    - node.type.homepagina
+id: node.homepagina.field_kop_linksboven
+field_name: field_kop_linksboven
+entity_type: node
+bundle: homepagina
+label: 'Kop linksboven'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

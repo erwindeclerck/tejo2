@@ -1,0 +1,24 @@
+uuid: 6b64764e-eb32-4d31-a426-01f1f06a001e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_samenvatting
+    - filter.format.basic_html
+    - node.type.article
+  module:
+    - text
+id: node.article.field_samenvatting
+field_name: field_samenvatting
+entity_type: node
+bundle: article
+label: Samenvatting
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

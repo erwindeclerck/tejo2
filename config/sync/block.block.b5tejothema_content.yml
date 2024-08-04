@@ -1,0 +1,22 @@
+uuid: db74ae4e-32af-4a13-b651-95a30a2c7f7f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5tejothema
+_core:
+  default_config_hash: TkGCRqXefex6DzaDweQC30hpzTX1SW4ls6tBa-cmdPI
+id: b5tejothema_content
+theme: b5tejothema
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primaire inhoud van de pagina'
+  label_display: '0'
+  provider: system
+visibility: {  }

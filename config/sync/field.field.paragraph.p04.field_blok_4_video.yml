@@ -1,0 +1,25 @@
+uuid: 8a3ca645-bbae-40cc-be99-be057b4e294c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blok_4_video
+    - paragraphs.paragraphs_type.p04
+  module:
+    - video_embed_field
+id: paragraph.p04.field_blok_4_video
+field_name: field_blok_4_video
+entity_type: paragraph
+bundle: p04
+label: 'Blok 4 video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: '0'
+    youtube_playlist: '0'
+    youtube: '0'
+field_type: video_embed_field

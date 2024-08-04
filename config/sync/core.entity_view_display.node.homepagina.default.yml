@@ -1,0 +1,283 @@
+uuid: e8937815-b87e-46a8-9aa6-48242662afa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepagina.body
+    - field.field.node.homepagina.field_blokken
+    - field.field.node.homepagina.field_blokken_2
+    - field.field.node.homepagina.field_breedte
+    - field.field.node.homepagina.field_brood_links
+    - field.field.node.homepagina.field_brood_midden
+    - field.field.node.homepagina.field_brood_rechts
+    - field.field.node.homepagina.field_hero
+    - field.field.node.homepagina.field_hero_overlay
+    - field.field.node.homepagina.field_herolinks
+    - field.field.node.homepagina.field_kop_linksboven
+    - field.field.node.homepagina.field_kop_middenboven
+    - field.field.node.homepagina.field_kop_rechtsboven
+    - field.field.node.homepagina.field_link_links
+    - field.field.node.homepagina.field_link_rechts
+    - field.field.node.homepagina.field_llink_midden
+    - field.field.node.homepagina.field_nieuws
+    - image.style.herohome
+    - node.type.homepagina
+  module:
+    - entity_reference_revisions
+    - field_group
+    - image
+    - layout_builder
+    - link
+    - options
+    - text
+    - user
+    - viewsreference
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_hero_triplet:
+      children:
+        - group_hero_links
+        - group_hero_midden
+        - group_hero_rechts
+      label: 'Hero triplet'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: herotriplet
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_midden:
+      children:
+        - field_kop_middenboven
+        - field_brood_midden
+        - field_llink_midden
+      label: 'Hero midden'
+      parent_name: group_hero_triplet
+      region: content
+      weight: 11
+      format_type: html_element
+      format_settings:
+        classes: homeheromidden
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_links:
+      children:
+        - field_kop_linksboven
+        - field_brood_links
+        - field_link_links
+      label: 'Hero links'
+      parent_name: group_hero_triplet
+      region: content
+      weight: 10
+      format_type: html_element
+      format_settings:
+        classes: homherolinks
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_rechts:
+      children:
+        - field_kop_rechtsboven
+        - field_brood_rechts
+        - field_link_rechts
+      label: 'Hero rechts'
+      parent_name: group_hero_triplet
+      region: content
+      weight: 12
+      format_type: html_element
+      format_settings:
+        classes: homeherorechts
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.homepagina.default
+targetEntityType: node
+bundle: homepagina
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_blokken:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_blokken_2:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_breedte:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_brood_links:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_brood_midden:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_brood_rechts:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: herohome
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_hero_overlay:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_herolinks:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_kop_linksboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_kop_middenboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_kop_rechtsboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_link_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_link_rechts:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_llink_midden:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_nieuws:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  links: true

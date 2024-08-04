@@ -1,0 +1,24 @@
+uuid: 3c07a22e-08b0-4dec-ab45-7e9564b82a5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_brood_midden
+    - filter.format.basic_html
+    - node.type.homepagina
+  module:
+    - text
+id: node.homepagina.field_brood_midden
+field_name: field_brood_midden
+entity_type: node
+bundle: homepagina
+label: 'Brood midden'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

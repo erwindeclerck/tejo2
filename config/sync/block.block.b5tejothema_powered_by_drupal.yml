@@ -1,0 +1,22 @@
+uuid: 21494150-ab65-4ce8-b0df-a31797eda4be
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5tejothema
+_core:
+  default_config_hash: xm_0xLyQ4zw7DHw2nwdNFLY5UsvAJb17mUoGacaiVp4
+id: b5tejothema_powered_by_drupal
+theme: b5tejothema
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Gebouwd met Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

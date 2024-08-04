@@ -1,0 +1,21 @@
+uuid: c157da43-aa69-4fe8-84fb-b43d36830b9b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plek
+    - node.type.testlocatie
+  module:
+    - geofield
+id: node.testlocatie.field_plek
+field_name: field_plek
+entity_type: node
+bundle: testlocatie
+label: plek
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

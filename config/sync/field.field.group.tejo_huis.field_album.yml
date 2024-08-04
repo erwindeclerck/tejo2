@@ -1,0 +1,38 @@
+uuid: 202c51fa-95d8-4c16-b258-1873ef681f68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_album
+    - group.type.tejo_huis
+  module:
+    - image
+id: group.tejo_huis.field_album
+field_name: field_album
+entity_type: group
+bundle: tejo_huis
+label: Album
+description: "Voer één of meerdere afbeeldingen in die kunnen helpen om het huis beter te illustreren.<br>\r\nGebruik bij voorkeur steeds dezelfde oriëntatie: dus altijd portret of altijd landschap voor een mooiere en rustige presentatie."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

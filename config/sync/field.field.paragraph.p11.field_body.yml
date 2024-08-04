@@ -1,0 +1,26 @@
+uuid: 1a7cefa5-12f0-47f6-9a53-c29b886f9fdb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.p11
+  module:
+    - text
+id: paragraph.p11.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: p11
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

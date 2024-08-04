@@ -1,0 +1,29 @@
+uuid: fbad727a-2961-4500-8d87-049d38f482a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - b5tejothema
+id: b5tejothema_groupoperations
+theme: b5tejothema
+region: content
+weight: -7
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  label_display: '0'
+  provider: group
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  group_type:
+    id: group_type
+    group_types:
+      tejo_huis: tejo_huis
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

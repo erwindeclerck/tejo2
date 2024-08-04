@@ -1,0 +1,23 @@
+uuid: af65174f-cd62-45ee-a9dc-a981d4afc5d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.vaste_pagina
+  module:
+    - link
+id: node.vaste_pagina.field_links
+field_name: field_links
+entity_type: node
+bundle: vaste_pagina
+label: Links
+description: "Gebruik dit veld om links naar interne of externe pagina's aan te maken."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

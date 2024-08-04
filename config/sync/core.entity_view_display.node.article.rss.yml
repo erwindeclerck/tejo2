@@ -1,0 +1,45 @@
+uuid: b125f317-f27d-4ad3-bb8c-d5ba2bd5dd9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_album
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_hoofdtekst
+    - field.field.node.article.field_kandidaat_homepagina
+    - field.field.node.article.field_links
+    - field.field.node.article.field_oproep
+    - field.field.node.article.field_persoon
+    - field.field.node.article.field_samenvatting
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_video
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_album: true
+  field_hero: true
+  field_hoofdtekst: true
+  field_kandidaat_homepagina: true
+  field_links: true
+  field_oproep: true
+  field_persoon: true
+  field_samenvatting: true
+  field_tags: true
+  field_video: true
+  langcode: true

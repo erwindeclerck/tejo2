@@ -1,0 +1,595 @@
+uuid: f4844db9-59ed-4abc-adae-ca4c936785d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.homepagina.body
+    - field.field.node.homepagina.field_blokken
+    - field.field.node.homepagina.field_blokken_2
+    - field.field.node.homepagina.field_breedte
+    - field.field.node.homepagina.field_brood_links
+    - field.field.node.homepagina.field_brood_midden
+    - field.field.node.homepagina.field_brood_rechts
+    - field.field.node.homepagina.field_hero
+    - field.field.node.homepagina.field_hero_overlay
+    - field.field.node.homepagina.field_herolinks
+    - field.field.node.homepagina.field_kop_linksboven
+    - field.field.node.homepagina.field_kop_middenboven
+    - field.field.node.homepagina.field_kop_rechtsboven
+    - field.field.node.homepagina.field_link_links
+    - field.field.node.homepagina.field_link_rechts
+    - field.field.node.homepagina.field_llink_midden
+    - field.field.node.homepagina.field_nieuws
+    - image.style.herohome
+    - node.type.homepagina
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+    - viewsreference
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  field_group:
+    group_hero_triplet:
+      children:
+        - group_hero_links
+        - group_hero_midden
+        - group_hero_rechts
+      label: 'Hero triplet'
+      parent_name: ''
+      region: main
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: herotriplet
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_midden:
+      children:
+        - field_kop_middenboven
+        - field_brood_midden
+        - field_llink_midden
+      label: 'Hero midden'
+      parent_name: group_hero_triplet
+      region: main
+      weight: 11
+      format_type: html_element
+      format_settings:
+        classes: 'homeheromidden homehero'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_links:
+      children:
+        - field_kop_linksboven
+        - field_brood_links
+        - field_link_links
+      label: 'Hero links'
+      parent_name: group_hero_triplet
+      region: main
+      weight: 10
+      format_type: html_element
+      format_settings:
+        classes: 'homeherolinks homehero'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_hero_rechts:
+      children:
+        - field_kop_rechtsboven
+        - field_brood_rechts
+        - field_link_rechts
+      label: 'Hero rechts'
+      parent_name: group_hero_triplet
+      region: main
+      weight: 12
+      format_type: html_element
+      format_settings:
+        classes: 'homeherorechts homehero'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_herocanvas:
+      children:
+        - field_hero
+        - field_hero_overlay
+        - field_herolinks
+      label: Herocanvas
+      parent_name: ''
+      region: main
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: herocanvas
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: 'class|[node:field_breedte:value]'
+    regions:
+      main:
+        - group_herocanvas
+        - group_hero_triplet
+        - body
+        - field_hero
+        - field_blokken
+        - field_hero_overlay
+        - field_nieuws
+        - field_herolinks
+        - field_blokken_2
+        - field_kop_linksboven
+        - field_brood_links
+        - field_kop_middenboven
+        - field_link_links
+        - field_brood_midden
+        - field_kop_rechtsboven
+        - group_hero_links
+        - field_llink_midden
+        - field_brood_rechts
+        - group_hero_midden
+        - field_link_rechts
+        - group_hero_rechts
+id: node.homepagina.full
+targetEntityType: node
+bundle: homepagina
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: main
+  field_blokken:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: main
+  field_blokken_2:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: main
+  field_brood_links:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: brood
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 8
+    region: main
+  field_brood_midden:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: brood
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 9
+    region: main
+  field_brood_rechts:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: true
+            ow-el: ''
+            ow-cl: brood
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 10
+    region: main
+  field_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: herohome
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: main
+  field_hero_overlay:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: main
+  field_herolinks:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: main
+  field_kop_linksboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: kop
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 7
+    region: main
+  field_kop_middenboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: kop
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 8
+    region: main
+  field_kop_rechtsboven:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: kop
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 9
+    region: main
+  field_link_links:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: link
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 9
+    region: main
+  field_link_rechts:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: link
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 11
+    region: main
+  field_llink_midden:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: link
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 10
+    region: main
+  field_nieuws:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 4
+    region: main
+hidden:
+  field_breedte: true
+  langcode: true
+  links: true

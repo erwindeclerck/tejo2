@@ -1,0 +1,18 @@
+uuid: 89cef2dd-218d-4896-83fe-1833deb15c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.aankondiging
+id: node.aankondiging.title
+field_name: title
+entity_type: node
+bundle: aankondiging
+label: Titel
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

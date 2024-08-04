@@ -1,0 +1,22 @@
+uuid: 2c2096d9-f0cb-45a8-a805-c150419cc217
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap5
+_core:
+  default_config_hash: VShtwe72J2j41BJzApoNbs8l554EpngM5RTObxM7yiw
+id: bootstrap5_breadcrumbs
+theme: bootstrap5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  label_display: '0'
+  provider: system
+visibility: {  }

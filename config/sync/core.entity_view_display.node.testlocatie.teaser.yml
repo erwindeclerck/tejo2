@@ -1,0 +1,33 @@
+uuid: b396809e-a1b3-4e1b-978a-032eb6846cfe
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.testlocatie.body
+    - field.field.node.testlocatie.field_plek
+    - node.type.testlocatie
+  module:
+    - text
+    - user
+id: node.testlocatie.teaser
+targetEntityType: node
+bundle: testlocatie
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_plek: true
+  langcode: true

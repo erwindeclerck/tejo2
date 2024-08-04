@@ -1,0 +1,17 @@
+uuid: ab1bb761-8298-46e6-b1f1-ac274a8d9eb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: letterbox_1600x300
+label: 'Letterbox 1600x300'
+effects:
+  da779fe8-81cc-46d3-ab1b-c7a7f4cb645a:
+    uuid: da779fe8-81cc-46d3-ab1b-c7a7f4cb645a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 300
+      crop_type: focal_point

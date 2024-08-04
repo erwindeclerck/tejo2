@@ -1,0 +1,21 @@
+uuid: 14d56c14-9c53-4eaf-82cd-09a977b635ef
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vormgeving
+    - paragraphs.paragraphs_type.p02
+  module:
+    - options
+id: paragraph.p02.field_vormgeving
+field_name: field_vormgeving
+entity_type: paragraph
+bundle: p02
+label: Vormgeving
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

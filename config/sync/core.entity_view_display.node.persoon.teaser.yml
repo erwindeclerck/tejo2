@@ -1,0 +1,51 @@
+uuid: 4fb283e1-3f83-41c2-9677-4762b88399f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persoon.body
+    - field.field.node.persoon.field_adres
+    - field.field.node.persoon.field_album
+    - field.field.node.persoon.field_bio_en_expertise
+    - field.field.node.persoon.field_e_mail
+    - field.field.node.persoon.field_gsm
+    - field.field.node.persoon.field_hero
+    - field.field.node.persoon.field_kort
+    - node.type.persoon
+  module:
+    - image
+    - text
+    - user
+id: node.persoon.teaser
+targetEntityType: node
+bundle: persoon
+mode: teaser
+content:
+  field_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_kort:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_adres: true
+  field_album: true
+  field_bio_en_expertise: true
+  field_e_mail: true
+  field_gsm: true
+  langcode: true
+  links: true

@@ -1,0 +1,532 @@
+uuid: d125191c-e773-4a59-81b8-36c883378cb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.tejo_huis.field_adres
+    - field.field.group.tejo_huis.field_album
+    - field.field.group.tejo_huis.field_beschrijving
+    - field.field.group.tejo_huis.field_e_mail
+    - field.field.group.tejo_huis.field_gevel
+    - field.field.group.tejo_huis.field_hero
+    - field.field.group.tejo_huis.field_locatie
+    - field.field.group.tejo_huis.field_nieuws
+    - field.field.group.tejo_huis.field_openingsuren
+    - field.field.group.tejo_huis.field_routebeschrijving
+    - field.field.group.tejo_huis.field_routebeschrijvingslink
+    - field.field.group.tejo_huis.field_sponsor
+    - field.field.group.tejo_huis.field_telefoon
+    - field.field.group.tejo_huis.field_top_link
+    - group.type.tejo_huis
+  module:
+    - address
+    - ds
+    - field_group
+    - image
+    - leaflet
+    - link
+    - telephone
+    - text
+    - viewsreference
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_herocanvas
+        - field_hero
+        - 'dynamic_token_field:group-tejo_huis_titelveld'
+        - group_grouphead
+        - group_waar_en_wanneer
+        - group_group_front_group
+        - group_ons_vinden
+        - field_beschrijving
+        - field_routebeschrijving
+        - field_album
+        - field_routebeschrijvingslink
+        - field_sponsor
+        - field_locatie
+        - field_nieuws
+        - field_openingsuren
+        - field_gevel
+        - group_waartekst
+        - field_adres
+        - field_e_mail
+        - field_telefoon
+        - group_waar
+        - group_wanneer
+        - field_top_link
+    fields:
+      'dynamic_token_field:group-tejo_huis_titelveld':
+        plugin_id: 'dynamic_token_field:group-tejo_huis_titelveld'
+        weight: 1
+        label: above
+        formatter: default
+        ft:
+          id: expert
+          settings:
+            lb: 'Welkom bij'
+            lbw: true
+            lbw-el: ''
+            lbw-cl: 'herotitle label'
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: H1
+            fis-cl: 'herotitle title'
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+  field_group:
+    group_herocanvas:
+      children:
+        - field_hero
+      label: HEROCANVAS
+      parent_name: ''
+      region: main
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: herocanvas
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_waar_en_wanneer:
+      children:
+        - group_waar
+        - group_wanneer
+      label: 'Waar en wanneer'
+      parent_name: group_group_front_group
+      region: main
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: waar-en-wanneer
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_waar:
+      children:
+        - field_gevel
+        - group_waartekst
+      label: Waar
+      parent_name: group_waar_en_wanneer
+      region: main
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: waar
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_wanneer:
+      children:
+        - field_openingsuren
+      label: Wanneer
+      parent_name: group_waar_en_wanneer
+      region: main
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: wanneer
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_ons_vinden:
+      children:
+        - field_beschrijving
+        - field_routebeschrijving
+        - field_routebeschrijvingslink
+        - field_locatie
+      label: 'Ons vinden'
+      parent_name: group_group_front_group
+      region: main
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: onsvinden
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_group_front_group:
+      children:
+        - group_waar_en_wanneer
+        - group_ons_vinden
+      label: 'Group front group'
+      parent_name: ''
+      region: main
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: group-front-group
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_waartekst:
+      children:
+        - field_adres
+        - field_e_mail
+        - field_telefoon
+      label: Waartekst
+      parent_name: group_waar
+      region: main
+      weight: 14
+      format_type: html_element
+      format_settings:
+        classes: waartekst
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_grouphead:
+      children:
+        - 'dynamic_token_field:group-tejo_huis_titelveld'
+        - field_top_link
+      label: Grouphead
+      parent_name: ''
+      region: main
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: grouphead
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+id: group.tejo_huis.default
+targetEntityType: group
+bundle: tejo_huis
+mode: default
+content:
+  field_adres:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: main
+  field_album:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: main
+  field_beschrijving:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: main
+  field_e_mail:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: main
+  field_gevel:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: letterbox_1600x1000
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 13
+    region: main
+  field_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: main
+  field_locatie:
+    type: leaflet_formatter_default
+    label: above
+    settings:
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      fitbounds_options: '{"padding":[0,0]}'
+      reset_map:
+        control: false
+        options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: false
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+      locate:
+        control: false
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+        automatic: false
+      leaflet_tooltip:
+        value: ''
+        options: '{"permanent":false,"direction":"center"}'
+      popup: false
+      popup_content: ''
+      leaflet_popup:
+        control: '0'
+        content: ''
+        options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
+      map_position:
+        force: false
+        center:
+          lat: 0.0
+          lon: 0.0
+        zoomControlPosition: topleft
+        zoom: 18
+        minZoom: 1
+        maxZoom: 20
+        zoomFiner: 0
+      icon:
+        iconType: html
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: 23px
+          'y': 76px
+        shadowSize:
+          x: 5px
+          'y': 5px
+        shadowAnchor:
+          x: '5'
+          'y': '5'
+        popupAnchor:
+          x: ''
+          'y': ''
+        html: '<div><img src="http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/bol.png"/></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        excluded: ''
+        include_path: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      feature_properties:
+        values: ''
+      geocoder:
+        control: true
+        settings:
+          autocomplete:
+            placeholder: 'Search Address'
+            title: 'Search an Address on the Map'
+          position: topright
+          input_size: 20
+          providers:
+            mapbox:
+              weight: 0
+              checked: true
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      map_lazy_load:
+        lazy_load: false
+      weight: null
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 6
+    region: main
+  field_nieuws:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: '0'
+        page: '0'
+        feed: '0'
+        embed: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 6
+    region: main
+  field_openingsuren:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: main
+  field_routebeschrijving:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: main
+  field_routebeschrijvingslink:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: main
+  field_sponsor:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: gelinkt_logo
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 5
+    region: main
+  field_telefoon:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 17
+    region: main
+  field_top_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 22
+    region: main
+hidden:
+  changed: true
+  created: true
+  label: true
+  langcode: true
+  uid: true

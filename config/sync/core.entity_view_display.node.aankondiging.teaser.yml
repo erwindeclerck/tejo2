@@ -1,0 +1,37 @@
+uuid: 86e95c43-33fe-4fa6-8de9-88611bcf4b14
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.aankondiging.body
+    - field.field.node.aankondiging.field_hero
+    - field.field.node.aankondiging.field_waar
+    - field.field.node.aankondiging.field_wanneer
+    - node.type.aankondiging
+  module:
+    - text
+    - user
+id: node.aankondiging.teaser
+targetEntityType: node
+bundle: aankondiging
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero: true
+  field_waar: true
+  field_wanneer: true
+  langcode: true

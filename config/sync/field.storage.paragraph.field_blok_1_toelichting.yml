@@ -1,0 +1,19 @@
+uuid: f5478e9b-d170-41c8-bb8b-a8e8b93c29b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_blok_1_toelichting
+field_name: field_blok_1_toelichting
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

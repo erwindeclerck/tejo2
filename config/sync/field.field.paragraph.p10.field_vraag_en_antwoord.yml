@@ -1,0 +1,22 @@
+uuid: 56e5f662-b0d7-4b0e-9ce1-53fbb8974d4a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vraag_en_antwoord
+    - paragraphs.paragraphs_type.p10
+  module:
+    - faqfield
+id: paragraph.p10.field_vraag_en_antwoord
+field_name: field_vraag_en_antwoord
+entity_type: paragraph
+bundle: p10
+label: 'Vraag en antwoord'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  default_format: basic_html
+field_type: faqfield

@@ -1,0 +1,21 @@
+uuid: ae9734ac-7829-466f-b3b1-53e05161f972
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_telefoon
+    - group.type.tejo_huis
+  module:
+    - telephone
+id: group.tejo_huis.field_telefoon
+field_name: field_telefoon
+entity_type: group
+bundle: tejo_huis
+label: Telefoon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

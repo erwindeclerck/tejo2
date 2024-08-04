@@ -1,0 +1,14 @@
+id: tejo_huis_titelveld
+label: 'TEJO huis titelveld'
+ui_limit: ''
+type: token
+type_label: 'Token field'
+entities:
+  group: group
+properties:
+  content:
+    value: '[group:title]'
+    format: plain_text
+  force_global_entity: false
+  use_global_entity: false
+  use_global_view_token: false

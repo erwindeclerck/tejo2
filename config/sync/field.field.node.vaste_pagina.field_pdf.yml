@@ -1,0 +1,27 @@
+uuid: 66f6fa81-b22a-43c5-a2f6-2f49cba28597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pdf
+    - node.type.vaste_pagina
+  module:
+    - file
+id: node.vaste_pagina.field_pdf
+field_name: field_pdf
+entity_type: node
+bundle: vaste_pagina
+label: Pdf
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

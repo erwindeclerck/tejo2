@@ -1,0 +1,11 @@
+uuid: 4a858b0f-976f-4c84-806c-342459243c44
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.gelinkt_logo
+label: 'Gelinkt logo'
+description: ''
+targetEntityType: node
+cache: true

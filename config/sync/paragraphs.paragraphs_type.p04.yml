@@ -1,0 +1,10 @@
+uuid: 18017de0-5660-47d3-8967-e53c7762307e
+langcode: en
+status: true
+dependencies: {  }
+id: p04
+label: P04
+icon_uuid: null
+icon_default: null
+description: "Vier kaarten naast elkaar\r\nFoto/video tekst link\r\n- wit of lichtblauw"
+behavior_plugins: {  }

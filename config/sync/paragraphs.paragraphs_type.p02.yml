@@ -1,0 +1,10 @@
+uuid: c1e808a8-ad65-45db-b8be-a49c8e59f3d1
+langcode: en
+status: true
+dependencies: {  }
+id: p02
+label: P02
+icon_uuid: null
+icon_default: null
+description: "Twee kaarten naast elkaar\r\nFoto/video tekst link\r\n- wit of lichtblauw"
+behavior_plugins: {  }

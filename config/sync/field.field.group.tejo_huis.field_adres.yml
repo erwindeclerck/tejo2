@@ -1,0 +1,33 @@
+uuid: 8d961b27-c9dd-4ded-81dd-b4ea6e6fb328
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_adres
+    - group.type.tejo_huis
+  module:
+    - address
+id: group.tejo_huis.field_adres
+field_name: field_adres
+entity_type: group
+bundle: tejo_huis
+label: Adres
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    administrativeArea:
+      override: hidden
+  fields: {  }
+field_type: address

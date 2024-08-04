@@ -1,0 +1,29 @@
+uuid: 52835ab0-73a6-46dd-9d9d-7f1c627c70c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_sponsor
+    - group.type.tejo_huis
+    - node.type.organisatie
+id: group.tejo_huis.field_sponsor
+field_name: field_sponsor
+entity_type: group
+bundle: tejo_huis
+label: Sponsor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organisatie: organisatie
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

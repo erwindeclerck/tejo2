@@ -1,0 +1,24 @@
+uuid: 6db34990-5451-4e29-b83c-473e2c0b36bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_overlay
+    - filter.format.basic_html
+    - node.type.homepagina
+  module:
+    - text
+id: node.homepagina.field_hero_overlay
+field_name: field_hero_overlay
+entity_type: node
+bundle: homepagina
+label: 'Hero overlay'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

@@ -1,0 +1,18 @@
+uuid: a426674d-9b14-439d-9486-851939bf1570
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: testlocatie
+type: testlocatie
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,17 @@
+uuid: a0345c1b-8673-4d22-b09f-6ac8b02cf8cb
+langcode: nl
+status: false
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - ds_extras
+      - node
+_core:
+  default_config_hash: 9KZ3WmwficPZQW4KRu0DdKX2V9A1Xiz5LFFm2NHg4_A
+id: node.revision
+label: Revisie
+description: ''
+targetEntityType: node
+cache: true

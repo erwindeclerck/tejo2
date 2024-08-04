@@ -1,0 +1,145 @@
+uuid: a00695df-a25e-43d0-ae42-931c376a42f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.organisatie.body
+    - field.field.node.organisatie.field_adres
+    - field.field.node.organisatie.field_album
+    - field.field.node.organisatie.field_gelinkte_personen
+    - field.field.node.organisatie.field_hero
+    - field.field.node.organisatie.field_logo
+    - field.field.node.organisatie.field_omschrijving
+    - field.field.node.organisatie.field_oproep
+    - field.field.node.organisatie.field_website
+    - node.type.organisatie
+  module:
+    - address
+    - ds
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - body
+        - field_adres
+        - field_hero
+        - field_album
+        - field_gelinkte_personen
+        - field_logo
+        - field_omschrijving
+        - field_oproep
+        - field_website
+id: node.organisatie.default
+targetEntityType: node
+bundle: organisatie
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: main
+  field_adres:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: main
+  field_album:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: main
+  field_gelinkte_personen:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: main
+  field_hero:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: main
+  field_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 5
+    region: main
+  field_omschrijving:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: main
+  field_oproep:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: main
+  field_website:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: main
+hidden:
+  langcode: true
+  links: true

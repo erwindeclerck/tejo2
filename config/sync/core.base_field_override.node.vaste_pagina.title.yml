@@ -1,0 +1,18 @@
+uuid: 536d25d7-9b03-4976-9539-380e88740900
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vaste_pagina
+id: node.vaste_pagina.title
+field_name: title
+entity_type: node
+bundle: vaste_pagina
+label: Titel
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

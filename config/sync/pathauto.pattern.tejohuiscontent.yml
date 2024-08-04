@@ -1,0 +1,22 @@
+uuid: 45a6967a-5ac0-44e2-b96e-40a04e2de990
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+id: tejohuiscontent
+label: TejohuisContent
+type: 'canonical_entities:group'
+pattern: '[group:type-name]/[current-page:title]'
+selection_criteria:
+  62c31d1c-97dc-4712-8470-de2867129866:
+    id: 'entity_bundle:group'
+    negate: false
+    uuid: 62c31d1c-97dc-4712-8470-de2867129866
+    context_mapping:
+      group: group
+    bundles:
+      tejo_huis: tejo_huis
+selection_logic: and
+weight: 0
+relationships: {  }

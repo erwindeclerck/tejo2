@@ -1,0 +1,15 @@
+uuid: 8292692e-e2e9-484d-b55d-32a85133ada3
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - user.role.authenticated
+id: tejo_huis-outsider
+label: Outsider
+weight: -101
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: tejo_huis
+permissions: {  }
