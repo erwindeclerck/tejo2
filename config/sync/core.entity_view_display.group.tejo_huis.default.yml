@@ -378,9 +378,9 @@ content:
         maxZoom: 20
         zoomFiner: 0
       icon:
-        iconType: html
-        iconUrl: ''
-        shadowUrl: ''
+        iconType: marker
+        iconUrl: /themes/custom/b5tejothema/resources/bol.png
+        shadowUrl: /themes/custom/b5tejothema/resources/bolshadow.png
         className: ''
         iconSize:
           x: ''
@@ -389,11 +389,11 @@ content:
           x: 23px
           'y': 76px
         shadowSize:
-          x: 5px
-          'y': 5px
+          x: 64px
+          'y': 72px
         shadowAnchor:
-          x: '5'
-          'y': '5'
+          x: 18px
+          'y': 72px
         popupAnchor:
           x: ''
           'y': ''
