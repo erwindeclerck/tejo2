@@ -1,0 +1,108 @@
+
+
+/*
+P02 TWEE KEER FOTO/TEKST BLAUWE GOLF
+*/
+
+.paragraph--type-p02 {
+  padding-top: $blocktopmargin;
+  margin-bottom: $blockbottommargin;
+  padding-bottom: 30px;
+
+  .break-out {
+
+    .container {
+
+      .row {
+        .col {
+          padding: 0 1rem;
+          .sectiekop {
+            padding: 0 1rem;
+            @include sectiekop(true);
+          }
+          .blokken {
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            @include media-breakpoint-up('md') {
+              gap: 2rem;
+              flex-direction: row;
+            }
+            justify-content: space-between;
+
+            .blok {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              @include tejoboxhover;
+
+              background-color: $tejolichtblauw;
+              border-radius: 30px;
+              width: 100%;
+              .titel {
+                text-align: center;
+                font-weight: bold;
+                color: $tejoblauw;
+                padding: 3rem 2rem 1rem;
+                font-size: 2rem;
+              }
+              .toelichting {
+                color: white;
+                padding: 1rem 2rem 1rem;
+                font-size: 1rem;
+              }
+              .img-fluid {
+                border-radius: 30px 30px 0 0;
+              }
+              .link {
+                margin-top: auto;
+                margin-bottom: 30px;
+                @include tejolink($tejoblauw, $tejogrijs, $tejowit, $tejodonkerblauw,15rem );
+              }
+            }
+          }
+
+        }
+      }
+      .sectievoet {
+        padding: 0 1rem;
+        @include sectievoet();
+        .link {
+          margin-top: auto;
+          @include tejolink($tejoblauw, $tejorood, $tejowit, $tejodonkerblauw,15rem );
+
+        }
+      }
+    }
+  }
+}
+
+.paragraph--type-p02 {
+
+  .blauw {
+    .blokken {
+      .blok {
+        background-color: $tejolichtblauw !important;
+        .titel {
+          color: $tejoblauw !important;
+        }
+        .toelichting {
+          color: $tejoblauw !important;
+        }
+      }
+    }
+  }
+  .wit {
+    .blokken {
+      .blok {
+        background-color: $tejowit !important;
+        .titel {
+          color: $tejoblauw !important;
+        }
+        .toelichting {
+          color: $tejoblauw !important;
+        }
+      }
+    }
+  }
+}

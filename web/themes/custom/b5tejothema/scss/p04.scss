@@ -1,0 +1,82 @@
+/* protoype van alle velden */
+
+.paragraph--type-p00 {
+  padding-top: $blocktopmargin;
+  margin-bottom: $blockbottommargin;
+  padding-bottom: 30px;
+  .sectiekop {
+    @include sectiekop(true);
+  }
+
+  .blokken {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+
+    @include media-breakpoint-up('md'){
+      flex-direction: row;
+    }
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .blok {
+      display: flex;
+      flex-direction: column;
+      @include tejoboxhover;
+
+      background-color: $tejolichtblauw;
+      border-radius: 30px;
+      max-width: 100%;
+      @include media-breakpoint-up('md'){
+        max-width: 45%;
+      }
+      @include media-breakpoint-up('lg'){
+        max-width: 23%;
+      }
+      .titel {
+        text-align: center;
+        font-weight: bold;
+        color: $tejoblauw;
+        padding: 0.5em 1em;
+      }
+      .toelichting {
+        color: white;
+        font-size: 1em;
+        padding: 10px;
+      }
+      .img-fluid {
+        border-radius: 30px 30px 0 0;
+      }
+      .link {
+        @include tejolink($tejoblauw,$tejowit,$tejogrijs,$tejodonkerblauw,15rem);
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .sectievoet {
+    @include sectievoet(true);
+    .link {
+      @include tejolink($tejoblauw,$tejowit,$tejogrijs,$tejodonkerblauw,15rem);
+    }
+  }
+
+  .codegeel {
+    .blokken {
+      .blok {
+        .link {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+  .codeoranje {
+    .blokken {
+      .blok {
+        .link {
+          background-color: orange;
+        }
+      }
+    }
+  }
+
+}

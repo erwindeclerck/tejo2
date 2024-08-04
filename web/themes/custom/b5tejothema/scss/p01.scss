@@ -1,0 +1,192 @@
+
+/*
+P01 EEN KEER FOTO/TEKST BLAUWE GOLF
+*/
+
+.page-node-type-vaste-pagina {
+  .paragraph--type-p01 {
+    font-size: 1.2em;
+  }
+}
+
+.page-node-type-homepagina {
+  .paragraph--type-p01 {
+    font-size: 1.2em;
+  }
+}
+
+.paragraph--type-p01 {
+  padding-top: $blocktopmargin;
+  margin-bottom: $blockbottommargin;
+  padding-bottom: 30px;
+
+  .break-out {
+    background-color: $tejoblauw;
+    &:after {
+      position: absolute;
+      display: block;
+      background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      width: 100%;
+      height: 85px;
+      content: "";
+      z-index: -1;
+    }
+    &:before {
+      position: absolute;
+      display: block;
+      background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      width: 100%;
+      height: 80px;
+      max-height: 100px;
+      content: "";
+      top: -80px;
+      z-index: -1;
+    }
+  }
+  .col {
+    padding-bottom: 60px;
+    margin-top: 60px;
+  }
+  .sectiekop {
+    @include sectiekop(false);
+  }
+
+  .blokken {
+    display: flex;
+    column-gap: 1em;
+
+    flex-direction: column;
+    @include media-breakpoint-up('lg'){
+      flex-direction: row;
+    }
+
+    justify-content: space-evenly;
+    //flex-wrap: wrap;
+
+    .blok {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      background-color: $tejoblauw;
+      border-radius: 30px;
+      width: 100%;
+      @include media-breakpoint-up('lg'){
+        width: 50%;
+      }
+      // max-width: 100%;
+      .titel {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: $tejowit;
+        padding: 0.5em 1em;
+      }
+      .toelichting {
+        color: white;
+        padding: 1em;
+        font-size: 1.2em;
+        text-align: left;
+
+        ul {
+          position: relative;
+          li {
+            list-style-type: none;
+            margin-bottom: 30px;
+            &:before {
+              font-family: 'nunito';
+              position: absolute;
+              left: -10px;
+              margin-top: -35px;
+              display: block;
+              font-size: 3em;
+              color: red;
+              content: "\2022";
+            }
+          }
+        }
+
+      }
+      .img-fluid {
+        border-radius: 30px;
+        border: 30px solid white;
+      }
+      .video-embed-field-provider-vimeo {
+        border-radius: 30px;
+        @include media-breakpoint-up('xs'){
+          height: 91vw;
+        }
+        @include media-breakpoint-up('sm'){
+          height: 74vw;
+        }
+        @include media-breakpoint-up('md'){
+          height: 90vw;
+        }
+        @include media-breakpoint-up('lg'){
+          height: 639px;
+        }
+
+        //      border: 30px solid white;
+        background-color: white;
+        iframe {
+          border-radius: 30px;
+        }
+      }
+
+    }
+
+    .link {
+      @include tejolink($tejowit,$tejorood,$tejoblauw,$tejowit);
+      margin-top: auto;
+
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        width: 20em;
+        margin: 1em auto;
+        padding: 1em 2em;
+        border-radius: 30px;
+
+        background-color: $tejorood;
+        color: white;
+        transition: 0.3s;
+        &:hover {
+          background-color: $tejogrijs;
+          color: $tejodonkerblauw;
+        }
+      }
+    }
+  }
+  .sectievoet {
+    @include sectievoet(false);
+    .link {
+      margin-top: auto;
+      @include tejolink($tejowit,$tejolichtblauw,$tejoblauw,$tejodonkerblauw,15rem);
+    }
+
+  }
+
+  .fotolinks {
+    .blokken {
+      flex-direction: column;
+      @include media-breakpoint-up('lg'){
+        flex-direction: row;
+      }
+    }
+  }
+
+  .fotorechts {
+    .blokken {
+      flex-direction: column;
+      @include media-breakpoint-up('lg'){
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+}

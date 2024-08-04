@@ -1,0 +1,294 @@
+.navbar .d-flex .region-nav-branding .block-system-branding-block .navbar-brand A.site-logo IMG {
+  height: 80px;
+}
+
+/*
+Verplaatsen naar boven met 25px van de contextmenuknopjes
+*/
+
+.focus .focusable {
+  top:-25px;
+}
+
+
+
+/*
+Bovenste menu
+*/
+
+header .region-header {
+  background-color: $tejoblauw;
+  height: 80px;
+}
+
+
+.adminimal header .region-header {
+  all: unset;
+  &:after {
+    all: unset;
+  }
+}
+
+.region-header {
+  background-color: $tejoblauw;
+  height: 80px;
+  margin-bottom: 80px;
+  &:after {
+    position: absolute;
+    display: block;
+    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 85px;
+    content: "";
+  }
+}
+
+.navbar-collapse .region-nav-additional {
+  height: 40px !important;
+}
+
+.menu--account {
+  padding-top: 35px;
+  ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li a {
+      color: white;
+    }
+
+  }
+}
+
+
+
+.menu--account ul.navbar-nav {
+
+  li {
+    a {
+      text-transform: uppercase;
+      &:hover{
+        //color: $tejowit;
+        text-decoration: underline;
+        text-decoration-color: $tejolichtblauw;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5em;
+        text-underline-position: auto;
+      }
+      &.active-link{
+        color:$tejowit;
+        text-decoration: underline;
+        text-decoration-color: $tejolichtblauw;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5em;
+        text-underline-position: auto;
+      }
+    }
+  }
+}
+
+/*
+Top menu
+ */
+.navbar-brand a.site-title {
+  color: var(--tejo-rood);
+}
+
+nav.menu--main > ul > li > a {
+  color: $tejoblauw;
+  &:hover{
+    color: $tejoblauw;
+    text-decoration: underline;
+    text-decoration-color: $tejolichtblauw;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 0.5em;
+    text-underline-position: auto;
+  }
+  &.active-link{
+    color:$tejoblauw!important;
+    text-decoration: underline;
+    text-decoration-color: $tejolichtblauw;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 0.5em;
+    text-underline-position: auto;
+  }
+
+}
+nav.menu--main > ul >li > a {
+  font-size: 1.0em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+
+/* searchbutton animation see also custom.js */
+
+
+.navbar-collapse {
+  .region-nav-main {
+    position: relative;
+    .container {
+      nav {
+        ul{
+          margin-right: 20px;
+          li:last-child{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .search-block-form {
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 100%;
+      .form-type-search {
+        border: 1px solid green;
+        min-width: 10%;
+        &.sbox{
+          min-width: 100%;
+          transition: min-width 0.2s ease-in-out;
+        }
+      }
+      .form-wrapper {
+        input [type=submit] {}
+      }
+    }
+  }
+}
+
+.dimmed {
+  filter:blur(3px);
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+
+
+/*
+Footer menu
+ */
+
+footer.mt-auto {
+  background-color: var(--tejo-blauw);
+}
+footer nav ul li a {
+  color: white !important;
+}
+footer nav ul li a.active {
+  color: red !important;
+}
+footer nav ul li a:hover {
+  color: var(--tejo-rood) !important;
+}
+.footer a.site-title:hover {
+  color: rgb(49,77,142);
+}
+
+/*
+Search field
+ */
+
+#search-block-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .button {
+    background-color: $tejoblauw;
+  }
+}
+.path-frontpage #search-block-form {
+  margin-bottom: 32px;
+}
+
+
+/* Broodkruimel */
+
+#block-b5tejothema-breadcrumbs ol.breadcrumb {
+  padding-left: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+#block-b5tejothema-breadcrumbs ol.breadcrumb {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: var(--bs-breadcrumb-divider-color);
+  content: var(--bs-breadcrumb-divider, ">")
+  /* rtl: var(--bs-breadcrumb-divider, "/") */
+;
+}
+
+.breadcrumb-item {
+  a{
+    color:$tejoblauw;
+  }
+}
+
+/* --- witruimte onder de content en boven de footer */
+main {
+  margin-bottom: 60px;
+
+}
+
+/* -- footer menu --- */
+.region-footer {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px;
+}
+
+.region-footer nav {
+  flex-basis: 100%;
+}
+
+nav h5 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.region-footer nav ul {
+  list-style-type: circle;
+  color: white;
+  margin-left: 16px;
+}
+
+.region-footer nav ul li a {
+  padding: 0.2em;
+}
+
+
+
+footer.mt-auto{
+  position: relative;
+  background-color: $tejoblauw;
+  &:before {
+    position: absolute;
+    display: block;
+    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 80px;
+    max-height: 100px;
+    content: "";
+    top: -80px;
+  }
+
+}
+

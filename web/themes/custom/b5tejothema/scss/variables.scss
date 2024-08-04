@@ -1,0 +1,39 @@
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+$madison: rgb(12,63,124); // Madison
+$tejoblauw: $madison;
+
+$cinnabar: rgb(224,55,38); // Cinnabar
+$tejorood: $cinnabar;
+
+$white: rgb(255,255,255); // White
+$tejowit: $white;
+
+$spindle: rgb(172,206,237); // Spindle
+$tejolichtblauw: $spindle;
+
+$alabaster: rgb(249,249,249); // Alabaster
+$tejogrijs: $alabaster;
+
+$midnight: rgb(0,29,76); // Midnight
+$tejodonkerblauw: $midnight;
+
+$black: rgb(0,0,0); // Black
+$tejozwart: $black;
+
+$borderradius: 30px;
+$sectiekoph2: 2rem;
+$sectiekoptoelichtingfontsize: 1rem;
+$sectievoetfontsize: 1.2rem;
+
+$blocktopmargin: 60px;
+$blockbottommargin: 60px;

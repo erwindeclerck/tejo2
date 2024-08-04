@@ -1,0 +1,36 @@
+diff --git a/src/Plugin/Field/FieldFormatter/ViewsReferenceFieldFormatter.php b/src/Plugin/Field/FieldFormatter/ViewsReferenceFieldFormatter.php
+index b79351d..b1e46eb 100644
+--- a/src/Plugin/Field/FieldFormatter/ViewsReferenceFieldFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/ViewsReferenceFieldFormatter.php
+@@ -88,8 +88,10 @@ class ViewsReferenceFieldFormatter extends FormatterBase {
+       }
+ 
+       $view->setDisplay($display_id);
+-      $enabled_settings = array_filter($this->getFieldSetting('enabled_settings') ?? []);
+-
++      // Hotfix based on the issue https://www.drupal.org/project/viewsreference/issues/3400712
++      $enabled_settings_raw = array_filter($this->getFieldSetting('enabled_settings') ?? []);
++      // Use the keys from the settings array as values.
++      $enabled_settings = array_combine(array_keys($enabled_settings_raw), array_keys($enabled_settings_raw));
+       // Add properties to the view so our hook_views_pre_build() implementation
+       // can alter the view. This is pretty hacky, but we need this to fix ajax
+       // behaviour in views. The hook_views_pre_build() needs to know if the
+diff --git a/src/Plugin/Field/FieldWidget/ViewsReferenceTrait.php b/src/Plugin/Field/FieldWidget/ViewsReferenceTrait.php
+index a69e611..64068af 100644
+--- a/src/Plugin/Field/FieldWidget/ViewsReferenceTrait.php
++++ b/src/Plugin/Field/FieldWidget/ViewsReferenceTrait.php
+@@ -151,9 +151,11 @@ trait ViewsReferenceTrait {
+     $viewsreference_plugin_manager = \Drupal::service('plugin.manager.viewsreference.setting');
+     $plugin_definitions = $viewsreference_plugin_manager->getDefinitions();
+     $enabled_settings = array_filter($this->getFieldSetting('enabled_settings') ?? []);
+-    foreach ($enabled_settings as $enabled_setting) {
+-      if (!empty($plugin_definitions[$enabled_setting])) {
+-        $plugin_definition = $plugin_definitions[$enabled_setting];
++    // Hotfix based on the issue https://www.drupal.org/project/viewsreference/issues/3400712
++    // Use the keys from the settings array as values.
++    foreach ($enabled_settings as $key => $enabled_setting) {
++      if (!empty($plugin_definitions[$key])) {
++        $plugin_definition = $plugin_definitions[$key];
+         /** @var \Drupal\viewsreference\Plugin\ViewsReferenceSettingInterface $plugin_instance */
+         $plugin_instance = $viewsreference_plugin_manager->createInstance($plugin_definition['id'], [
+           'view_name' => $view_name,

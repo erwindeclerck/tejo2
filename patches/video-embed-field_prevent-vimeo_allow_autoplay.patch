@@ -1,0 +1,12 @@
+diff --git a/src/Plugin/video_embed_field/Provider/Vimeo.php b/src/Plugin/video_embed_field/Provider/Vimeo.php
+index 2e1d1e945..e9d9b6f04 100644
+--- a/src/Plugin/video_embed_field/Provider/Vimeo.php
++++ b/src/Plugin/video_embed_field/Provider/Vimeo.php
+@@ -24,6 +24,7 @@ public function renderEmbedCode($width, $height, $autoplay) {
+       '#url' => sprintf('https://player.vimeo.com/video/%s', $this->getVideoId()),
+       '#query' => [
+         'autoplay' => $autoplay,
++        'muted' => $autoplay ? 1 : 0,
+       ],
+       '#attributes' => [
+         'width' => $width,

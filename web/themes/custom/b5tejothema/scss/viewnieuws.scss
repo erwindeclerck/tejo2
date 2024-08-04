@@ -1,0 +1,117 @@
+.field.field--name-field-nieuws {
+  // border:1px solid orange;
+  padding: 3rem;
+}
+.views-element-container.contextual-region {
+
+  .viewsreference--view-title {
+    // border: 1px solid red;
+    font-size: 2rem;
+    color: $tejoblauw;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  .view-tejonieuws,
+  .view-tejonieuws-per-afdeling {
+
+    .view-content {
+      //            border: 1px solid green;
+
+      .views-view-responsive-grid.views-view-responsive-grid--horizontal {
+        // border: 1px solid yellow;
+
+        .views-view-responsive-grid__item-inner {
+          // border: 1px solid purple;
+          @include tejoboxhover;
+          background-color: $tejowit;
+          border-radius: 30px;
+          min-height: 800px;
+          display: flex;
+          flex-direction: column;
+
+          .views-field.views-field-field-hero {
+            // border: 1px solid blue;
+
+            .field-content {
+
+              a {
+
+                img.img-fluid.image-style-large {
+                  border-radius: 30px 30px 0 0;
+
+                }
+              }
+            }
+          }
+
+          .tejohuisreferentie,.views-field-gid {
+            a {
+              display: block;
+              padding: 2rem 0 1rem;
+              text-align: center;
+              font-weight: bold;
+              text-decoration: none;
+              color: $tejorood;
+              font-size: 1.2rem;
+            }
+            & a:before {
+              content: "- ";
+            }
+            & a:after {
+              content: " -";
+            }
+          }
+
+          .views-field.views-field-gid {
+
+            span.field-content {}
+          }
+          .views-field.views-field-title {
+
+            h3.field-content {
+              padding: 1rem;
+              text-align: center;
+              a {
+                text-decoration: none;
+                color: $tejoblauw;
+              }
+            }
+          }
+          .views-field.views-field-field-samenvatting {
+
+            .field-content {
+              padding: 1rem;
+              p {
+                color: $tejodonkerblauw;
+              }
+            }
+          }
+          .views-field.views-field-view-node.pijlbutton {
+            margin-top: auto;
+            @include pijlbutton;
+          }
+        }
+
+      }
+    }
+
+    .view-footer {
+      padding: 3rem;
+      @include tejolink($tejorood,$tejowit,$tejowit,$tejorood);
+    }
+
+  }
+  .view-tejonieuws.view-display-id-block_1 {
+    .break-out {
+      @include break-out;
+      .view-footer {
+        padding: 3rem;
+        @include tejolink($tejorood,$tejowit,$tejowit,$tejorood);
+      }
+
+    }
+
+  }
+
+}

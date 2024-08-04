@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ *
+ * This template provides a two column 50%-50% display layout, with
+ * additional areas for the top and the bottom.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'layout',
+  'layout--twocol-50-50',
+  'layout--edc2',
+  'container'
+]
+%}
+{% if content|render|trim %}
+  <div class="bluebox break-out">
+    <div class="before"></div>
+
+    <div{{ attributes.addClass(classes) }}>
+
+      <div class="toprow row">
+        <div {{ region_attributes.top.addClass('col', 'layout__region', 'layout__region--top','region-full') }} {% if not region_attributes.top %} class="layout__region layout__region--top  region-full" {% endif %}>
+          {% if content.top %}
+            {{ content.top }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="middlerow row">
+        <div {{ region_attributes.first.addClass('col', 'layout__region', 'layout__region--middle', 'region-first') }} {% if not region_attributes.first %} class="layout__region layout__region--middle  region-first" {% endif %}>
+          {% if content.first %}
+            {{ content.first }}
+          {% endif %}
+        </div>
+
+        <div {{ region_attributes.second.addClass('col', 'layout__region', 'layout__region--middle', 'region-second') }} {% if not region_attributes.second %} class="layout__region layout__region--middle  region-second" {% endif %}>
+          {% if content.second %}
+            {{ content.second }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="bottomrow row">
+        <div {{ region_attributes.bottom.addClass('col', 'layout__region', 'layout__region--bottom', 'region-full') }} {% if not region_attributes.bottom %} class="layout__region layout__region--bottom  region-full" {% endif %}>
+          {% if content.bottom %}
+            {{ content.bottom }}
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+    <div class="after"></div>
+
+  </div>
+{% endif %}

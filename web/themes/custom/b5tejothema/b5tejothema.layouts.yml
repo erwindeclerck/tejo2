@@ -1,0 +1,41 @@
+custom_layouts_threecol_brick_33_33_33_edc:
+  label: 'Three column 33/33/33 EDC'
+  path: templates/layouts
+  template: custom-layouts--threecol-brick-33-33-33-edc
+  category: 'Columns: 3 brick edc'
+  default_region: second
+  icon_map:
+    - [top]
+    - [first, second, third]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    bottom:
+      label: Bottom
+
+custom_layouts_twocol_brick_50_50_edc:
+  label: 'Two column 50/50 EDC'
+  path: templates/layouts
+  template: custom-layouts--twocol-brick-50-50-edc
+  category: 'Columns: 2 brick edc'
+  default_region: second
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom

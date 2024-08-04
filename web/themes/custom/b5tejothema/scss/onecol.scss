@@ -1,0 +1,210 @@
+///*
+// * @file
+// * Provides the layout styles for layout_onecol.
+// */
+//
+//.layout.layout--onecol{
+//  padding:20px;
+//}
+//.layout--onecol .layout__region {
+//  width: 100%;
+//}
+//
+//.break-out.spacer-ag-blauw-tx-wit{
+//  background-color:var(--tejo-blauw);
+//  color: white;
+//  text-align: center;
+//}
+//
+//.break-out.spacer-ag-wit-tx-blauw{
+//  background-color:white;
+//  color: var(--tejoblauw);
+//  text-align: center;
+//}
+//
+//.break-out.wave-top-wit-bot-blauw{
+//
+//}
+//.break-out.wave-top-wit-bot-blauw:before{
+//
+//}
+//
+//.break-out.wave-top-blauw-bot-wit{
+//  background-color: var(--tejoblauw);
+//  margin-bottom:100px;
+//}
+//.break-out.wave-top-blauw-bot-wit .layout h2.h2{
+//  display:none;
+//}
+//.break-out.wave-top-blauw-bot-wit:after{
+//  position: absolute;
+//  display: block;
+//  background-image: url(/themes/custom/b5tejothema/resources/BottomGolf.svg);
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  background-position: center bottom;
+//  width: 100%;
+//  height: 80px;
+//  content: "";
+//}
+//
+//
+//.break-out.wave-top-wit-bot-blauw{
+//  background-color: white;
+//  margin-bottom:100px;
+//}
+//.break-out.wave-top-wit-bot-blauw .layout h2.h2{
+//  display: none;
+//}
+//.break-out.wave-top-wit-bot-blauw:after{
+//  position: absolute;
+//  display: block;
+//  background-image: url(/themes/custom/b5tejothema/resources/BottomGolfWhite.svg);
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  background-position: center bottom;
+//  width: 100%;
+//  height: 80px;
+//  content: "";
+//}
+//
+//
+//
+///**  duo lichtblauw blok  **/
+//
+//.paragraph--type--duoblok-ag-lichtblauw-tx-wit.field--name-field-duo-titel{
+//
+//}
+//.field--label-hidden.field__item h2 {
+//  text-align: center;
+//  color:var(--tejorood);
+//  font-size: 1.1em;
+//  letter-spacing: .2rem;
+//  padding-top: 60px;
+//
+//}
+//
+//.row.bs-1col{
+//  text-align: center;
+//  padding:15px;
+//  /*font-size: 1.5em;*/
+//  color: var(--donkerblauw);
+//}
+//
+//
+//.row.bs-2col.lichtblauw,
+//.row.bs-2col.lichtblauwdonker
+//{
+//  gap:60px;
+//  justify-content: center;
+//}
+//.row.bs-2col.lichtblauw>*,
+//.row.bs-2col.lichtblauwdonker>*
+//{
+//  width:40%;
+//}
+//.row.bs-2col.lichtblauw .bs-region--left,
+//.row.bs-2col.lichtblauw .bs-region--right,
+//.row.bs-2col.lichtblauwdonker .bs-region--left,
+//.row.bs-2col.lichtblauwdonker .bs-region--right
+//
+//{
+//  border-radius:15px;
+//  background-color: var(--lichtblauw);
+//  padding:30px;
+//}
+//.row.bs-2col.lichtblauw .bs-region--left .field--name-field-kop-links,
+//.row.bs-2col.lichtblauw .bs-region--right .field--name-field-kop-rechts,
+//.row.bs-2col.lichtblauwdonker .bs-region--left .field--name-field-kop-links,
+//.row.bs-2col.lichtblauwdonker .bs-region--right .field--name-field-kop-rechts
+//{
+//  text-align: center;
+//  font-weight: bold;
+//  color: var(--donkerblauw);
+//  font-size: 1.5em;
+//  padding: 15px;
+//}
+//.row.bs-2col.lichtblauw .bs-region--left .field--name-field-brood-links,
+//.row.bs-2col.lichtblauw .bs-region--right .field--name-field-brood-rechts,
+//.row.bs-2col.lichtblauwdonker .bs-region--left .field--name-field-brood-links,
+//.row.bs-2col.lichtblauwdonker .bs-region--right .field--name-field-brood-rechts
+//{
+//  text-align: center;
+//  font-weight: normal;
+//  color: white;
+//}
+//.row.bs-2col.lichtblauw .bs-region--left .field--name-field-brood-links,
+//.row.bs-2col.lichtblauw .bs-region--right .field--name-field-brood-rechts,
+//.row.bs-2col.lichtblauwdonker .bs-region--left .field--name-field-brood-links,
+//.row.bs-2col.lichtblauwdonker .bs-region--right .field--name-field-brood-rechts
+//{
+//  text-align: center;
+//  font-weight: normal;
+//  color: var(--donkerblauw);
+//}
+//.row.bs-2col.lichtblauw .bs-region--left .field--name-field-link-links a,
+//.row.bs-2col.lichtblauw .bs-region--right .field--name-field-link-rechts a,
+//.row.bs-2col.lichtblauwdonker .bs-region--left .field--name-field-link-links a,
+//.row.bs-2col.lichtblauwdonker .bs-region--right .field--name-field-link-rechts a
+//{
+//  display: block;
+//  text-align: center;
+//  padding: 15px;
+//  border-radius: 50px;
+//  width: 50%;
+//  margin-left: auto;
+//  margin-right: auto;
+//  background-color: var(--donkerblauw);
+//  color: white;
+//  text-decoration: none;
+//  margin-top:60px;
+//}
+//.row.bs-2col.lichtblauw .bs-region--left .field--name-field-link-links a:hover,
+//.row.bs-2col.lichtblauw .bs-region--right .field--name-field-link-rechts a:hover,
+//.row.bs-2col.lichtblauwdonker .bs-region--left .field--name-field-link-links a:hover,
+//.row.bs-2col.lichtblauwdonker .bs-region--right .field--name-field-link-rechts a:hover
+//{
+//  background-color: white;
+//  color: var(--donkerblauw);
+//}
+//
+//
+//
+//.blauwblok{
+//  background-color:var(--tejoblauw);
+//  color: white;
+//  padding: 60px;
+//
+//}
+//.block-field-blockparagraphgrootblauw-brickfield-duo-titel .field {
+//  font-size: 2em;
+//  text-align: center;
+//  padding: 15px;
+//}
+//
+//.blauwblok .bs-region--left {
+//  padding: 30px;
+//}
+//
+//.blauwblok .bs-region--right {
+//  padding: 30px;
+//}
+//
+//.field--name-field-footer-link a {
+//  display: block;
+//  text-align: center;
+//  padding: 15px;
+//  border-radius: 50px;
+//  width: 300px;
+//  margin-left: auto;
+//  margin-right: auto;
+//  background-color: var(--tejorood);
+//  color: white;
+//  text-decoration: none;
+//  font-weight: bold;
+//
+//}
+//.field--name-field-footer-link a:hover{
+//  color:var(--tejorood);
+//  background-color: white;
+//}

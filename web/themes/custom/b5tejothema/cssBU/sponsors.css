@@ -1,0 +1,10 @@
+div.field--name-field-sponsor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+img.img-fluid.image-style-medium {
+  padding: 30px;
+}

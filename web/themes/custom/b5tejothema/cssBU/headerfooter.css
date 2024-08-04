@@ -1,0 +1,114 @@
+
+.navbar .d-flex .region-nav-branding .block-system-branding-block .navbar-brand A.site-logo IMG
+{
+  height: 120px;
+}
+
+/*
+Top menu
+ */
+.navbar-brand a.site-title{
+  color: var(--tejo-rood);
+}
+nav.menu--main > ul > li > a{
+  color: var(--tejo-blauw);
+}
+nav.menu--main > ul > li > a.active{
+  color: var(--tejo-rood)!important;
+}
+.navbar-brand a.site-title:hover{
+  color: rgb(49,77,142);
+}
+nav.menu--main > ul >li > a {
+  font-size:1.1em;
+  font-weight: bold;
+}
+
+/*
+Footer menu
+ */
+
+footer.mt-auto {
+  background-color: var(--tejo-blauw);
+}
+footer nav ul li a {
+  color: white !important;
+}
+footer nav ul li a.active {
+  color: red !important;
+}footer nav ul li a:hover {
+   color: var(--tejo-rood) !important;
+ }
+.footer a.site-title:hover{
+  color: rgb(49,77,142);
+}
+
+
+/*
+Search field
+ */
+
+#search-block-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.path-frontpage #search-block-form{
+margin-bottom:32px;
+}
+
+/* Broodkruimel */
+
+#block-b5tejothema-breadcrumbs ol.breadcrumb {
+  padding-left: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+#block-b5tejothema-breadcrumbs ol.breadcrumb {
+  font-weight: bold;
+  font-size:1.1em;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: var(--bs-breadcrumb-item-padding-x);
+  color: var(--bs-breadcrumb-divider-color);
+  content: var(--bs-breadcrumb-divider, ">") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+
+.breadcrumb-item {
+}
+
+/* --- witruimte onder de content en boven de footer */
+main {
+  margin-bottom: 60px;
+
+}
+
+/* -- footer menu --- */
+.region-footer {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 8px;
+}
+
+.region-footer nav {
+  flex-basis: 100%;
+}
+
+nav h5 {
+  color: white;
+  font-size: 1.5em;
+}
+
+.region-footer nav  ul {
+  list-style-type: circle;
+  color: white;
+  margin-left: 16px;
+}
+
+.region-footer nav ul li a {
+  padding: 0.2em;
+}
+
+.path-frontpage

@@ -1,0 +1,178 @@
+
+.paragraph--type-p01-card-hor {
+  padding-top: $blocktopmargin;
+  margin-bottom: $blockbottommargin;
+  padding-bottom: 30px;
+  .col-sm-12 {
+    .break-out {
+      .container {
+        .col {
+          .sectiekop {
+            @include sectiekop(true);
+          }
+          .blokken {
+            display: flex;
+            .blok.blok1 {
+              flex-basis: 50%;
+              .field.field--name-field-blok-1-afbeelding.field--type-image.field--label-hidden.field__item {
+                img.img-fluid.image-style-square-1600x1600 {}
+              }
+            }
+            .blok2.blok {
+              flex-basis: 50%;
+              h3.titel {}
+              .toelichting {
+                p {}
+              }
+              .link {
+                a {}
+              }
+
+            }
+          }
+          .sectievoet {
+            .voet {
+              font-size: $sectievoetfontsize;
+              color: $tejoblauw;
+              padding: 15px;
+              p {}
+            }
+            .link {
+              a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                width: 20em;
+                margin: 1em auto;
+                padding: 1em 2em;
+                border-radius: 30px;
+
+                background-color: $tejoblauw;
+                color: $tejowit;
+                transition: 0.3s;
+                &:hover {
+                  background-color: $tejorood;
+                  color: $tejowit;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.paragraph--type-p01-card-hor {
+  .fotolinks {
+    .blokken {
+      flex-direction: column;
+      @include media-breakpoint-up('lg'){
+        flex-direction: row;
+      }
+      .blok.blok1 {
+        img.img-fluid {
+          border-top-left-radius: $borderradius;
+          border-top-right-radius: $borderradius;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          @include media-breakpoint-up('lg'){
+            border-top-left-radius: $borderradius;
+            border-top-right-radius: 0 ;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: $borderradius;
+          }
+        }
+      }
+    }
+  }
+
+  .fotorechts {
+    .blokken {
+      flex-direction: column;
+      @include media-breakpoint-up('lg'){
+        flex-direction: row-reverse;
+      }
+      .blok.blok1 {
+        img.img-fluid {
+          border-top-left-radius: $borderradius;
+          border-top-right-radius: $borderradius;
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+          @include media-breakpoint-up('lg'){
+            border-top-left-radius: 0;
+            border-top-right-radius: $borderradius;
+            border-bottom-right-radius: $borderradius;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+  }
+  .blauw {
+    .blokken {
+      border-radius: $borderradius;
+      background-color: $tejoblauw;
+      color: $tejowit;
+      .blok.blok2 {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        @include tejolink($tejolichtblauw,$tejowit,$tejoblauw,$tejoblauw);
+        .link0 {
+          a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            width: 20em;
+            margin: 1em auto;
+            padding: 1em 2em;
+            border-radius: 30px;
+
+            background-color: $tejolichtblauw;
+            color: $tejoblauw;
+            transition: 0.3s;
+            &:hover {
+              background-color: $tejowit;
+              color: $tejoblauw;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .wit {
+    .blokken {
+      border-radius: $borderradius;
+      background-color: $tejowit;
+      color: $tejoblauw;
+      .blok.blok2 {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        @include tejolink($tejolichtblauw,$tejoblauw,$tejoblauw,$tejowit);
+
+        .link0 {
+          a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            width: 20em;
+            margin: 1em auto;
+            padding: 1em 2em;
+            border-radius: 30px;
+
+            background-color: $tejolichtblauw;
+            color: $tejoblauw;
+            transition: 0.3s;
+            &:hover {
+              background-color: $tejoblauw;
+              color: $tejowit;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

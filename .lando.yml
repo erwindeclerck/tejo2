@@ -1,0 +1,13 @@
+name: tejo2
+recipe: drupal10
+config:
+  webroot: web
+  xdebug: 'develop,debug'
+  php: '8.2'
+services:
+  appserver:
+    composer_version: "2.6.5"
+tooling:
+  composer:
+    service: appserver
+    cmd: php /usr/local/bin/composer

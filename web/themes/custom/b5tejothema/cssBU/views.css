@@ -1,0 +1,109 @@
+.layout--twocol > .layout__region--first,
+.layout--twocol > .layout__region--second
+{
+  padding: 30px;
+}
+.viewsrow
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: #EFEFEF;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.viewscell
+{
+}
+.viewscell.leftside
+{
+  flex: 1 1 25%;
+  text-align: center;
+}
+.viewscell.rightside
+{
+  flex: 1 1 70%;
+  min-width: 42ch;
+}
+.viewscell.leftside a
+{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+.viewscell.leftside p a{
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--tejo-blauw);
+  border-radius: 20px;
+}
+
+.viewscell.leftside p a:hover{
+  background-color: var(--tejo-rood);
+  color: white;
+}
+.viewscell.rightside .leesmeer a
+{
+  text-decoration: none;
+  float: right;
+}
+.view-edc-afdelingen
+{
+  padding-bottom:8px;
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.view-edc-afdelingen ul li
+{
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 8px;
+}
+.view-edc-afdelingen ul li a
+{
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid var(--tejo-blauw);
+  border-radius: 20px;
+}
+.view-edc-afdelingen ul li a:hover,.view-edc-afdelingen ul li a.active-link
+{
+  background-color: var(--tejo-rood);
+  color: white;
+}
+.herotitle
+{
+  color:var(--tejo-rood);
+  text-transform: uppercase;
+}
+
+
+
+/* --- ambassadeurs --- */
+
+
+.paspoortje {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin-bottom: 32px;
+  background-color: #f8f8f8;
+}
+
+.paspoortje .leftpersoon {
+  flex: 1 1 29%;
+  min-width: 15 ch;
+}
+
+.paspoortje .ritghtpersoon {
+  flex: 1 1 69%;
+  min-width: 25ch;
+}
+
+div.ritghtpersoon.persoonsveld .persoon {
+  font-size: 2em;
+  text-decoration: none;
+}

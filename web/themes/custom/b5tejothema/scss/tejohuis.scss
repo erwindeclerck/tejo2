@@ -1,0 +1,113 @@
+
+.grouphead {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  .label {
+    font-size: 1.2rem;
+    color: $tejorood;
+    font-weight: bold;
+  }
+  .title {
+    font-size: 2.1rem;
+    color: $tejoblauw;
+    font-weight: bold;
+  }
+  p {}
+  .field--name-field-top-link{
+    @include tejolink($tejorood,$tejowit,$tejowit,$tejorood);
+    padding:2rem;
+  }
+}
+
+.group-front-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  & > *{
+    width:100%;
+    @include media-breakpoint-up(md){
+      width: 50%;
+    }
+  }
+  .waar-en-wanneer {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid green;
+    gap: 2rem;
+    .waar {
+      border-radius: $borderradius;
+      img {
+        border-radius: $borderradius $borderradius 0 0;
+      }
+      // border: 1px solid orange;
+      text-align: center;
+      background-color: $tejoblauw;
+      color: $tejowit;
+      .waartekst {
+        padding: 2rem;
+        a {
+          color: white;
+        }
+      }
+    }
+    .wanneer {
+      border-radius: $borderradius;
+      min-width: 50%;
+      background-color: $tejolichtblauw;
+      color: $tejoblauw;
+      text-align: center;
+      padding: 2rem;
+      // border: 1px solid orange;
+      .field--name-field-openingsuren .field__label {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {}
+      }
+    }
+  }
+  .onsvinden {
+    // border: 1px solid purple;
+    padding: 2rem;
+    background: $tejowit;
+    border-radius: $borderradius;
+  }
+}
+
+
+.field--name-field-sponsor {
+  .field__label{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: $tejoblauw;
+    font-size: 1.8rem;
+  }
+  display: flex;
+  flex-direction: column;
+  .field__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & > *{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width:120px;
+      // border: 1px solid red;
+      background-color: $tejowit;
+      border-radius:1rem;
+      @include tejoboxhover2;
+    }
+  }
+}
+

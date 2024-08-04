@@ -1,0 +1,29 @@
+From bffb8f274be152a08f2e1792b5ce6e4f80449003 Mon Sep 17 00:00:00 2001
+From: Matthew Sielski <msielski@gmail.com>
+Date: Thu, 1 Jun 2023 09:28:13 -0400
+Subject: [PATCH] 3358929: Fix build function to align with views module's.
+
+---
+ src/Plugin/views/query/ConfigEntityQuery.php | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/Plugin/views/query/ConfigEntityQuery.php b/src/Plugin/views/query/ConfigEntityQuery.php
+index 56cfbe7..2aeb487 100644
+--- a/src/Plugin/views/query/ConfigEntityQuery.php
++++ b/src/Plugin/views/query/ConfigEntityQuery.php
+@@ -75,6 +75,12 @@ class ConfigEntityQuery extends Sql {
+     $this->view = $view;
+ 
+     $view->initPager();
++
++    // Let the pager modify the query to add limits.
++    $view->pager->query();
++
++    $view->build_info['query'] = $this->query();
++    $view->build_info['count_query'] = $this->query(TRUE);
+   }
+ 
+   /**
+-- 
+GitLab
+

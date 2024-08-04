@@ -1,0 +1,96 @@
+
+.paragraph--type-p10 {
+  margin-top: 2rem;
+  .bs-region--main {
+
+    .field--name-field-sectietitel {
+      padding: 1rem;
+      color: $tejoblauw;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .field.field--name-field-vraag-en-antwoord {
+
+      & .field__item {
+        position: relative;
+        border: 2px solid $tejoblauw;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: $borderradius;
+        counter-increment: my-counter;
+
+        .ui-accordion .ui-accordion-header {
+          border-radius: 30px;
+          padding: 1rem;
+        }
+        .ui-widget-content {
+          background-color: yellow;
+        }
+
+        details.faqfield-details {
+          border: none;
+
+          summary.faqfield-question {
+            padding: 2px 1rem;
+            font-size: 1.5rem;
+            color: $tejoblauw;
+            border: none;
+            cursor: pointer;
+            margin-right: 0rem;
+            &::marker {
+              color: $tejowit;
+              content: " " counter(my-counter) "\00A0\00A0\00A0\00A0";
+              line-height: 1;
+              position: absolute;
+              font-size: 100%;
+              width: 300%;
+            }
+            &:before {
+              content: "";
+              background-color: $tejolichtblauw;
+              width: 3rem;
+              height: 3rem;
+              position: absolute;
+              left: 0.9rem;
+              top: 1.8rem;
+              z-index: -2;
+              border-radius: 50%;
+            }
+          }
+
+          .faqfield-answer {
+            border: none;
+            padding: 2rem 1rem;
+            p {
+              span.OYPEnA {
+                strong {}
+              }
+            }
+          }
+
+          &::after {
+            content: "\25bc";
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            color: $tejorood;
+            font-size: 2rem;
+            z-index: -1
+          }
+          &:not([open])::after {
+            content: "\25b6";
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            color: $tejorood;
+            font-size: 2rem;
+            z-index: -1
+          }
+
+        }
+
+      }
+
+    }
+  }
+}

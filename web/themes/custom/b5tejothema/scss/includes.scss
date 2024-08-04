@@ -1,0 +1,134 @@
+
+@mixin break-out {
+  background-color: $tejoblauw;
+  &:after {
+    position: absolute;
+    display: block;
+    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 85px;
+    content: "";
+    z-index: -1;
+
+  }
+  &:before {
+    position: absolute;
+    display: block;
+    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 80px;
+    max-height: 100px;
+    content: "";
+    top: -80px;
+    z-index: -1;
+  }
+}
+
+@mixin tejolink($background, $backgroundhover, $color, $colorhover, $width: 18rem) {
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: $width;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+
+    background-color: $background;
+    color: $color;
+    transition: 0.3s;
+    &:hover {
+      background-color: $backgroundhover;
+      color: $colorhover;
+    }
+  }
+}
+@mixin tejoboxhover {
+  box-shadow: 2px 2px 10px -2px rgba(196,34,34,0);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 8px 0 15px -5px $tejodonkerblauw;
+  }
+}
+@mixin tejoboxhover2 {
+  box-shadow: 2px 2px 10px -2px rgba(196,34,34,0);
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 4px 0 15px -5px $tejodonkerblauw;
+  }
+}
+
+@mixin hn($level){
+  $content: h+$level;
+  @if $debug{
+    position: relative;
+    &:hover::after{
+      content: "#{$content}";
+      position: absolute;
+      top: -0.5rem;
+      font-size: 1rem;}
+  }
+  //@debug "#{$level $debug $content} }";
+}
+
+@mixin sectiekop($light:true) {
+  .titel {
+    @if($light) {
+      color: $tejodonkerblauw;
+    }
+    @else {
+      color: $tejowit;
+    }
+  }
+  .toelichting {
+    @if($light) {
+      color: $tejodonkerblauw;
+    }
+    @else {
+      color: $tejowit;
+    }
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+@mixin sectievoet($light:true) {
+  .voet {
+    @if($light) {
+      color: $tejodonkerblauw;
+    }
+    @else {
+      color: $tejowit;
+    }
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+
+@mixin pijlbutton {
+  text-align: center;
+  a {
+    display: block;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: $tejoblauw;
+    &:after {
+      content: "\25B6";
+      width: 50px;
+      height: 50px;
+      margin-left: 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+    &:hover {
+      color: $tejorood;
+    }
+  }
+
+}

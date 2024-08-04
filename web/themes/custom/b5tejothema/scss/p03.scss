@@ -1,0 +1,110 @@
+
+/*
+P03 drie KEER FOTO/TEKST
+*/
+
+.paragraph--type-p03 {
+  padding-top: $blocktopmargin;
+  margin-bottom: $blockbottommargin;
+  padding-bottom: 30px;
+
+  .col-sm-12 {
+    .break-out {
+      .container {
+        .row {
+          .sectiekop {
+            @include sectiekop(true);
+          }
+          .blokken.col {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            @include media-breakpoint-up('md') {
+              flex-direction: row;
+              flex-wrap:wrap;
+            }
+            @include media-breakpoint-up('lg') {
+              flex-wrap:wrap;
+              flex-direction: row;
+            }
+            justify-content: space-between;
+            & > * {}
+            .blok {
+              @include tejoboxhover;
+
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              background-color: $tejolichtblauw;
+              border-radius: $borderradius;
+              @include media-breakpoint-up('md') {
+                max-width: 47%;
+              }
+              @include media-breakpoint-up('lg') {
+                max-width: 30%;
+              }
+              .img-fluid {
+                border-radius: 30px 30px 0 0;
+              }
+
+              h3.titel {
+                text-align: center;
+                font-weight: bold;
+                color: $tejoblauw;
+                padding: 2rem;
+              }
+              .toelichting {
+                color: $tejoblauw;
+                font-size: 1rem;
+                padding: 1rem;
+
+                p {}
+              }
+
+              .link {
+                margin-top: auto;
+                @include tejolink($tejoblauw,$tejogrijs,$tejowit,$tejodonkerblauw);
+                margin-bottom: 1rem;
+              }
+            }
+          }
+          .sectievoet {
+
+            .voet {
+              color: $tejodonkerblauw;
+              font-size: 1rem;
+              padding: 1rem;
+
+              p {}
+            }
+            .link {
+              margin-top: auto;
+              @include tejolink($tejoblauw,$tejogrijs,$tejowit,$tejodonkerblauw);
+            }
+          }
+        }
+      }
+    }
+  }
+  .codegeel {
+    .blokken {
+      .blok {
+        .link {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+  .codeoranje {
+    .blokken {
+      .blok {
+        .link {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+}
+
+

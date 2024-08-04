@@ -1,0 +1,18 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/_variables.css: {}
+      css/tekst.css: {}
+      css/hero.css: {}
+      css/fields.css: {}
+      css/sponsors.css: {}
+      css/custom.css: {}
+      templates/onecol/onecol.css: {}
+    component:
+      scss/style.scss: {}
+  js:
+    js/custom.js: {}
+
+  dependencies:
+    - core/jquery

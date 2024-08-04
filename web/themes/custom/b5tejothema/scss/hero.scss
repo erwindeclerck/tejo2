@@ -1,0 +1,43 @@
+.herocanvas{
+  position: relative;
+}
+
+.herocanvas, .buttoncanvas{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.herocanvas .herotitle {
+  position: absolute;
+  bottom:30px;
+  left:30px;
+  right:30px;
+  padding:30px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.herocanvas .herotitle p{
+  margin-bottom: 0px;
+}
+
+.herocanvas .field_kort{
+  position: absolute;
+  bottom:30px;
+  left:30px;
+  right:30px;
+  padding:30px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Hero boven webform pagina's zoals heb jij nood aan een gesprek ---- */
+p.herotitlebig {
+  position: absolute;
+  bottom: 15px;
+  font-size: 4em !important;
+  color: #FFFFFF !important;
+  left: 32px;
+  right: 32px;
+  padding-left: 32px;
+}

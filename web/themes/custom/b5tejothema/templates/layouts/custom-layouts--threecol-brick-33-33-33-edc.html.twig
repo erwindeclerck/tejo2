@@ -1,0 +1,66 @@
+{#
+/**
+ * @file
+ *
+ * This template provides a three column 33%-30%-33% display layout, with
+ * additional areas for the top and the bottom.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'layout',
+  'layout--threecol-33-33-33',
+  'layout--edc1',
+  'container'
+]
+%}
+{% if content|render|trim %}
+  <div class="whitetriplet break-out">
+    <div{{ attributes.addClass(classes) }}>
+
+      <div class="toprow row">
+        <div {{ region_attributes.top.addClass('col', 'layout__region', 'layout__region--top','region-full') }} {% if not region_attributes.top %} class="layout__region layout__region--top  region-full" {% endif %}>
+          {% if content.top %}
+            {{ content.top }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="middlerow row">
+        <div {{ region_attributes.first.addClass('col', 'layout__region', 'layout__region--middle', 'region-first') }} {% if not region_attributes.first %} class="layout__region layout__region--middle  region-first" {% endif %}>
+          {% if content.first %}
+            {{ content.first }}
+          {% endif %}
+        </div>
+
+        <div {{ region_attributes.second.addClass('col', 'layout__region', 'layout__region--middle', 'region-second') }} {% if not region_attributes.second %} class="layout__region layout__region--middle  region-second" {% endif %}>
+          {% if content.second %}
+            {{ content.second }}
+          {% endif %}
+        </div>
+
+        <div {{ region_attributes.third.addClass('col', 'layout__region', 'layout__region--middle', 'region-third') }} {% if not region_attributes.third %} class="layout__region layout__region--middle  region-third" {% endif %}>
+          {% if content.third %}
+            {{ content.third }}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="bottomrow row">
+        <div {{ region_attributes.bottom.addClass('col', 'layout__region', 'layout__region--bottom', 'region-full') }} {% if not region_attributes.bottom %} class="layout__region layout__region--bottom  region-full" {% endif %}>
+          {% if content.bottom %}
+            {{ content.bottom }}
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endif %}
+

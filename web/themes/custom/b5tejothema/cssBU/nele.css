@@ -1,0 +1,55 @@
+/* home triplet */
+.herotriplet {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: -100px;
+}
+.herotriplet > * {
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  color: var(--tejoblauw);
+}
+.herotriplet > * .field--name-field-kop-linksboven,
+.herotriplet > * .field--name-field-kop-middenboven,
+.herotriplet > * .field--name-field-kop-rechtsboven {
+  color: var(--tejoblauw);
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom:15px;
+}
+.herotriplet > * a {
+  display: block;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.herotriplet > * a:after {
+  content:"►";
+  width: 50px;
+  height: 50px;
+  margin-left: 0em;
+  text-decoration: none;
+  display: inline-block
+}
+.herotriplet > * a:hover {
+  color: var(--tejorood);
+}
+
+
+.fa-user {
+  width: 20px;
+  height: auto
+}
+
+.fa-right-from-bracket{
+  width: 25px;
+  height: auto;
+}

@@ -1,0 +1,112 @@
+
+/* koppen h1,2,3,4,5*/
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: $tejoblauw;
+  padding: 2rem;
+  font-weight: bold;
+  @include hn(1);
+  //position: relative;
+  //&:hover::after{content: 'h1';position: absolute; top: -0.5rem;font-size: 1rem;}
+}
+
+h2 {
+  font-size: 1.9rem;
+  text-align: center;
+  color: $tejoblauw;
+  padding-bottom:  1.5rem;
+  font-weight: bold;
+  @include hn(2);
+  //position: relative;
+  //&:hover::after{content: 'h2';position: absolute; top: -0.5rem;font-size: 1rem;}
+}
+
+/* Buttons en links */
+
+.tejobutton a {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: white;
+  color: var(--tejorood);
+  border: 1px solid var(--tejorood);
+  border-radius: 50px;
+  padding: 16px 32px;
+}
+
+.tejobutton a:hover {
+  background-color: #DF3725;
+  color:white;
+}
+
+/* big blue ordered list bullets */
+/* https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ */
+
+ol.blueball {
+  counter-reset: li;
+  margin-left: 0;
+  padding-left: 0;
+
+  & > li {
+    position: relative;
+    margin: 0 0 1rem 4rem;
+    padding: 4px 16px;
+    list-style: none;
+  }
+  & > li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: 0.5rem;
+    left: -4rem;
+    width: 3.8rem;
+    margin-right: 8px;
+    padding: 1rem;
+    color: #fff;
+    background: $tejolichtblauw;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
+li ol,
+li ul {
+  margin-top: 6px;
+}
+ol ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* body breedte */
+
+body{
+  background-color: #F9F9F9 !important;
+  overflow-x:hidden;
+}
+
+.field--name-body{
+  a{
+    color: $tejorood;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      text-underline-offset:3px;
+    }
+  }
+}
+
+/* break out of the body to screen-width */
+
+.break-out{
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  color: rgba(0,0,0,.6);
+}

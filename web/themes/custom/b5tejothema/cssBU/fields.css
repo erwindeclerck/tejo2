@@ -1,0 +1,71 @@
+/*
+album
+ */
+.field--name-field-album
+{
+}
+.field--name-field-album .field__items
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.field--name-field-album .field__items .field__item
+{
+  width: 146px;
+}
+.field--name-field-album .field__items .field__item A.colorbox
+{
+}
+.field--name-field-album .field__items .field__item A.colorbox IMG
+{
+}
+
+/*
+field kort
+ */
+.field_kort p,.calltoaction p{
+  margin-bottom: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/*
+button canvas
+ */
+.buttoncanvas{
+  width: 50%;
+}
+.buttoncanvas .field_kort{
+  position: absolute;
+  bottom:30px;
+  left:30px;
+  right:30px;
+  padding:30px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.buttoncanvas .calltoaction{
+  position: absolute;
+  top:30px;
+  left:30px;
+  right:30px;
+  padding:30px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.buttoncanvas .calltoaction p {
+  font-size: 2em;
+  text-align: center;
+  color: #F44336;
+}
+.buttoncanvas .field--name-field-hero img{
+  filter: grayscale(0%);
+}
+.buttoncanvas .field--name-field-hero img:hover{
+  filter: grayscale(100%);
+  transition: filter 0.2s ease-in-out;
+}

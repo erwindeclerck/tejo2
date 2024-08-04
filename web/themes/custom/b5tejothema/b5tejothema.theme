@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * @file
+ * TEJO THEMA theme file.
+ */
+
+
+/**
+ * Implements hook_form_alter
+ */
+function b5tejothema_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id <> "webform_submission_nood_aan_een_gesprek_add_form"){
+    add_placeholders($form);
+  }
+}
+
+
+/**
+ * Add placeholders to suitable form elements -> textfield, password, email, textarea
+ */
+function add_placeholders(&$element) {
+  if(isset($element['#type']) && in_array($element['#type'], ['textfield', 'password', 'email', 'textarea'])) {
+    $element['#attributes']['placeholder'] = $element['#title'];
+  }
+  foreach(\Drupal\Core\Render\Element::children($element) as $key) {
+    add_placeholders($element[$key]);
+  }
+}

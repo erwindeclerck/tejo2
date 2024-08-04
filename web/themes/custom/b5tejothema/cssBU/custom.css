@@ -1,0 +1,694 @@
+/* ==UserStyle==
+@name			TEJO
+@author			Cascadea User
+@version		1.0.0
+@namespace		cascadea4016951620
+@preprocessor	default
+==/UserStyle== */
+
+
+	header .region-header {
+		background-color: #0C3F7C;
+		height: 80px;
+	}
+	.adminimal header .region-header{
+		all:unset;
+	}
+
+	.region-header{
+		margin-bottom: 80px;
+	}
+
+	.region-header:after {
+	  position: absolute;
+	  display: block;
+	  background-image: url("../resources/BottomGolf.svg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center bottom;
+	  width: 100%;
+	  height: 85px;
+	  content:"";
+	}
+	.adminimal header .region-header:after{
+		all:unset;
+	}
+
+	.navbar-collapse .region-nav-additional{
+		height: 40px !important;
+	}
+
+
+	.menu--account ul.navbar-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.menu--account {
+		padding-top: 35px;
+	}
+
+	.menu--account ul.navbar-nav li a {
+		color: white;
+	}
+	 ul.navbar-nav li a.is-active {
+		color: var(--felrood)!important ;
+	}
+
+
+
+
+
+
+
+
+
+	/* brick twee kolommen tekst beeld */
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .contentblock{
+		background-color: var(--tejoblauw);
+		color: white;
+	}
+	.paragraph--type-blauwblok-brick-2-kolommen-text .outer{
+	 position: relative;
+	 border: 1px solid red;
+	 margin-top: 0px;
+	 margin-bottom: 200px;
+	 z-index: 1;
+	}
+	.paragraph--type-blauwblok-brick-2-kolommen-text .before:before {
+	  position: absolute;
+	  display: block;
+	  background-image: url("../resources/TopGolf.svg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center top;
+	  width: 100%;
+	  height: 80px;
+	  max-height: 100px;
+	  content:"";
+	  top:-80px;
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .before,.after {
+	  width: 100vw;
+	  height: 80px;
+	  position: relative;
+	  left: calc(-1 *(100vw - 100%)/2);
+	  background-color: var(--tejoblauw);
+
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .after:after {
+	  position: absolute;
+	  display: block;
+	  background-image: url("../resources/BottomGolf.svg");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center bottom;
+	  width: 100%;
+	  height: 80px;
+	  max-height: 100px;
+	  content:"";
+	  top: 80px;
+	}
+
+	.around{
+		  width: 100vw;
+	  position: relative;
+	  left: calc(-1 *(100vw - 100%)/2);
+		background-color: var(--tejoblauw);
+
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .around{
+	  width: 100vw;
+	  position: relative;
+	  left: calc(-1 *(100vw - 100%)/2);
+		background-color: var(--tejoblauw);
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .gridgroup {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 2em;
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .group-header {
+		padding: 2em;
+		text-align: center;
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .group-left {
+		padding: 2em;
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .group-right {
+		border: 5px solid;
+		border-radius: 15px;
+		padding: 2em;
+	}
+
+	.paragraph--type-blauwblok-brick-2-kolommen-text .group-footer {
+		padding: 2em;
+		text-align: center;
+	}
+
+
+
+
+	:root{
+		--tejoblauw: #0C3F7C;
+		--tejorood: #E03726;
+		--tejowit: #FDFDFD;
+		--felrood: #FF0000;
+    --lichtblauw: #ACCEED;
+    --grijswit: #F9F9F9;
+    --donkerblauw: #001D4C;
+
+	}
+
+
+	.tejobutton a {
+		display: block;
+		width: 80%;
+		max-width: 300px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align: center;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: white;
+		color: var(--tejorood);
+		border: 1px solid var(--tejorood);
+		border-radius: 50px;
+		padding: 16px 32px;
+	}
+
+	.tejobutton a:hover {
+		background-color: #DF3725;
+		color:white;
+	}
+	.tejohuisreferentie a{
+		display: block;
+		/*max-width: 300px;*/
+		/*width: 80%;*/
+		margin-left:auto;
+		margin-right:auto;
+		text-align: center;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: white;
+		color: var(--tejorood);
+		/*border: 1px solid red;*/
+		/*border-radius: 30px;*/
+		font-size: 1.2em;
+		padding: 8px 16px;
+	}
+	.tejohuisreferentie a:before{
+		content:"- ";
+	}
+	.tejohuisreferentie a:after{
+		content:" -";
+	}
+
+
+	.view-tejonieuws-per-afdeling .views-field-title {
+		text-decoration: none;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	header,
+	main{
+    /*background-image: url("../resources/BottomGolf.svg");*/
+		z-index: 0;
+		padding-bottom:60px;
+	}
+
+	body{
+		background-color: #F9F9F9 !important;
+		overflow-x:hidden;
+	}
+
+	/* drie kolommen cards */
+
+
+	.paragraph--type-drie-kolommen-steekkaarten {
+		/*min-height: 600px;*/
+		/*background-repeat: no-repeat;*/
+		/*background-position: bottom center;*/
+		/*background-size: contain;*/
+		z-index: 1;
+		position: relative;
+		flex-wrap:wrap;
+		flex-grow:1;
+	}
+
+
+	/*.paragraph--type-drie-kolommen-steekkaarten .bs-region--footer {*/
+	/*	background-image: url("/themes/custom/b5tejothema/resources/TopGolf.svg");*/
+	/*	background-repeat: no-repeat;*/
+	/*	background-position: top center;*/
+	/*	background-size: contain;*/
+
+	/*	margin-top: -100px;.bs-region--adding-bottom: 100px;*/
+	/*	z-index: -10;*/
+	/*}*/
+
+
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--footer {
+		/*width: 100vw;*/
+		/*position: relative;*/
+		/*left: calc(-1 * (100vw - 100%)/2);*/
+	}
+
+
+	.paragraph--type-drie-kolommen-steekkaarten .gridgroup {
+		/*display: flex;*/
+		/*flex-direction: row;*/
+		/*flex-wrap: wrap;*/
+		/*gap: 2em*/
+	}
+
+
+	.paragraph--type-drie-kolommen-steekkaarten .group {
+
+	}
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--left .contentwrapper,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--middle .contentwrapper,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--right .contentwrapper{
+		border: 5px solid #0B3F7C;
+		border-radius: 30px;
+		min-height: 800px;
+		/*width: unset;*/
+		padding: 30px;
+		background-color: var(--tejowit);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+	  box-shadow: 1px 1px 5px 0px #fff;;
+
+	}
+
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--left h3.kop,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--middle h3.kop,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--right h3.kop {
+		text-align: center;
+		color: #0B3F7C;
+	}
+
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--left .field--type-link,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--middle .field--type-link,
+	.paragraph--type-drie-kolommen-steekkaarten .bs-region--right .field--type-link {
+		text-align: center;
+	}
+
+
+
+	/*.view-tejoniews*/
+	/*views-field */
+	/*views-field-field-hero*/
+	/*views-field-title*/
+	/*views-field-field-samenvatting*/
+	/*views-field-view-node tejobutton*/
+
+
+	.field--name-field-nieuws .viewsreference--view-title {
+		font-size: 2em;
+		text-align: center;
+		font-weight: bold;
+		padding: 2em;
+		color: var(--tejoblauw);
+	}
+
+	/*.view-tejonieuws-per-afdeling .views-view-responsive-grid__item{*/
+	/*	border: 1px solid var(--tejorood);*/
+	/*	border-radius: 30px;*/
+	/*}*/
+
+
+	.view-tejonieuws-per-afdeling .views-view-responsive-grid__item .views-view-responsive-grid__item-inner ,
+	.view-tejonieuws .views-view-responsive-grid__item .views-view-responsive-grid__item-inner {
+		background-color: white;
+		border-radius: 2em 2em 0 0;
+		border:1px solid #eee;
+		box-shadow: 0px 0px 5px rgba(5,5,5,.2);
+	}
+
+	.view-tejonieuws-per-afdeling .views-field-field-hero ,
+	.view-tejonieuws .views-field-field-hero {
+		border-radius: 2em;
+	}
+
+	.view-tejonieuws-per-afdeling .viewfield-field-hero a img ,
+	.view-tejonieuws .viewfield-field-hero a img {
+		border: 1px solid red;
+	}
+
+	.field--name-field-nieuws .view-tejonieuws-per-afdeling .views-field.views-field-field-hero>div>a>img ,
+	.field--name-field-nieuws .view-tejonieuws .views-field.views-field-field-hero>div>a>img {
+		border-radius: 2em;
+	}
+
+	.field--name-field-nieuws .view-tejonieuws-per-afdeling .views-field.views-field-title ,
+	.field--name-field-nieuws .view-tejonieuws .views-field.views-field-title {
+		text-align: center;
+		padding: 1em;
+	}
+	.field--name-field-nieuws .view-tejonieuws-per-afdeling .views-field.views-field-title a,
+	.field--name-field-nieuws .view-tejonieuws .views-field.views-field-title a{
+		color: var(--tejoblauw);
+		text-decoration: none;
+	}
+
+	.field--name-field-nieuws .view-tejonieuws-per-afdeling .views-field.views-field-field-samenvatting ,
+	.field--name-field-nieuws .view-tejonieuws .views-field.views-field-field-samenvatting {
+		text-align: center;
+		padding: 15px;
+	}
+
+	.field--name-field-nieuws .view-tejonieuws-per-afdeling .views-field.views-field-view-node ,
+	.field--name-field-nieuws .view-tejonieuws .views-field.views-field-view-node {
+		padding: 30px;
+	}
+
+
+
+
+.paragraph--type-witblok-brick-2-kolommen-text-be.clearfix:after {
+	all:unset;
+
+}
+
+.paragraph--type-witblok-brick-2-kolommen-text-be {
+    display: flex;
+    flex-direction:row;
+    padding-top:2em;
+    padding-bottom:2em;
+
+}
+
+.paragraph--type-witblok-brick-2-kolommen-text-be .group-right img{
+	  /*transform: rotatey(180deg);*/
+	  width:100%;
+	  flex-grow:1;
+}
+
+.paragraph--type-witblok-brick-2-kolommen-text-be .group-left {
+	/*border:1px solid green ;*/
+	color: var(--tejoblauw);
+	flex-grow:1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.4rem;
+}
+
+
+
+.paragraph--type-witblok-brick-2-kolommen-text-be .group-left div.text-formatted{
+	/*border:1px solid green ;*/
+}
+
+.layout--edc1{
+	/*background-color: yellow;*/
+	margin-bottom: 180px;
+}
+
+.layout--edc1 .toprow{
+	/*background-color: red;*/
+}
+
+.layout--edc1 .middlerow{
+	/*background-color: green;*/
+	gap:2em;
+}
+
+
+.layout--edc1 .middlerow .col{
+	border: 4px solid var(--tejoblauw);
+	padding: 2em;
+	border-radius: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+}
+
+.layout--edc1 .middlerow .col .kop{
+	color: var(--tejoblauw);
+	text-align: center;
+}
+
+.layout--edc1 .middlerow .toprow{
+}
+.layout--edc1 .middlerow .region-first{
+}
+.layout--edc1 .middlerow .region-second{
+}
+.layout--edc1 .middlerow .region-third{
+}
+.layout--edc1 .middlerow .bottomrow{
+}
+
+
+.layout--edc1.container {
+	padding: 2em;
+}
+
+.container>*{
+  /*margin: 0.25em 0;*/
+}
+
+.break-out{
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  color: rgba(0,0,0,.6);
+}
+.bluebox {
+	background-color: var(--tejoblauw);
+	color:white;
+	margin-bottom: 60px;
+}
+
+.bluebox .before:before{
+  position: absolute;
+  display: block;
+  background-image: url("../resources/TopGolf.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 80px;
+  /*max-height: 100px;*/
+  content:"";
+  top:-80px;
+
+}
+
+.bluebox .after:after{
+  position: absolute;
+  display: block;
+  background-image: url("../resources/BottomGolf.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 80px;
+  /*max-height: 100px;*/
+  content:"";
+  top: 80px;
+
+}
+
+.bluebox .container .region-first{
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bluebox .container .region-second{
+	border: 5px solid;
+	border-radius: 15px;
+	padding: 2em;
+
+}
+
+.bluebox .container .layout__region--top{
+	text-align: center;
+	margin-bottom:60px;
+}.bluebox .container .layout__region--bottom{
+	margin-top:60px;
+}
+
+
+
+
+	.view-tejohuizen
+	{
+	  padding-bottom:8px;
+	  padding-left:8px;
+	  padding-right:8px;
+	}
+
+	.view-tejohuizen ul li
+	{
+	  display: inline-block;
+	  margin-bottom: 16px;
+	  margin-left: 0px;
+	  margin-right: 8px;
+	}
+	.view-tejohuizen ul li a
+	{
+	  text-decoration: none;
+	  padding: 6px 12px;
+	  border: 1px solid var(--tejoblauw);
+	  border-radius: 20px;
+	}
+	.view-tejohuizen ul li a:hover,.view-tejohuizen ul li a.active-link
+	{
+	  background-color: var(--tejorood);
+	  color: white;
+	}
+
+
+
+
+
+
+.field--name-field-rechts-beeld img{
+	border-radius : 30px;
+}
+
+.field--name-field-kop{
+font-size: 2em;
+text-align: center;
+font-weight: bold;
+padding-bottom: 1em;
+color: var(--tejoblauw);
+}
+
+.field--name-field-link-l {
+
+}
+
+
+.paragraph--type-horizontaal-l-foto-r-tekst{
+	margin-top:8em;
+	margin-bottom:8em;
+	border-radius: 30px;
+}
+.paragraph--type-horizontaal-l-foto-r-tekst .bs-region--left{
+		background-color: var(--tejoblauw);
+		border-radius: 30px 0 0 30px;
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding:2em;
+}
+
+.paragraph--type-horizontaal-l-foto-r-tekst .bs-region--left .field--name-field-kop{
+	color:white;
+}
+.paragraph--type-horizontaal-l-foto-r-tekst .bs-region--right{
+		background-color: var(--tejoblauw);
+		border-radius: 0 30px  30px 0;
+
+}
+
+.paragraph--type-horizontaal-l-foto-r-tekst .bs-region--right .field--name-field-rechts-beeld{
+	    margin-right: -11px;
+}
+
+
+.field--name-field-links-beeld img{
+	border-radius: 30px;
+}
+
+
+.paragraph--type-horizontaal-l-tekst-r-foto{
+	margin-top:8em;
+	margin-bottom:8em;
+}
+.paragraph--type-quote-block-l-foto-r-quote {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+.paragraph--type-quote-block-l-foto-r-quote .group-left {
+	width: 25%;
+}
+
+.paragraph--type-quote-block-l-foto-r-quote .group-left img {
+	border-radius: 30px;
+}
+
+.paragraph--type-quote-block-l-foto-r-quote .group-right {
+	width: 75%;
+	text-align: center;
+}
+
+.paragraph--type-quote-block-l-foto-r-quote .group-right .field--name-field-quote-tekst-rechts {
+	padding: 15px;
+	font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+.paragraph--type-quote-block-l-quote-r-foto {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+.paragraph--type-quote-block-l-quote-r-foto .group-left {
+	width: 75%;
+	text-align: center;
+}
+
+.paragraph--type-quote-block-l-quote-r-foto .group-left .field--name-field-quote-tekst-links {
+	padding: 15px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.paragraph--type-quote-block-l-quote-r-foto .group-right {
+	width: 25%;
+}
+
+.paragraph--type-quote-block-l-quote-r-foto .group-right img {
+	border-radius: 30px;
+}
+
+
+
+
+.ds-2col-fluid>.group-left {
+	float: left;
+	width: 75%!important;
+	padding: 0px 30px 0 0px;
+}
+
+.ds-2col-fluid>.group-right {
+	float: right;
+	width: 25%!important;
+	padding: 0px 0px 0 30px;
+}
+
+.field--name-field-persoon{
+
+}
+.field--name-field-persoon img{
+	border-radius: 50%;
+}

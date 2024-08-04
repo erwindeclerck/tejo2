@@ -1,0 +1,34 @@
+.contact-message-form,
+.webform-submission-nood-aan-een-gesprek-form{
+  width: 60%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  label.form-required {
+    color: red;
+    font-size: 0;
+    &:after {
+      margin-left: 15px;
+      width: 12px;
+      height: 12px;
+      background-size: 12px 12px;
+    }
+  }
+  .form-control {
+    border-radius: 30px;
+    border-color: $tejoblauw;
+    border-width: 2px;
+    padding: 15px 20px;
+
+  }
+  .button--primary {
+    background-color: $tejorood;
+    border-radius: $borderradius;
+    border: none;
+    padding: 15px 20px;
+    &:hover{
+      background-color: $tejowit;
+      color: $tejorood;
+    }
+  }
+}

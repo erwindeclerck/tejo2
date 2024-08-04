@@ -1,0 +1,23 @@
+Error bij Module documenteer -> zit in config_views
+
+https://www.drupal.org/project/config_views/issues/3358929
+
+https://git.drupalcode.org/project/config_views/-/merge_requests/8/diffs?commit_id=bffb8f274be152a08f2e1792b5ce6e4f80449003
+
+Patch 8.patch
+
+
+
+
+Error bij de viewsreference module -> selectief afzetten van opties is niet mogelijk.
+
+https://www.drupal.org/project/viewsreference/issues/3400712  -> post #21
+
+https://www.drupal.org/files/issues/2023-11-23/viewsreference-hotfix-enabled-settings-3400712-8.patch
+
+
+
+Vimeo-filmpjes zullen niet starten als ze niet gemuted zijn.
+Deze patch zet de muted-waarde op 1
+
+https://www.drupal.org/files/issues/2022-12-05/video-embed-field_prevent-vimeo_allow_autoplay.patch

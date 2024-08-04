@@ -1,0 +1,42 @@
+:root{
+  --bs-body-text-align : null;
+  --bs-dropdown-item-border-radius: null;
+  --bs-nav-link-font-size: null;
+  --bs-breadcrumb-font-size: null;
+  --bs-focus-ring-x: null;
+  --bs-focus-ring-y: null;
+  --bs-focus-ring-blur: null;
+  --bs-icon-link-transform: null;
+}
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+$debug: true;
+@import 'includes';
+@import 'componenten';
+@import 'wysiwyg';
+@import 'headerfooter';
+@import 'home';
+@import 'p00';
+@import 'p01';
+@import 'p01-quote';
+@import 'p01-card-hor';
+@import 'p02';
+@import 'p03';
+@import 'p04';
+@import 'p10';
+@import 'contactform';
+@import 'viewnieuws';
+@import 'tejohuis';
+@import 'viewtejohuizen';
+@import 'artikel';
+
