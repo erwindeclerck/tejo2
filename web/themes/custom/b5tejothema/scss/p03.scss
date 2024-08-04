@@ -15,7 +15,7 @@ P03 drie KEER FOTO/TEKST
           .sectiekop {
             @include sectiekop(true);
           }
-          .blokken.col {
+          .blokken {
             display: flex;
             flex-direction: column;
             gap: 2rem;
