@@ -11333,7 +11333,7 @@ header .region-header {
   .region-header:after {
     position: absolute;
     display: block;
-    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+    background-image: url("/themes/custom/b5tejothema/resources/BottomGolf.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -11505,7 +11505,7 @@ footer.mt-auto {
   footer.mt-auto:before {
     position: absolute;
     display: block;
-    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+    background-image: url("/themes/custom/b5tejothema/resources/TopGolf.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
