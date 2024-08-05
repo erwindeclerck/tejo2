@@ -11,6 +11,9 @@ dependencies:
     - paragraphs.paragraphs_type.p01_quote
     - paragraphs.paragraphs_type.p02
     - paragraphs.paragraphs_type.p03
+    - paragraphs.paragraphs_type.p04
+    - paragraphs.paragraphs_type.p10
+    - paragraphs.paragraphs_type.p11
   module:
     - entity_reference_revisions
 id: node.homepagina.field_blokken
@@ -33,135 +36,90 @@ settings:
       p01_card_hor: p01_card_hor
       p02: p02
       p03: p03
+      p04: p04
+      p10: p10
+      p11: p11
     negate: 0
     target_bundles_drag_drop:
-      blauwblok_brick_2_kolommen_text:
-        weight: -81
-        enabled: false
       bp_accordion:
-        weight: -75
-        enabled: false
-      bp_accordion_section:
-        weight: -74
-        enabled: false
-      bp_blank:
-        weight: -73
-        enabled: false
-      bp_block:
-        weight: -72
-        enabled: false
-      bp_callout:
-        weight: -63
-        enabled: false
-      bp_card:
-        weight: -43
-        enabled: false
-      bp_carousel:
-        weight: -71
-        enabled: false
-      bp_column_wrapper:
-        weight: -67
-        enabled: false
-      bp_columns:
-        weight: -70
-        enabled: false
-      bp_columns_three_uneven:
-        weight: -69
-        enabled: false
-      bp_columns_two_uneven:
-        weight: -68
-        enabled: false
-      bp_image:
-        weight: -66
-        enabled: false
-      bp_modal:
-        weight: -65
-        enabled: false
-      bp_simple:
-        weight: -64
-        enabled: false
-      bp_tab_section:
-        weight: -61
-        enabled: false
-      bp_tabs:
-        weight: -62
-        enabled: false
-      bp_view:
-        weight: -60
-        enabled: false
-      drie_kolommen_steekkaarten:
-        weight: -82
-        enabled: false
-      duoblok_ag_lichtblauw_tx_blauw:
-        weight: -59
-        enabled: false
-      duoblok_ag_lichtblauw_tx_wit:
-        weight: -58
-        enabled: false
-      edc1:
-        weight: -56
-        enabled: false
-      grootblauw_brick:
-        weight: -57
-        enabled: false
-      horizontaal_l_foto_r_tekst:
-        weight: -80
-        enabled: false
-      horizontaal_l_tekst_r_foto:
-        weight: -79
-        enabled: false
-      p00:
-        weight: -50
-        enabled: true
-      p01:
-        weight: -49
-        enabled: true
-      p01_card_hor:
-        weight: -47
-        enabled: true
-      p01_quote:
-        weight: -48
-        enabled: true
-      p02:
-        weight: -46
-        enabled: true
-      p03:
-        weight: -45
-        enabled: true
-      p05:
-        weight: -44
-        enabled: false
-      p10:
-        weight: 76
-        enabled: false
-      p11:
-        weight: 77
-        enabled: false
-      quote_block_l_foto_r_quote:
-        weight: -78
-        enabled: false
-      quote_block_l_quote_r_foto:
-        weight: -77
-        enabled: false
-      spacer_ag_blauw_tx_wit:
         weight: -55
         enabled: false
-      spacer_ag_wit_tx_blauw:
+      bp_accordion_section:
         weight: -54
         enabled: false
-      test_paragraph:
+      bp_blank:
         weight: -53
         enabled: false
-      twee_horizontaal_foto_titel_teks:
-        weight: -76
-        enabled: false
-      wave_top_blauw_bot_wit:
+      bp_block:
         weight: -52
         enabled: false
-      wave_top_wit_bot_blauw:
+      bp_callout:
+        weight: -43
+        enabled: false
+      bp_card:
+        weight: -31
+        enabled: false
+      bp_carousel:
         weight: -51
         enabled: false
-      witblok_brick_2_kolommen_text_be:
-        weight: -83
+      bp_column_wrapper:
+        weight: -47
         enabled: false
+      bp_columns:
+        weight: -50
+        enabled: false
+      bp_columns_three_uneven:
+        weight: -49
+        enabled: false
+      bp_columns_two_uneven:
+        weight: -48
+        enabled: false
+      bp_image:
+        weight: -46
+        enabled: false
+      bp_modal:
+        weight: -45
+        enabled: false
+      bp_simple:
+        weight: -44
+        enabled: false
+      bp_tab_section:
+        weight: -41
+        enabled: false
+      bp_tabs:
+        weight: -42
+        enabled: false
+      bp_view:
+        weight: -40
+        enabled: false
+      p00:
+        weight: -39
+        enabled: true
+      p01:
+        weight: -38
+        enabled: true
+      p01_card_hor:
+        weight: -36
+        enabled: true
+      p01_quote:
+        weight: -37
+        enabled: true
+      p02:
+        weight: -35
+        enabled: true
+      p03:
+        weight: -34
+        enabled: true
+      p04:
+        weight: -33
+        enabled: true
+      p05:
+        weight: -32
+        enabled: false
+      p10:
+        weight: -30
+        enabled: true
+      p11:
+        weight: -29
+        enabled: true
 field_type: entity_reference_revisions
