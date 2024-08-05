@@ -1,0 +1,13 @@
+uuid: 300ab41e-106d-422e-a01a-9df3a730516f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - group
+id: adminredacteur
+label: Adminredacteur
+weight: -7
+is_admin: null
+permissions:
+  - 'access group overview'
+  - 'create tejo_huis group'

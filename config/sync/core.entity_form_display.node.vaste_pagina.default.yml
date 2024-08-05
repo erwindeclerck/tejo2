@@ -79,7 +79,7 @@ content:
     third_party_settings: {  }
   field_gelinkte_personen:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -97,7 +97,7 @@ content:
     third_party_settings: {  }
   field_links:
     type: link_default
-    weight: 8
+    weight: 7
     region: content
     settings:
       placeholder_url: ''
@@ -105,7 +105,7 @@ content:
     third_party_settings: {  }
   field_oproep:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS
@@ -132,9 +132,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 12
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
     region: content
     settings:
       display_label: true
@@ -149,7 +163,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 15
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
@@ -159,5 +173,3 @@ content:
     third_party_settings: {  }
 hidden:
   langcode: true
-  promote: true
-  sticky: true

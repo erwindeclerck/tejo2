@@ -69,6 +69,7 @@ third_party_settings:
             attributes: ''
     regions:
       top:
+        - node_title
         - field_hero
         - field_omschrijving
         - field_album
@@ -81,6 +82,12 @@ third_party_settings:
         - field_oproep
       right:
         - field_gelinkte_personen
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
 id: node.organisatie.full
 targetEntityType: node
 bundle: organisatie
@@ -91,14 +98,14 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 7
     region: middle
   field_adres:
     type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 6
     region: left
   field_album:
     type: image
@@ -109,7 +116,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 6
+    weight: 3
     region: top
   field_gelinkte_personen:
     type: entity_reference_label
@@ -117,7 +124,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: right
   field_hero:
     type: image
@@ -128,7 +135,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: top
   field_logo:
     type: image
@@ -139,14 +146,14 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: left
   field_omschrijving:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 2
     region: top
   field_oproep:
     type: entity_reference_label
@@ -154,7 +161,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: middle
   field_website:
     type: link
@@ -166,7 +173,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: left
 hidden:
   langcode: true

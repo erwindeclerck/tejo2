@@ -94,9 +94,9 @@ third_party_settings:
         - field_oproep
         - field_video
       top_right:
-        - field_links
-        - field_tags
         - field_persoon
+        - field_tags
+        - field_links
         - 'bundle_field:node'
     fields:
       node_title:
@@ -173,7 +173,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: top_right
   field_oproep:
     type: entity_reference_label
@@ -198,7 +198,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 8
+    weight: 6
     region: top_right
   field_tags:
     type: entity_reference_label
