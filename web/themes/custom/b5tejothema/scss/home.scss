@@ -1,24 +1,28 @@
+
+
+
 /* home triplet */
 
 .herotriplet {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  @include media-breakpoint-up('md'){
-    flex-direction: row;
-  }
-  width:100%;
-  gap: 10px;
+  // width:100%;
+  gap: 2rem;
   justify-content: space-around;
-  width: 100%;
-  margin-top: -100px;
-  .homeherolinks,
-  .homeheromidden,
-  .homeherorechts {
+  padding-left:2rem;
+  padding-right:2rem;
+  margin-top: -30px;
+  @include media-breakpoint-up('lg'){
     width: 100%;
-    @include media-breakpoint-up('md'){
-      width:30%;
-    }
+    // padding-left: 0;
+    // padding-right: 0;
+    flex-direction: row;
+    margin-top: -100px;
+    justify-content: space-evenly;
+  }
+  & > * {
+    flex:1;
     background-color: white;
     padding: 30px 30px 0px 30px;
     text-align: center;
@@ -62,3 +66,5 @@
   }
 
 }
+
+

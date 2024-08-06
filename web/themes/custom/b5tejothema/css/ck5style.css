@@ -30,6 +30,7 @@
   /* https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ */
   /* body breedte */
   /* break out of the body to screen-width */
+  /* breedte van de body */
   /**
   Componenten
    */
@@ -9123,6 +9124,14 @@
     position: relative;
     left: calc(-1 * (100vw - 100%) / 2);
     color: rgba(0, 0, 0, 0.6); }
+  @media (max-width: 767.98px) {
+    .ck-content .region-content .smal .field--name-body img {
+      width: 100%;
+      margin: auto 0; } }
+  @media (min-width: 768px) {
+    .ck-content .region-content .smal .field--name-body {
+      width: 60%;
+      margin: 0 20%; } }
   .ck-content img.left50 {
     float: left;
     margin-right: 15px;
@@ -9156,9 +9165,6 @@
     margin-left: -25%;
     margin-right: -25%;
     height: auto; }
-  .ck-content .region-content .smal .field--name-body {
-    width: 60%;
-    margin: 0 20%; }
   .ck-content p.wys-kop {
     font-size: 2rem;
     color: #0c3f7c;
@@ -9391,18 +9397,19 @@
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 10px;
+    gap: 2rem;
     justify-content: space-around;
-    width: 100%;
-    margin-top: -100px; }
-    @media (min-width: 768px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: -30px; }
+    @media (min-width: 992px) {
       .ck-content .herotriplet {
-        flex-direction: row; } }
-    .ck-content .herotriplet .homeherolinks,
-    .ck-content .herotriplet .homeheromidden,
-    .ck-content .herotriplet .homeherorechts {
-      width: 100%;
+        width: 100%;
+        flex-direction: row;
+        margin-top: -100px;
+        justify-content: space-evenly; } }
+    .ck-content .herotriplet > * {
+      flex: 1;
       background-color: white;
       padding: 30px 30px 0px 30px;
       text-align: center;
@@ -9411,47 +9418,30 @@
       justify-content: start;
       border-radius: 30px;
       color: #0c3f7c; }
-      @media (min-width: 768px) {
-        .ck-content .herotriplet .homeherolinks,
-        .ck-content .herotriplet .homeheromidden,
-        .ck-content .herotriplet .homeherorechts {
-          width: 30%; } }
-      .ck-content .herotriplet .homeherolinks .kop,
-      .ck-content .herotriplet .homeheromidden .kop,
-      .ck-content .herotriplet .homeherorechts .kop {
+      .ck-content .herotriplet > * .kop {
         color: #0c3f7c;
         font-weight: bold;
         font-size: 1.5em;
         margin-bottom: 30px; }
-      .ck-content .herotriplet .homeherolinks .brood,
-      .ck-content .herotriplet .homeheromidden .brood,
-      .ck-content .herotriplet .homeherorechts .brood {
+      .ck-content .herotriplet > * .brood {
         font-size: 1.1em;
         line-height: 1.3; }
-      .ck-content .herotriplet .homeherolinks .link,
-      .ck-content .herotriplet .homeheromidden .link,
-      .ck-content .herotriplet .homeherorechts .link {
+      .ck-content .herotriplet > * .link {
         margin-top: auto; }
-        .ck-content .herotriplet .homeherolinks .link a,
-        .ck-content .herotriplet .homeheromidden .link a,
-        .ck-content .herotriplet .homeherorechts .link a {
+        .ck-content .herotriplet > * .link a {
           display: block;
           padding: 30px 0 30px 0;
           font-weight: bold;
           font-size: 1.4em;
           color: #0c3f7c; }
-          .ck-content .herotriplet .homeherolinks .link a:after,
-          .ck-content .herotriplet .homeheromidden .link a:after,
-          .ck-content .herotriplet .homeherorechts .link a:after {
+          .ck-content .herotriplet > * .link a:after {
             content: "\25B6";
             width: 50px;
             height: 50px;
             margin-left: 0;
             text-decoration: none;
             display: inline-block; }
-          .ck-content .herotriplet .homeherolinks .link a:hover,
-          .ck-content .herotriplet .homeheromidden .link a:hover,
-          .ck-content .herotriplet .homeherorechts .link a:hover {
+          .ck-content .herotriplet > * .link a:hover {
             color: #e03726; }
   .ck-content .paragraph--type-p00 {
     padding-top: 60px;
@@ -10433,7 +10423,7 @@
     .ck-content .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:after {
       position: absolute;
       display: block;
-      background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+      background-image: url("/themes/custom/b5tejothema/resources/BottomGolf.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center bottom;
@@ -10444,7 +10434,7 @@
     .ck-content .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:before {
       position: absolute;
       display: block;
-      background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+      background-image: url("/themes/custom/b5tejothema/resources/TopGolf.svg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center top;

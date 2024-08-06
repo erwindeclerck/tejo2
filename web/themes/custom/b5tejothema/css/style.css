@@ -11185,6 +11185,16 @@ body {
   left: calc(-1 * (100vw - 100%) / 2);
   color: rgba(0, 0, 0, 0.6); }
 
+/* breedte van de body */
+@media (max-width: 767.98px) {
+  .region-content .smal .field--name-body img {
+    width: 100%;
+    margin: auto 0; } }
+@media (min-width: 768px) {
+  .region-content .smal .field--name-body {
+    width: 60%;
+    margin: 0 20%; } }
+
 /**
 Componenten
  */
@@ -11227,10 +11237,6 @@ img.center150 {
   margin-left: -25%;
   margin-right: -25%;
   height: auto; }
-
-.region-content .smal .field--name-body {
-  width: 60%;
-  margin: 0 20%; }
 
 p.wys-kop {
   font-size: 2rem;
@@ -11520,18 +11526,19 @@ footer.mt-auto {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  gap: 10px;
+  gap: 2rem;
   justify-content: space-around;
-  width: 100%;
-  margin-top: -100px; }
-  @media (min-width: 768px) {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: -30px; }
+  @media (min-width: 992px) {
     .herotriplet {
-      flex-direction: row; } }
-  .herotriplet .homeherolinks,
-  .herotriplet .homeheromidden,
-  .herotriplet .homeherorechts {
-    width: 100%;
+      width: 100%;
+      flex-direction: row;
+      margin-top: -100px;
+      justify-content: space-evenly; } }
+  .herotriplet > * {
+    flex: 1;
     background-color: white;
     padding: 30px 30px 0px 30px;
     text-align: center;
@@ -11540,47 +11547,30 @@ footer.mt-auto {
     justify-content: start;
     border-radius: 30px;
     color: #0c3f7c; }
-    @media (min-width: 768px) {
-      .herotriplet .homeherolinks,
-      .herotriplet .homeheromidden,
-      .herotriplet .homeherorechts {
-        width: 30%; } }
-    .herotriplet .homeherolinks .kop,
-    .herotriplet .homeheromidden .kop,
-    .herotriplet .homeherorechts .kop {
+    .herotriplet > * .kop {
       color: #0c3f7c;
       font-weight: bold;
       font-size: 1.5em;
       margin-bottom: 30px; }
-    .herotriplet .homeherolinks .brood,
-    .herotriplet .homeheromidden .brood,
-    .herotriplet .homeherorechts .brood {
+    .herotriplet > * .brood {
       font-size: 1.1em;
       line-height: 1.3; }
-    .herotriplet .homeherolinks .link,
-    .herotriplet .homeheromidden .link,
-    .herotriplet .homeherorechts .link {
+    .herotriplet > * .link {
       margin-top: auto; }
-      .herotriplet .homeherolinks .link a,
-      .herotriplet .homeheromidden .link a,
-      .herotriplet .homeherorechts .link a {
+      .herotriplet > * .link a {
         display: block;
         padding: 30px 0 30px 0;
         font-weight: bold;
         font-size: 1.4em;
         color: #0c3f7c; }
-        .herotriplet .homeherolinks .link a:after,
-        .herotriplet .homeheromidden .link a:after,
-        .herotriplet .homeherorechts .link a:after {
+        .herotriplet > * .link a:after {
           content: "\25B6";
           width: 50px;
           height: 50px;
           margin-left: 0;
           text-decoration: none;
           display: inline-block; }
-        .herotriplet .homeherolinks .link a:hover,
-        .herotriplet .homeheromidden .link a:hover,
-        .herotriplet .homeherorechts .link a:hover {
+        .herotriplet > * .link a:hover {
           color: #e03726; }
 
 /* protoype van alle velden */
@@ -12589,7 +12579,7 @@ P03 drie KEER FOTO/TEKST
   .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:after {
     position: absolute;
     display: block;
-    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/BottomGolf.svg");
+    background-image: url("/themes/custom/b5tejothema/resources/BottomGolf.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -12600,7 +12590,7 @@ P03 drie KEER FOTO/TEKST
   .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:before {
     position: absolute;
     display: block;
-    background-image: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/TopGolf.svg");
+    background-image: url("/themes/custom/b5tejothema/resources/TopGolf.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

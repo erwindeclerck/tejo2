@@ -110,3 +110,22 @@ body{
   left: calc(-1 * (100vw - 100%) / 2);
   color: rgba(0,0,0,.6);
 }
+
+
+/* breedte van de body */
+
+.region-content .smal .field--name-body{
+  //width: 100% ;
+  @include media-breakpoint-down('md') {
+    img{
+      width: 100%;
+      margin: auto 0;
+    }
+  }
+  @include media-breakpoint-up('md'){
+    width: 60% ;
+    margin: 0 20%;
+  }
+}
+.region-content .breed .field--name-body{
+}
