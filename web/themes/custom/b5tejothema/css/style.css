@@ -11185,16 +11185,6 @@ body {
   left: calc(-1 * (100vw - 100%) / 2);
   color: rgba(0, 0, 0, 0.6); }
 
-/* breedte van de body */
-@media (max-width: 767.98px) {
-  .region-content .smal .field--name-body img {
-    width: 100%;
-    margin: auto 0; } }
-@media (min-width: 768px) {
-  .region-content .smal .field--name-body {
-    width: 60%;
-    margin: 0 20%; } }
-
 /**
 Componenten
  */
@@ -11529,9 +11519,10 @@ footer.mt-auto {
   justify-content: space-around;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-top: -60px;
   display: flex;
   flex-direction: column; }
-  @media (min-width: 576px) {
+  @media (min-width: 992px) {
     .herotriplet {
       width: 100%;
       flex-direction: row;
@@ -11572,6 +11563,28 @@ footer.mt-auto {
           display: inline-block; }
         .herotriplet > * .link a:hover {
           color: #e03726; }
+
+.page-node-type-homepagina {
+  /* breedte van de body */ }
+  @media (max-width: 767.98px) {
+    .page-node-type-homepagina .region-content .smal .field--name-body img {
+      width: 100%;
+      margin: auto 0; } }
+  @media (min-width: 768px) {
+    .page-node-type-homepagina .region-content .smal .field--name-body {
+      width: 60%;
+      margin: 0 20%; } }
+
+.page-node-type-article {
+  /* breedte van de body */ }
+  @media (max-width: 767.98px) {
+    .page-node-type-article .region-content .smal .field--name-field-hoofdtekst img {
+      width: 100%;
+      margin: auto 0; } }
+  @media (min-width: 768px) {
+    .page-node-type-article .region-content .smal .field--name-field-hoofdtekst {
+      width: 60%;
+      margin: 0 20%; } }
 
 /* protoype van alle velden */
 .paragraph--type-p00 {

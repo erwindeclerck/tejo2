@@ -10,10 +10,10 @@
   justify-content: space-around;
   padding-left:2rem;
   padding-right:2rem;
-  // margin-top: -30px;
+  margin-top: -60px;
   display:flex;
   flex-direction: column;
-  @include media-breakpoint-up('sm'){
+  @include media-breakpoint-up('lg'){
     width: 100%;
     // padding-left: 0;
     // padding-right: 0;
@@ -67,5 +67,10 @@
 
 }
 
+.page-node-type-homepagina{
+  @include smal(".field--name-body");
+}
 
-
+.page-node-type-article{
+  @include smal(".field--name-field-hoofdtekst");
+}
