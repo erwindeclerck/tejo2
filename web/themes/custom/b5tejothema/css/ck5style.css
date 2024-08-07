@@ -10606,17 +10606,17 @@
   .ck-content .region-footer {
     display: flex;
     flex-direction: row; }
-    .ck-content .region-footer .container {
+    .ck-content .region-footer > * {
       flex: 1; }
-      .ck-content .region-footer .container h5, .ck-content .region-footer .container .h5 {
+      .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
         font-size: 1rem;
         font-weight: bold;
         margin-bottom: 1.2rem; }
-      .ck-content .region-footer .container UL {
+      .ck-content .region-footer > * UL {
         margin-left: 0;
         paddin: 0;
         list-style: none; }
-        .ck-content .region-footer .container UL li {
+        .ck-content .region-footer > * UL li {
           margin-left: -8px;
           padding: 0; }
 

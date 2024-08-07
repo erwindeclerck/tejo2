@@ -12770,17 +12770,17 @@ P03 drie KEER FOTO/TEKST
 .region-footer {
   display: flex;
   flex-direction: row; }
-  .region-footer .container {
+  .region-footer > * {
     flex: 1; }
-    .region-footer .container h5, .region-footer .container .h5 {
+    .region-footer > * h5, .region-footer > * .h5 {
       font-size: 1rem;
       font-weight: bold;
       margin-bottom: 1.2rem; }
-    .region-footer .container UL {
+    .region-footer > * UL {
       margin-left: 0;
       paddin: 0;
       list-style: none; }
-      .region-footer .container UL li {
+      .region-footer > * UL li {
         margin-left: -8px;
         padding: 0; }
 
