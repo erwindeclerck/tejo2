@@ -1,24 +1,28 @@
-.region-footer{
-  display: flex;
-  flex-direction: row;
+.region-footer {
+  display: flex !important;
+  flex-direction: row !important;
 
-  & > *{
-    flex:1;
-    // border:1px solid white;
-    h5{
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 1.2rem;
+
+  & > * {
+    flex: 1;
+    nav {
+      flex-basis: 100%;
     }
-    UL{
-      margin-left: 0;
-      paddin:0;
-      list-style: none;
-      li{
-        margin-left: -8px;
+    h5 {
+      color: white;
+      font-size: 1.1em;
+      margin-bottom: 1rem
+    }
+    ul {
+      color: white;
+      margin-left: -8px;
+      li {
         padding: 0;
+
+        a {
+
+        }
       }
     }
   }
 }
-

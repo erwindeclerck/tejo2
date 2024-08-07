@@ -11474,26 +11474,6 @@ main {
   margin-bottom: 60px; }
 
 /* -- footer menu --- */
-.region-footer {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 8px; }
-
-.region-footer nav {
-  flex-basis: 100%; }
-
-nav h5, nav .h5 {
-  color: white;
-  font-size: 1.5em; }
-
-.region-footer nav ul {
-  list-style-type: circle;
-  color: white;
-  margin-left: 16px; }
-
-.region-footer nav ul li a {
-  padding: 0.2em; }
-
 footer.mt-auto {
   position: relative;
   background-color: #0c3f7c; }
@@ -12768,20 +12748,20 @@ P03 drie KEER FOTO/TEKST
   width: 34%; }
 
 .region-footer {
-  display: flex;
-  flex-direction: row; }
+  display: flex !important;
+  flex-direction: row !important; }
   .region-footer > * {
     flex: 1; }
+    .region-footer > * nav {
+      flex-basis: 100%; }
     .region-footer > * h5, .region-footer > * .h5 {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 1.2rem; }
-    .region-footer > * UL {
-      margin-left: 0;
-      paddin: 0;
-      list-style: none; }
-      .region-footer > * UL li {
-        margin-left: -8px;
+      color: white;
+      font-size: 1.1em;
+      margin-bottom: 1rem; }
+    .region-footer > * ul {
+      color: white;
+      margin-left: -8px; }
+      .region-footer > * ul li {
         padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

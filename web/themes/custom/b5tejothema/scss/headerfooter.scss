@@ -246,30 +246,29 @@ main {
 }
 
 /* -- footer menu --- */
-.region-footer {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 8px;
-}
-
-.region-footer nav {
-  flex-basis: 100%;
-}
-
-nav h5 {
-  color: white;
-  font-size: 1.5em;
-}
-
-.region-footer nav ul {
-  list-style-type: circle;
-  color: white;
-  margin-left: 16px;
-}
-
-.region-footer nav ul li a {
-  padding: 0.2em;
-}
+//.region-footer {
+//  display: flex !important;
+//  flex-direction: row !important;
+//  gap: 8px;
+//}
+//
+//.region-footer nav {
+//  flex-basis: 100%;
+//}
+//
+//nav h5 {
+//  color: white;
+//  font-size: 1.5em;
+//}
+//
+//.region-footer nav ul {
+//  color: white;
+//  margin-left: 16px;
+//}
+//
+//.region-footer nav ul li a {
+//  padding: 0.2em;
+//}
 
 
 

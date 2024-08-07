@@ -9355,21 +9355,6 @@
     color: #0c3f7c; }
   .ck-content main {
     margin-bottom: 60px; }
-  .ck-content .region-footer {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 8px; }
-  .ck-content .region-footer nav {
-    flex-basis: 100%; }
-  .ck-content nav h5, .ck-content nav .h5 {
-    color: white;
-    font-size: 1.5em; }
-  .ck-content .region-footer nav ul {
-    list-style-type: circle;
-    color: white;
-    margin-left: 16px; }
-  .ck-content .region-footer nav ul li a {
-    padding: 0.2em; }
   .ck-content footer.mt-auto {
     position: relative;
     background-color: #0c3f7c; }
@@ -10604,20 +10589,20 @@
   .ck-content .page-node-type-article .bs-region--top-right {
     width: 34%; }
   .ck-content .region-footer {
-    display: flex;
-    flex-direction: row; }
+    display: flex !important;
+    flex-direction: row !important; }
     .ck-content .region-footer > * {
       flex: 1; }
+      .ck-content .region-footer > * nav {
+        flex-basis: 100%; }
       .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-bottom: 1.2rem; }
-      .ck-content .region-footer > * UL {
-        margin-left: 0;
-        paddin: 0;
-        list-style: none; }
-        .ck-content .region-footer > * UL li {
-          margin-left: -8px;
+        color: white;
+        font-size: 1.1em;
+        margin-bottom: 1rem; }
+      .ck-content .region-footer > * ul {
+        color: white;
+        margin-left: -8px; }
+        .ck-content .region-footer > * ul li {
           padding: 0; }
 
 /*# sourceMappingURL=ck5style.css.map */
