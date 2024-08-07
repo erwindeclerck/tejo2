@@ -12763,5 +12763,7 @@ P03 drie KEER FOTO/TEKST
       margin-left: -8px; }
       .region-footer > * ul li {
         padding: 0; }
+        .region-footer > * ul li a {
+          padding: 3px; }
 
 /*# sourceMappingURL=style.css.map */

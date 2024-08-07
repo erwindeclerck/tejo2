@@ -10604,5 +10604,7 @@
         margin-left: -8px; }
         .ck-content .region-footer > * ul li {
           padding: 0; }
+          .ck-content .region-footer > * ul li a {
+            padding: 3px; }
 
 /*# sourceMappingURL=ck5style.css.map */
