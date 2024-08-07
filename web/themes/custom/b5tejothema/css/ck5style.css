@@ -58,6 +58,8 @@
   /*
   P01 EEN KEER FOTO/TEKST BLAUWE GOLF
   */
+  /* stukje is nodig om de bovenste blauwe golf onder het vorige artikel te laten schuiven indien het (in dit geval) over het triplet op de homepagina gaat */
+  /* Einde onder het triplet schuiver */
   /*
   P02 TWEE KEER FOTO/TEKST BLAUWE GOLF
   */
@@ -9528,6 +9530,8 @@
       background-color: yellow; }
     .ck-content .paragraph--type-p00 .codeoranje .blokken .blok .link {
       background-color: orange; }
+  .ck-content .herotriplet + .field--name-field-blokken .paragraph--type-p01 {
+    margin-top: -110px; }
   .ck-content .page-node-type-vaste-pagina .paragraph--type-p01 {
     font-size: 1.2em; }
   .ck-content .page-node-type-homepagina .paragraph--type-p01 {
