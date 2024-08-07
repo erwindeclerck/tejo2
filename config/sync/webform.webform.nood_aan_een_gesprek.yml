@@ -15,7 +15,7 @@ categories: {  }
 elements: |-
   markupintro:
     '#type': processed_text
-    '#text': '<h2 class="text-align-center">&nbsp;</h2><h2 class="text-align-center">TEJO wil een warme plek zijn waar jij je welkom voelt!&nbsp;<br>We zijn er om naar jou te luisteren.</h2><p class="text-align-center wys-onderkop">Voor jongerenvan 10 tot 20 jaar</p><p class="text-align-center wys-onderkop">&nbsp;</p>'
+    '#text': '<h2 class="text-align-center">&nbsp;</h2><h2 class="text-align-center">TEJO wil een warme plek zijn waar jij je welkom voelt!&nbsp;<br>We zijn er om naar jou te luisteren.</h2><p class="text-align-center wys-onderkop">Voor jongeren van 10 tot 20 jaar</p><p class="text-align-center wys-onderkop">&nbsp;</p>'
     '#format': full_html
   flexbox:
     '#type': webform_flexbox

@@ -16,35 +16,10 @@ dependencies:
     - image.style.logo
     - node.type.organisatie
   module:
-    - ds
     - image_link_formatter
     - layout_builder
     - user
 third_party_settings:
-  ds:
-    layout:
-      id: bs_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        layout:
-          wrapper: div
-          classes:
-            row: row
-          add_layout_class: 1
-          attributes: ''
-        regions:
-          main:
-            wrapper: div
-            classes:
-              col-sm-12: col-sm-12
-            add_region_classes: 1
-            attributes: ''
-    regions:
-      main:
-        - field_logo
   layout_builder:
     enabled: false
     allow_custom: false
@@ -61,16 +36,9 @@ content:
       image_link: field_website
       image_loading:
         attribute: lazy
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
     weight: 0
-    region: main
+    region: content
 hidden:
   body: true
   field_adres: true

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_hero
     - field.storage.node.field_samenvatting
-    - image.style.large
+    - image.style.nieuwslijstkop
     - node.type.article
   module:
     - group
@@ -82,7 +82,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: large
+            image_style: nieuwslijstkop
             image_loading:
               attribute: lazy
           group_column: ''
@@ -142,7 +142,7 @@ display:
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
-          empty: ''
+          empty: '<a href="/">TEJO</a>'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true

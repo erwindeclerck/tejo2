@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_album
+    - field.field.node.article.field_breedte
     - field.field.node.article.field_hero
     - field.field.node.article.field_hoofdtekst
     - field.field.node.article.field_kandidaat_homepagina
@@ -64,6 +65,7 @@ content:
 hidden:
   comment: true
   field_album: true
+  field_breedte: true
   field_hoofdtekst: true
   field_kandidaat_homepagina: true
   field_links: true

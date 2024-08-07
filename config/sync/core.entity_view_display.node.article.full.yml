@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_album
+    - field.field.node.article.field_breedte
     - field.field.node.article.field_hero
     - field.field.node.article.field_hoofdtekst
     - field.field.node.article.field_kandidaat_homepagina
@@ -41,7 +42,7 @@ third_party_settings:
           classes:
             row: row
           add_layout_class: 1
-          attributes: ''
+          attributes: 'class|[node:field_breedte:value]'
         regions:
           top:
             wrapper: div
@@ -86,14 +87,13 @@ third_party_settings:
             add_region_classes: 1
             attributes: ''
     regions:
-      top_left:
-        - field_hero
+      top:
         - node_title
+        - field_hero
         - field_hoofdtekst
         - field_album
         - field_oproep
         - field_video
-      top_right:
         - field_persoon
         - field_tags
         - field_links
@@ -101,7 +101,7 @@ third_party_settings:
     fields:
       node_title:
         plugin_id: node_title
-        weight: 1
+        weight: 0
         label: hidden
         formatter: default
       'bundle_field:node':
@@ -137,7 +137,7 @@ content:
             lb-col: false
             classes: {  }
     weight: 3
-    region: top_left
+    region: top
   field_hero:
     type: image
     label: hidden
@@ -154,15 +154,15 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 0
-    region: top_left
+    weight: 1
+    region: top
   field_hoofdtekst:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
-    region: top_left
+    region: top
   field_links:
     type: link
     label: above
@@ -174,7 +174,7 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 8
-    region: top_right
+    region: top
   field_oproep:
     type: entity_reference_label
     label: above
@@ -182,7 +182,7 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
-    region: top_left
+    region: top
   field_persoon:
     type: entity_reference_entity_view
     label: hidden
@@ -199,15 +199,16 @@ content:
             lb-col: false
             classes: {  }
     weight: 6
-    region: top_right
+    region: top
   field_tags:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: above
     settings:
+      view_mode: default
       link: true
     third_party_settings: {  }
     weight: 7
-    region: top_right
+    region: top
   field_video:
     type: video_embed_field_video
     label: above
@@ -218,10 +219,11 @@ content:
       height: 480
     third_party_settings: {  }
     weight: 5
-    region: top_left
+    region: top
 hidden:
   body: true
   comment: true
+  field_breedte: true
   field_kandidaat_homepagina: true
   field_samenvatting: true
   langcode: true

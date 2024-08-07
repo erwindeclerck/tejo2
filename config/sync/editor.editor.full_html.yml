@@ -75,6 +75,9 @@ settings:
         -
           label: 'UL-Blauw raster'
           element: '<ul class="blueraster">'
+        -
+          label: 'Quote signature'
+          element: '<span class="quotesignature">'
     editor_advanced_image_image:
       disable_balloon: false
       default_class: ''

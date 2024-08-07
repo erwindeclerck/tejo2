@@ -497,11 +497,32 @@ content:
       ds:
         ds_limit: ''
         ft:
-          id: default
+          id: expert
           settings:
             lb: ''
+            lbw: true
+            lbw-el: ''
+            lbw-cl: logoslabel
+            lbw-at: ''
             lb-col: false
-            classes: {  }
+            ow: true
+            ow-el: ''
+            ow-cl: logoset
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: logos
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: ''
+            fi-cl: logo
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
     weight: 5
     region: main
   field_telefoon:

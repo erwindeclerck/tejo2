@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_album
+    - field.field.node.article.field_breedte
     - field.field.node.article.field_hero
     - field.field.node.article.field_hoofdtekst
     - field.field.node.article.field_kandidaat_homepagina
@@ -22,6 +23,7 @@ dependencies:
     - ds
     - image
     - link
+    - options
     - text
     - user
     - video_embed_field
@@ -79,6 +81,13 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_breedte:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
     region: content
   field_hero:
     type: image
