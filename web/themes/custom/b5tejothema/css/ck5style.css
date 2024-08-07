@@ -10603,5 +10603,21 @@
     width: 66%; }
   .ck-content .page-node-type-article .bs-region--top-right {
     width: 34%; }
+  .ck-content .region-footer {
+    display: flex;
+    flex-direction: row; }
+    .ck-content .region-footer .container {
+      flex: 1; }
+      .ck-content .region-footer .container h5, .ck-content .region-footer .container .h5 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1.2rem; }
+      .ck-content .region-footer .container UL {
+        margin-left: 0;
+        paddin: 0;
+        list-style: none; }
+        .ck-content .region-footer .container UL li {
+          margin-left: -8px;
+          padding: 0; }
 
 /*# sourceMappingURL=ck5style.css.map */

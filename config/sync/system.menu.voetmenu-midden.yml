@@ -1,0 +1,8 @@
+uuid: 3b927110-4642-428d-ac74-d84b745b0b9e
+langcode: nl
+status: true
+dependencies: {  }
+id: voetmenu-midden
+label: 'Voetmenu midden'
+description: ''
+locked: false

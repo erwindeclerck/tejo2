@@ -1,24 +1,22 @@
-uuid: 1853f926-ee68-45ca-9de6-46052eda1768
+uuid: be7af192-fbf6-4cf4-a71b-9dc164759fad
 langcode: nl
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.voetmenu-midden
   module:
     - system
   theme:
     - b5tejothema
-_core:
-  default_config_hash: pL0jHM09ci0wxZaAM9gDBR8VzXqiTgJJ0_yQt8VYvPU
-id: b5tejothema_footer
+id: b5tejothema_voetmenumidden
 theme: b5tejothema
 region: footer
-weight: -8
+weight: -6
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:voetmenu-midden'
 settings:
-  id: 'system_menu_block:footer'
-  label: Voet
+  id: 'system_menu_block:voetmenu-midden'
+  label: 'SAMEN STERK'
   label_display: visible
   provider: system
   level: 1

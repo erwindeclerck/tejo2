@@ -1,24 +1,22 @@
-uuid: 1853f926-ee68-45ca-9de6-46052eda1768
+uuid: 8cf9a181-1530-4967-97ca-397a54548a18
 langcode: nl
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.voetmenu-links
   module:
     - system
   theme:
     - b5tejothema
-_core:
-  default_config_hash: pL0jHM09ci0wxZaAM9gDBR8VzXqiTgJJ0_yQt8VYvPU
-id: b5tejothema_footer
+id: b5tejothema_voetmenulinks
 theme: b5tejothema
 region: footer
-weight: -8
+weight: -7
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:voetmenu-links'
 settings:
-  id: 'system_menu_block:footer'
-  label: Voet
+  id: 'system_menu_block:voetmenu-links'
+  label: HULPAANBOD
   label_display: visible
   provider: system
   level: 1

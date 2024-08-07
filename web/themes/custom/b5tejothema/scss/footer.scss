@@ -1,0 +1,24 @@
+.region-footer{
+  display: flex;
+  flex-direction: row;
+
+  .container{
+    flex:1;
+    // border:1px solid white;
+    h5{
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+    }
+    UL{
+      margin-left: 0;
+      paddin:0;
+      list-style: none;
+      li{
+        margin-left: -8px;
+        padding: 0;
+      }
+    }
+  }
+}
+

@@ -31,7 +31,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: bs_2col_bricked
+      id: bs_1col
       library: null
       disable_css: false
       entity_classes: all_classes
@@ -42,52 +42,16 @@ third_party_settings:
           classes:
             row: row
           add_layout_class: 1
-          attributes: 'class|[node:field_breedte:value]'
+          attributes: ''
         regions:
-          top:
+          main:
             wrapper: div
             classes:
               col-sm-12: col-sm-12
             add_region_classes: 1
-            attributes: ''
-          top_left:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          top_right:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          middle:
-            wrapper: div
-            classes:
-              col-sm-12: col-sm-12
-            add_region_classes: 1
-            attributes: ''
-          bottom_left:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          bottom_right:
-            wrapper: div
-            classes:
-              col-sm-6: col-sm-6
-            add_region_classes: 1
-            attributes: ''
-          bottom:
-            wrapper: div
-            classes:
-              col-sm-12: col-sm-12
-            add_region_classes: 1
-            attributes: ''
+            attributes: 'class|[node:field_breedte:value]'
     regions:
-      top:
+      main:
         - node_title
         - field_hero
         - field_hoofdtekst
@@ -137,7 +101,7 @@ content:
             lb-col: false
             classes: {  }
     weight: 3
-    region: top
+    region: main
   field_hero:
     type: image
     label: hidden
@@ -155,14 +119,14 @@ content:
             lb-col: false
             classes: {  }
     weight: 1
-    region: top
+    region: main
   field_hoofdtekst:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 2
-    region: top
+    region: main
   field_links:
     type: link
     label: above
@@ -174,7 +138,7 @@ content:
       target: ''
     third_party_settings: {  }
     weight: 8
-    region: top
+    region: main
   field_oproep:
     type: entity_reference_label
     label: above
@@ -182,7 +146,7 @@ content:
       link: true
     third_party_settings: {  }
     weight: 4
-    region: top
+    region: main
   field_persoon:
     type: entity_reference_entity_view
     label: hidden
@@ -199,7 +163,7 @@ content:
             lb-col: false
             classes: {  }
     weight: 6
-    region: top
+    region: main
   field_tags:
     type: entity_reference_entity_view
     label: above
@@ -208,7 +172,7 @@ content:
       link: true
     third_party_settings: {  }
     weight: 7
-    region: top
+    region: main
   field_video:
     type: video_embed_field_video
     label: above
@@ -219,7 +183,7 @@ content:
       height: 480
     third_party_settings: {  }
     weight: 5
-    region: top
+    region: main
 hidden:
   body: true
   comment: true
