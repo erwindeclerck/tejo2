@@ -1,3 +1,4 @@
+
 /**
 Componenten
  */
@@ -75,14 +76,12 @@ blockquote p {
   color: $tejodonkerblauw;
   background-color: $tejolichtblauw;
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
   color: white;
   font-style: normal;
   margin-top:60px;
   margin-bottom:60px;
-  &:first-line{
-    font-size: 2em;
-  }
+  line-height: 1;
   &:before {
     color: $tejodonkerblauw;
     display: block;
@@ -93,7 +92,7 @@ blockquote p {
     position: absolute;
     line-height: 0;
     left: 20px;
-    top: 30px;
+    top: 60px;
   }
   &:after {
     color: $tejodonkerblauw;
@@ -105,7 +104,7 @@ blockquote p {
     position: absolute;
     right: 20px;
     line-height: 0;
-    bottom : -40px;
+    bottom : -70px;
   }
 }
 
@@ -142,3 +141,5 @@ ul.blueraster{
 
   }
 }
+
+

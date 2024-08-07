@@ -22,3 +22,12 @@ jQuery(".search-block-form input").blur(function(event){
   jQuery(".form-type-search").removeClass("sbox");
 });
 
+
+function wrap(selector, wrapper) {
+  el = document.querySelector(selector);
+  el.parentNode.insertBefore(wrapper, el);
+  wrapper.appendChild(el);
+}
+
+// example: wrapping an anchor with class "wrap_me" into a new div element
+wrap(document.querySelector('a.wrap_me'), document.createElement('div'));

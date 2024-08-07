@@ -1,3 +1,4 @@
+
 .field.field--name-field-nieuws {
   // border:1px solid orange;
   padding: 3rem;
@@ -16,7 +17,7 @@
   .view-tejonieuws-per-afdeling {
 
     .view-content {
-      //            border: 1px solid green;
+      // border: 1px solid green;
 
       .views-view-responsive-grid.views-view-responsive-grid--horizontal {
         // border: 1px solid yellow;
@@ -37,8 +38,8 @@
 
               a {
 
-                img.img-fluid.image-style-large {
-                  border-radius: 30px 30px 0 0;
+                img {
+                  border-radius: $borderradius $borderradius 0 0;
 
                 }
               }
