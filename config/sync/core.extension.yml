@@ -48,6 +48,7 @@ module:
   geofield: 0
   gnode: 0
   group: 0
+  group_content_menu: 0
   group_relationship_tokens: 0
   help: 0
   history: 0
@@ -93,6 +94,10 @@ module:
   viewsreference: 0
   vite: 0
   webform: 0
+  webform_group: 0
+  webform_node: 0
+  webform_submission_export_import: 0
+  webform_templates: 0
   webform_ui: 0
   ds: 1
   filefield_sources: 1

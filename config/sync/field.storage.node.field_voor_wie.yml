@@ -1,0 +1,19 @@
+uuid: 27ad88e4-5a7a-4e95-8769-fb4ed5f2dbf5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_voor_wie
+field_name: field_voor_wie
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

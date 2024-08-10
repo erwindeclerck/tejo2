@@ -7,7 +7,7 @@ h1 {
   color: $tejoblauw;
   padding: 2rem;
   font-weight: bold;
-  @include hn(1);
+  @include hover("h1");
   //position: relative;
   //&:hover::after{content: 'h1';position: absolute; top: -0.5rem;font-size: 1rem;}
 }
@@ -18,7 +18,7 @@ h2 {
   color: $tejoblauw;
   padding-bottom:  1.5rem;
   font-weight: bold;
-  @include hn(2);
+  @include hover("h2");
   //position: relative;
   //&:hover::after{content: 'h2';position: absolute; top: -0.5rem;font-size: 1rem;}
 }

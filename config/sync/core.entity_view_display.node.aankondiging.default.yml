@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.aankondiging.body
+    - field.field.node.aankondiging.field_formulier
     - field.field.node.aankondiging.field_hero
+    - field.field.node.aankondiging.field_noot
+    - field.field.node.aankondiging.field_voor_wie
     - field.field.node.aankondiging.field_waar
     - field.field.node.aankondiging.field_wanneer
     - node.type.aankondiging
@@ -13,6 +16,7 @@ dependencies:
     - image
     - text
     - user
+    - webform
 id: node.aankondiging.default
 targetEntityType: node
 bundle: aankondiging
@@ -25,6 +29,15 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_formulier:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
   field_hero:
     type: image
     label: hidden
@@ -35,6 +48,24 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_noot:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_voor_wie:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
     region: content
   field_waar:
     type: text_default

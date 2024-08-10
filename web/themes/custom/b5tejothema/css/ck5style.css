@@ -10588,6 +10588,70 @@
     width: 66%; }
   .ck-content .page-node-type-article .bs-region--top-right {
     width: 34%; }
+  .ck-content .notendop {
+    background-color: #0c3f7c;
+    color: white;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px; }
+    .ck-content .notendop .field--name-field-noot {
+      width: 105%;
+      margin: -10px;
+      text-align: center; }
+      .ck-content .notendop .field--name-field-noot img {
+        margin-bottom: 2rem; }
+    @media (min-width: 576px) {
+      .ck-content .notendop {
+        flex-direction: row; }
+        .ck-content .notendop .field--name-field-noot {
+          width: 50%; }
+          .ck-content .notendop .field--name-field-noot img {
+            margin: -00px; } }
+    .ck-content .notendop .lijst {
+      width: 100%;
+      padding-left: 10%;
+      padding-bottom: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .ck-content .notendop .lijst > * {
+        font-weight: bold; }
+        .ck-content .notendop .lijst > * .field__label {
+          font-weight: 100;
+          width: 20%; }
+      .ck-content .notendop .lijst .field--name-field-voor-wie p {
+        margin-bottom: 0; }
+      .ck-content .notendop .lijst .field--name-field-wanneer .datetime {
+        font-size: 0.9em; }
+      .ck-content .notendop .lijst .field--name-field-waar p {
+        margin-bottom: 0; }
+    @media (min-width: 576px) {
+      .ck-content .notendop {
+        border-radius: 200px 30px 30px 200px; }
+        .ck-content .notendop .field--name-field-noot {
+          width: 60%;
+          margin: -5px; }
+        .ck-content .notendop .lijst {
+          padding-left: 10%;
+          padding-bottom: 0; } }
+    @media (min-width: 768px) {
+      .ck-content .notendop {
+        border-radius: 200px 30px 30px 200px;
+        font-size: 1.5vw; }
+        .ck-content .notendop .field--name-field-noot {
+          width: 40%;
+          margin: -6px; }
+          .ck-content .notendop .field--name-field-noot img {
+            width: 100%;
+            height: auto; } }
+    @media (min-width: 992px) {
+      .ck-content .notendop {
+        border-radius: 200px 30px 30px 200px;
+        font-size: 1.5rem; }
+        .ck-content .notendop .field--name-field-noot {
+          width: 40%;
+          margin: -10px; } }
   .ck-content .region-footer {
     display: flex !important;
     flex-direction: row !important; }

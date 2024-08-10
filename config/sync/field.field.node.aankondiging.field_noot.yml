@@ -1,0 +1,38 @@
+uuid: 33b75dd5-8d04-484a-995f-089f65b23bcb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_noot
+    - node.type.aankondiging
+  module:
+    - image
+id: node.aankondiging.field_noot
+field_name: field_noot
+entity_type: node
+bundle: aankondiging
+label: Noot
+description: "Indien geen beeld wordt ingevoerd zal de noot zichtbaar zijn. <br>\r\nIndien een ander beeld wordt ingevoerd, is enkel een cirkelvormig beeld van toepassing dat bovendien een kleine transparante marge heeft waar mogelijk objecten inzitten zoals in de afbeelding met de noot."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: 60b4b59c-810c-4462-ac0c-ec2b7143f3a6
+    alt: ''
+    title: ''
+    width: 771
+    height: 771
+field_type: image

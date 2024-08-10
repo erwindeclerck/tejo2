@@ -5,7 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.aankondiging.body
+    - field.field.node.aankondiging.field_formulier
     - field.field.node.aankondiging.field_hero
+    - field.field.node.aankondiging.field_noot
+    - field.field.node.aankondiging.field_voor_wie
     - field.field.node.aankondiging.field_waar
     - field.field.node.aankondiging.field_wanneer
     - node.type.aankondiging
@@ -31,7 +34,10 @@ content:
     weight: 100
     region: content
 hidden:
+  field_formulier: true
   field_hero: true
+  field_noot: true
+  field_voor_wie: true
   field_waar: true
   field_wanneer: true
   langcode: true

@@ -50,6 +50,7 @@
         "drupal/geocoder": "^4.23",
         "drupal/geofield": "^1.60",
         "drupal/group": "^3.2",
+        "drupal/group_content_menu": "^3.0",
         "drupal/group_relationship_tokens": "^1.0",
         "drupal/image_link_formatter": "^2.2",
         "drupal/layout_paragraphs": "^2.0",

@@ -1,0 +1,17 @@
+uuid: 1a9d1d3f-a2d7-49de-9abd-f35dcbdeace9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - node.type.webform
+  module:
+    - gnode
+    - node
+id: tejo_huis-group_node-webform
+group_type: tejo_huis
+content_plugin: 'group_node:webform'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

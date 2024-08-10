@@ -1,0 +1,29 @@
+uuid: c52d0194-1f58-4f4a-9d9f-8bb31834a42b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - group_content_menu.group_content_menu_type.tejo_gids
+  module:
+    - group_content_menu
+  theme:
+    - b5tejothema
+id: b5tejothema_tejogids
+theme: b5tejothema
+region: breadcrumb
+weight: -8
+provider: null
+plugin: 'group_content_menu:tejo_gids'
+settings:
+  id: 'group_content_menu:tejo_gids'
+  label: 'TEJO gids'
+  label_display: '0'
+  provider: group_content_menu
+  context_mapping:
+    group: '@group.group_route_context:group'
+  level: 1
+  depth: 0
+  expand_all_items: false
+  relative_visibility: false
+  theme_hook_suggestion: ''
+visibility: {  }

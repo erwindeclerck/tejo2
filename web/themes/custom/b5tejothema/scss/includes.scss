@@ -86,9 +86,8 @@
     box-shadow: 4px 0 15px -5px $tejodonkerblauw;
   }
 }
-
-@mixin hn($level){
-  $content: h+$level;
+@mixin hover($hovertext){
+  $content: $hovertext;
   @if $debug{
     position: relative;
     &:hover::after{
