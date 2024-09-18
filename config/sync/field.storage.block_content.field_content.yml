@@ -1,0 +1,19 @@
+uuid: c6b238c7-e0ca-4f2a-9342-616c184b8020
+langcode: nl
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_content
+field_name: field_content
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.vaste_pagina.field_album
     - field.field.node.vaste_pagina.field_bijlage
     - field.field.node.vaste_pagina.field_blokken
+    - field.field.node.vaste_pagina.field_extra
     - field.field.node.vaste_pagina.field_gelinkte_personen
     - field.field.node.vaste_pagina.field_hero
     - field.field.node.vaste_pagina.field_links
@@ -40,6 +41,7 @@ hidden:
   field_album: true
   field_bijlage: true
   field_blokken: true
+  field_extra: true
   field_gelinkte_personen: true
   field_hero: true
   field_links: true

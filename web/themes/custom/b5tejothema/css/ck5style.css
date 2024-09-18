@@ -9370,6 +9370,34 @@
       max-height: 100px;
       content: "";
       top: -80px; }
+  .ck-content #mc_embed_shell #mc_embed_signup form {
+    margin: auto; }
+    .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
+      padding: 0; }
+      .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+        border-radius: 30px !important;
+        border: 1px solid #0c3f7c;
+        height: 60px;
+        margin-bottom: 16px; }
+    .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear {
+      display: flex; }
+      .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear input {
+        background-color: #e03726;
+        border-radius: 30px;
+        border: none;
+        padding: 15px 30px;
+        height: auto;
+        line-height: auto;
+        margin-top: 10px;
+        margin-right: 15px; }
+        .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear input:hover {
+          background-color: white;
+          color: #e03726; }
+      .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear .kleinelettertjes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem; }
   .ck-content .herotriplet {
     margin-bottom: 60px;
     display: flex;
@@ -10594,7 +10622,9 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    border-radius: 30px; }
+    margin-bottom: 3em;
+    border-radius: 30px;
+    margin-bottom: 3em; }
     .ck-content .notendop .field--name-field-noot {
       width: 105%;
       margin: -10px;

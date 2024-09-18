@@ -1,0 +1,38 @@
+uuid: 2066cf49-f4a6-4463-be66-8fa3d94543a7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.cleanblock
+    - field.field.block_content.cleanblock.field_content
+  module:
+    - text
+id: block_content.cleanblock.default
+targetEntityType: block_content
+bundle: cleanblock
+mode: default
+content:
+  field_content:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

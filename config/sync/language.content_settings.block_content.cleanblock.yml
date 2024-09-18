@@ -1,0 +1,11 @@
+uuid: 5329d838-81db-468c-bf0a-58842413396b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.cleanblock
+id: block_content.cleanblock
+target_entity_type_id: block_content
+target_bundle: cleanblock
+default_langcode: site_default
+language_alterable: false

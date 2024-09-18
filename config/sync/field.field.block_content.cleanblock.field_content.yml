@@ -1,0 +1,24 @@
+uuid: 63e33ca6-04d1-4d53-b752-6c98be6f5e59
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.cleanblock
+    - field.storage.block_content.field_content
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.cleanblock.field_content
+field_name: field_content
+entity_type: block_content
+bundle: cleanblock
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

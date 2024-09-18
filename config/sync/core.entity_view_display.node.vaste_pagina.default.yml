@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.vaste_pagina.field_album
     - field.field.node.vaste_pagina.field_bijlage
     - field.field.node.vaste_pagina.field_blokken
+    - field.field.node.vaste_pagina.field_extra
     - field.field.node.vaste_pagina.field_gelinkte_personen
     - field.field.node.vaste_pagina.field_hero
     - field.field.node.vaste_pagina.field_links
@@ -38,6 +39,7 @@ third_party_settings:
         - field_hero
         - node_title
         - body
+        - field_extra
         - field_blokken
         - field_video
         - field_album
@@ -101,6 +103,13 @@ content:
     settings:
       view_mode: default
       link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_extra:
+    type: text_default
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 3
     region: content

@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.vaste_pagina.field_album
     - field.field.node.vaste_pagina.field_bijlage
     - field.field.node.vaste_pagina.field_blokken
+    - field.field.node.vaste_pagina.field_extra
     - field.field.node.vaste_pagina.field_gelinkte_personen
     - field.field.node.vaste_pagina.field_hero
     - field.field.node.vaste_pagina.field_links
@@ -40,13 +41,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_album:
     type: image_image
-    weight: 6
+    weight: 7
     region: content
     settings:
       progress_indicator: throbber
@@ -54,14 +55,14 @@ content:
     third_party_settings: {  }
   field_bijlage:
     type: file_generic
-    weight: 13
+    weight: 14
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_blokken:
     type: paragraphs
-    weight: 4
+    weight: 5
     region: content
     settings:
       title: Paragraph
@@ -77,9 +78,17 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_extra:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_gelinkte_personen:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     region: content
     settings:
       match_operator: CONTAINS
@@ -97,7 +106,7 @@ content:
     third_party_settings: {  }
   field_links:
     type: link_default
-    weight: 7
+    weight: 8
     region: content
     settings:
       placeholder_url: ''
@@ -105,7 +114,7 @@ content:
     third_party_settings: {  }
   field_oproep:
     type: entity_reference_autocomplete
-    weight: 8
+    weight: 9
     region: content
     settings:
       match_operator: CONTAINS
@@ -115,40 +124,40 @@ content:
     third_party_settings: {  }
   field_pdf:
     type: file_generic
-    weight: 3
+    weight: 4
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_video:
     type: video_embed_field_textfield
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 17
     region: content
     settings:
       display_label: true
@@ -163,7 +172,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 14
+    weight: 15
     region: content
     settings:
       match_operator: CONTAINS

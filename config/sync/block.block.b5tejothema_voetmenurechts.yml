@@ -1,6 +1,6 @@
 uuid: 6fcc8f0d-ae28-44b7-8744-3bc0eadef00d
 langcode: nl
-status: true
+status: false
 dependencies:
   config:
     - system.menu.voetmenu-rechts

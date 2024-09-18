@@ -1,0 +1,19 @@
+uuid: 5c3de7c2-76ef-4ec2-92c5-df5a9ca00718
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_extra
+field_name: field_extra
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
