@@ -9371,7 +9371,10 @@
       content: "";
       top: -80px; }
   .ck-content #mc_embed_shell #mc_embed_signup form {
-    margin: auto; }
+    margin: auto;
+    width: 60%;
+    margin-left: 15%;
+    margin-right: 15%; }
     .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
       padding: 0; }
       .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
