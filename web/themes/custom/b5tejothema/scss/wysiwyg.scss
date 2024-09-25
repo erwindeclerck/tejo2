@@ -150,3 +150,23 @@ ul.blueraster{
 }
 
 
+ul.bigbubble {
+  border: 1px solid red;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  li {
+    color: $tejoblauw;
+    width: 300px;
+    text-align: center;
+    font-size: 1.8em;
+    text-wrap: wrap;
+    background-image: url("/themes/custom/b5tejothema/resources/path1.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 3rem;
+  }
+}

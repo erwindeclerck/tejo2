@@ -1,0 +1,19 @@
+uuid: e6f99589-0218-45f7-ab4d-8e8cad418812
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_periode
+    - node.type.project
+id: node.project.field_periode
+field_name: field_periode
+entity_type: node
+bundle: project
+label: Periode
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

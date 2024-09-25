@@ -81,6 +81,9 @@ settings:
         -
           label: 'Body 60%'
           element: '<p class="pct60">'
+        -
+          label: BigBubbles
+          element: '<ul class="bigbubble">'
     editor_advanced_image_image:
       disable_balloon: false
       default_class: ''

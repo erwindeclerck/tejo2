@@ -9250,6 +9250,24 @@
         .ck-content ul.blueraster li a:hover {
           text-decoration: underline;
           text-underline-offset: 2px; }
+  .ck-content ul.bigbubble {
+    border: 1px solid red;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around; }
+    .ck-content ul.bigbubble li {
+      color: #0c3f7c;
+      width: 300px;
+      text-align: center;
+      font-size: 1.8em;
+      text-wrap: wrap;
+      background-image: url("/themes/custom/b5tejothema/resources/path1.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      padding: 3rem; }
   .ck-content .navbar .d-flex .region-nav-branding .block-system-branding-block .navbar-brand A.site-logo IMG {
     height: 80px; }
   .ck-content .focus .focusable {

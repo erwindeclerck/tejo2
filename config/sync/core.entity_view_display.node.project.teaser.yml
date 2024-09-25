@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.project.body
     - field.field.node.project.field_album
     - field.field.node.project.field_hero
+    - field.field.node.project.field_periode
     - field.field.node.project.field_projectlinks
     - field.field.node.project.field_wat_de_pers_schrijft
     - node.type.project
@@ -34,6 +35,7 @@ content:
 hidden:
   field_album: true
   field_hero: true
+  field_periode: true
   field_projectlinks: true
   field_wat_de_pers_schrijft: true
   langcode: true
