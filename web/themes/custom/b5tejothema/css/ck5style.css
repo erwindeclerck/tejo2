@@ -10649,6 +10649,45 @@
     padding: 1em;
     font-size: 1.5rem;
     font-style: italic; }
+  .ck-content .view-projecten .views-view-responsive-grid__item-inner {
+    background: white;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between; }
+    .ck-content .view-projecten .views-view-responsive-grid__item-inner:hover {
+      border: 2px solid #0c3f7c; }
+    .ck-content .view-projecten .views-view-responsive-grid__item-inner .image-style-nieuwslijstkop {
+      border-radius: 2rem; }
+    .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-title a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #0c3f7c; }
+    .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-field-periode {
+      font-size: 1.2em;
+      font-style: italic;
+      letter-spacing: .2rem; }
+    .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node {
+      text-align: center; }
+      .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node a {
+        display: block;
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #0c3f7c; }
+        .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node a:after {
+          content: "\25B6";
+          width: 50px;
+          height: 50px;
+          margin-left: 0;
+          text-decoration: none;
+          display: inline-block;
+          color: #e03726; }
+        .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node a:hover {
+          color: #e03726; }
   .ck-content .notendop {
     background-color: #0c3f7c;
     color: white;
