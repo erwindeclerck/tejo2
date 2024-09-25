@@ -151,12 +151,11 @@ ul.blueraster{
 
 
 ul.bigbubble {
-  border: 1px solid red;
   list-style: none;
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   li {
     color: $tejoblauw;
     width: 300px;

@@ -11328,12 +11328,11 @@ ul.blueraster {
         text-underline-offset: 2px; }
 
 ul.bigbubble {
-  border: 1px solid red;
   list-style: none;
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
   ul.bigbubble li {
     color: #0c3f7c;
     width: 300px;
