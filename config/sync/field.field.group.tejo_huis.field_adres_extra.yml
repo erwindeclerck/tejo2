@@ -1,0 +1,26 @@
+uuid: d61366d3-7c80-4558-867f-b39623bd4346
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_adres_extra
+    - filter.format.basic_html
+    - filter.format.full_html
+    - group.type.tejo_huis
+  module:
+    - text
+id: group.tejo_huis.field_adres_extra
+field_name: field_adres_extra
+entity_type: group
+bundle: tejo_huis
+label: 'Adres extra'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

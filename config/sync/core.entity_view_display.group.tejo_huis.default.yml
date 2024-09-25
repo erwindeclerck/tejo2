@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.group.tejo_huis.field_adres
+    - field.field.group.tejo_huis.field_adres_extra
     - field.field.group.tejo_huis.field_album
     - field.field.group.tejo_huis.field_beschrijving
     - field.field.group.tejo_huis.field_e_mail
@@ -72,6 +73,7 @@ third_party_settings:
         - field_gevel
         - group_waartekst
         - field_adres
+        - field_adres_extra
         - field_e_mail
         - field_telefoon
         - group_waar
@@ -233,6 +235,7 @@ third_party_settings:
     group_waartekst:
       children:
         - field_adres
+        - field_adres_extra
         - field_e_mail
         - field_telefoon
       label: Waartekst
@@ -283,6 +286,13 @@ content:
     third_party_settings: {  }
     weight: 15
     region: main
+  field_adres_extra:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: main
   field_album:
     type: image
     label: above
@@ -306,7 +316,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: main
   field_gevel:
     type: image
@@ -539,7 +549,7 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: main
   field_top_link:
     type: link

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.group.tejo_huis.field_adres
+    - field.field.group.tejo_huis.field_adres_extra
     - field.field.group.tejo_huis.field_album
     - field.field.group.tejo_huis.field_beschrijving
     - field.field.group.tejo_huis.field_e_mail
@@ -37,6 +38,7 @@ third_party_settings:
       children:
         - field_gevel
         - field_adres
+        - field_adres_extra
         - field_e_mail
         - field_telefoon
       label: Waar
@@ -133,6 +135,14 @@ content:
     settings:
       wrapper_type: fieldset
     third_party_settings: {  }
+  field_adres_extra:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_album:
     type: image_image
     weight: 4
@@ -151,7 +161,7 @@ content:
     third_party_settings: {  }
   field_e_mail:
     type: email_default
-    weight: 5
+    weight: 6
     region: content
     settings:
       placeholder: ''
@@ -288,7 +298,7 @@ content:
     third_party_settings: {  }
   field_telefoon:
     type: telephone_default
-    weight: 6
+    weight: 7
     region: content
     settings:
       placeholder: ''
