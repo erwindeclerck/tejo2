@@ -31,7 +31,11 @@
     justify-content: start;
     border-radius: 30px;
     color: $tejoblauw;
-
+    border: 2px solid transparent;
+    transition: border .2s;
+    &:hover{
+      border: 2px solid $tejoblauw;
+    }
     .kop {
       color: $tejoblauw;
       font-weight: bold;

@@ -1,8 +1,0 @@
-uuid: c6cdfb82-3fdc-4718-ae90-625600a785ce
-langcode: nl
-status: true
-dependencies: {  }
-id: voetmenu-rechts
-label: 'Voetmenu rechts'
-description: ''
-locked: false
