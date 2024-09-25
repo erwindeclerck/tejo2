@@ -10455,7 +10455,8 @@
           height: 50px;
           margin-left: 0;
           text-decoration: none;
-          display: inline-block; }
+          display: inline-block;
+          color: #e03726; }
         .ck-content .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover,
         .ck-content .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover {
           color: #e03726; }
@@ -10644,6 +10645,10 @@
     width: 66%; }
   .ck-content .page-node-type-article .bs-region--top-right {
     width: 34%; }
+  .ck-content .field--name-field-periode {
+    padding: 1em;
+    font-size: 1.5rem;
+    font-style: italic; }
   .ck-content .notendop {
     background-color: #0c3f7c;
     color: white;

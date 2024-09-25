@@ -12612,7 +12612,8 @@ P03 drie KEER FOTO/TEKST
         height: 50px;
         margin-left: 0;
         text-decoration: none;
-        display: inline-block; }
+        display: inline-block;
+        color: #e03726; }
       .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover,
       .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover {
         color: #e03726; }
@@ -12806,6 +12807,11 @@ P03 drie KEER FOTO/TEKST
   width: 66%; }
 .page-node-type-article .bs-region--top-right {
   width: 34%; }
+
+.field--name-field-periode {
+  padding: 1em;
+  font-size: 1.5rem;
+  font-style: italic; }
 
 .notendop {
   background-color: #0c3f7c;
