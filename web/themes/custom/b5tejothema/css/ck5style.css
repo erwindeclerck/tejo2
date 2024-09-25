@@ -10214,6 +10214,8 @@
         .ck-content .paragraph--type-p03 .col-sm-12 .break-out .container .row .sectievoet .link a:hover {
           background-color: #f9f9f9;
           color: #001d4c; }
+    .ck-content .paragraph--type-p03 .col-sm-12.wit .blokken .blok {
+      background-color: white !important; }
     .ck-content .paragraph--type-p03 .codegeel .blokken .blok .link {
       background-color: yellow; }
     .ck-content .paragraph--type-p03 .codeoranje .blokken .blok .link {

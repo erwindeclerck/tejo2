@@ -12366,6 +12366,8 @@ P03 drie KEER FOTO/TEKST
       .paragraph--type-p03 .col-sm-12 .break-out .container .row .sectievoet .link a:hover {
         background-color: #f9f9f9;
         color: #001d4c; }
+  .paragraph--type-p03 .col-sm-12.wit .blokken .blok {
+    background-color: white !important; }
   .paragraph--type-p03 .codegeel .blokken .blok .link {
     background-color: yellow; }
   .paragraph--type-p03 .codeoranje .blokken .blok .link {

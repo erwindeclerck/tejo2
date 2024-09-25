@@ -85,6 +85,16 @@ P03 drie KEER FOTO/TEKST
         }
       }
     }
+
+
+    &.wit{
+      .blokken{
+        .blok{
+          background-color: white !important;
+        }
+      }
+    }
+
   }
   .codegeel {
     .blokken {
