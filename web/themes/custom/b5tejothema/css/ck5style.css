@@ -9090,7 +9090,7 @@
     .ck-content ol.blueball > li {
       position: relative;
       margin: 0 0 1rem 4rem;
-      padding: 4px 16px;
+      padding: 0.5rem;
       list-style: none;
       font-size: 1.2em; }
     .ck-content ol.blueball > li:before {
