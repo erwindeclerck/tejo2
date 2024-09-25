@@ -9478,7 +9478,8 @@
             height: 50px;
             margin-left: 0;
             text-decoration: none;
-            display: inline-block; }
+            display: inline-block;
+            color: #e03726; }
           .ck-content .herotriplet > * .link a:hover {
             color: #e03726; }
   .ck-content .page-node-type-homepagina {
