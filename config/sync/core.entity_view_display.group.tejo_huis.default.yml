@@ -18,6 +18,7 @@ dependencies:
     - field.field.group.tejo_huis.field_telefoon
     - field.field.group.tejo_huis.field_top_link
     - group.type.tejo_huis
+    - image.style.letterbox_1600x800
   module:
     - address
     - ds
@@ -54,18 +55,19 @@ third_party_settings:
       main:
         - group_herocanvas
         - field_hero
-        - 'dynamic_token_field:group-tejo_huis_titelveld'
         - group_grouphead
-        - group_waar_en_wanneer
+        - 'dynamic_token_field:group-tejo_huis_titelveld'
+        - field_top_link
         - group_group_front_group
+        - group_waar_en_wanneer
         - group_ons_vinden
         - field_beschrijving
-        - field_routebeschrijving
         - field_album
-        - field_routebeschrijvingslink
+        - field_routebeschrijving
         - field_sponsor
-        - field_locatie
+        - field_routebeschrijvingslink
         - field_nieuws
+        - field_locatie
         - field_openingsuren
         - field_gevel
         - group_waartekst
@@ -74,7 +76,6 @@ third_party_settings:
         - field_telefoon
         - group_waar
         - group_wanneer
-        - field_top_link
     fields:
       'dynamic_token_field:group-tejo_huis_titelveld':
         plugin_id: 'dynamic_token_field:group-tejo_huis_titelveld'
@@ -216,7 +217,7 @@ third_party_settings:
       label: 'Group front group'
       parent_name: ''
       region: main
-      weight: 3
+      weight: 2
       format_type: html_element
       format_settings:
         classes: group-front-group
@@ -257,7 +258,7 @@ third_party_settings:
       label: Grouphead
       parent_name: ''
       region: main
-      weight: 2
+      weight: 1
       format_type: html_element
       format_settings:
         classes: grouphead
@@ -291,7 +292,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: main
   field_beschrijving:
     type: text_default
@@ -330,10 +331,17 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: letterbox_1600x800
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
     region: main
   field_locatie:
@@ -459,7 +467,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 6
+    weight: 5
     region: main
   field_openingsuren:
     type: text_default
@@ -523,7 +531,7 @@ content:
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 5
+    weight: 4
     region: main
   field_telefoon:
     type: telephone_link
@@ -543,7 +551,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 22
+    weight: 2
     region: main
 hidden:
   changed: true

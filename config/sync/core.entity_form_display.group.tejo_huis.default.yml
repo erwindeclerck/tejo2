@@ -18,10 +18,12 @@ dependencies:
     - field.field.group.tejo_huis.field_telefoon
     - field.field.group.tejo_huis.field_top_link
     - group.type.tejo_huis
+    - image.style.medium
     - image.style.thumbnail
   module:
     - address
     - field_group
+    - focal_point
     - image
     - leaflet
     - link
@@ -156,12 +158,14 @@ content:
       size: 60
     third_party_settings: {  }
   field_gevel:
-    type: image_image
+    type: image_focal_point
     weight: 3
     region: content
     settings:
       progress_indicator: throbber
-      preview_image_style: thumbnail
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
     third_party_settings: {  }
   field_hero:
     type: image_image

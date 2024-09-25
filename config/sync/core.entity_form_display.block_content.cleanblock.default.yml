@@ -1,10 +1,10 @@
-uuid: 2066cf49-f4a6-4463-be66-8fa3d94543a7
+uuid: 075deda4-19e3-496f-a56f-1300dbd566f8
 langcode: nl
 status: true
 dependencies:
   config:
     - block_content.type.cleanblock
-    - field.field.block_content.cleanblock.field_content
+    - field.field.block_content.cleanblock.body
   module:
     - text
 id: block_content.cleanblock.default
@@ -12,13 +12,15 @@ targetEntityType: block_content
 bundle: cleanblock
 mode: default
 content:
-  field_content:
-    type: text_textarea
+  body:
+    type: text_textarea_with_summary
     weight: 26
     region: content
     settings:
-      rows: 5
+      rows: 9
+      summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   info:
     type: string_textfield

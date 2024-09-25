@@ -306,24 +306,9 @@ display:
                 delay: '800'
                 address_format: default_formatted_address
       pager:
-        type: mini
+        type: none
         options:
           offset: 0
-          pagination_heading_level: h4
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per pagina'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
-            offset: false
-            offset_label: Offset
       exposed_form:
         type: basic
         options:
@@ -403,7 +388,7 @@ display:
             value: label
             options: '{"permanent":false,"direction":"center"}'
           leaflet_popup:
-            value: label
+            value: ''
             options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
             view_mode: token
           leaflet_map: 'OSM Mapnik'
@@ -422,7 +407,7 @@ display:
           locate:
             control: true
             options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
-            automatic: true
+            automatic: false
           map_position:
             force: true
             center:
@@ -506,7 +491,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
       tags:
         - 'config:field.storage.group.field_locatie'
   attachment_1:
@@ -651,6 +635,10 @@ display:
                 min_terms: '4'
                 delay: '800'
                 address_format: default_formatted_address
+      pager:
+        type: none
+        options:
+          offset: 0
       style:
         type: default
         options:
@@ -903,6 +891,5 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
       tags:
         - 'config:field.storage.group.field_locatie'

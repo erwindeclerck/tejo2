@@ -1,49 +1,23 @@
-uuid: d8166dfa-b81c-4512-b660-44f9bea443aa
+uuid: e59afc5d-36d2-4f8b-bae4-b8b054e8117a
 langcode: nl
 status: true
 dependencies:
   config:
     - block_content.type.cleanblock
-    - field.field.block_content.cleanblock.field_content
+    - field.field.block_content.cleanblock.body
   module:
-    - ds
     - text
-third_party_settings:
-  ds:
-    layout:
-      id: bs_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        layout:
-          wrapper: div
-          classes:
-            row: row
-          add_layout_class: 1
-          attributes: ''
-        regions:
-          main:
-            wrapper: div
-            classes:
-              col-sm-12: col-sm-12
-            add_region_classes: 1
-            attributes: ''
-    regions:
-      main:
-        - field_content
 id: block_content.cleanblock.default
 targetEntityType: block_content
 bundle: cleanblock
 mode: default
 content:
-  field_content:
+  body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
-    region: main
+    region: content
 hidden:
   langcode: true

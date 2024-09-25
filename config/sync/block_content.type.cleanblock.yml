@@ -1,8 +1,8 @@
-uuid: b58bd43a-8504-4937-acfe-ca923d48e37a
+uuid: 6b797e36-4f98-489f-b7ee-e05940981faa
 langcode: nl
 status: true
 dependencies: {  }
 id: cleanblock
 label: Cleanblock
 revision: false
-description: 'Zonder opmaak'
+description: null
