@@ -99,9 +99,10 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 2rem;
     // overflow-x: auto;
     .logo {
-      @include tejoboxhover2;
+     // @include tejoboxhover2;
       // background-color: yellow;
       border-radius: 1rem;
       a{

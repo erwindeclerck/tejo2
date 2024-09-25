@@ -59,6 +59,7 @@ ol.blueball {
     margin: 0 0 1rem 4rem;
     padding: 4px 16px;
     list-style: none;
+    font-size: 1.2em;
   }
   & > li:before {
     content: counter(li);

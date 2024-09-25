@@ -11143,7 +11143,8 @@ ol.blueball {
     position: relative;
     margin: 0 0 1rem 4rem;
     padding: 4px 16px;
-    list-style: none; }
+    list-style: none;
+    font-size: 1.2em; }
   ol.blueball > li:before {
     content: counter(li);
     counter-increment: li;
@@ -12745,13 +12746,10 @@ P03 drie KEER FOTO/TEKST
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 2rem; }
   .logoset .logos .logo {
-    box-shadow: 2px 2px 10px -2px rgba(196, 34, 34, 0);
-    transition: box-shadow 0.2s;
     border-radius: 1rem; }
-    .logoset .logos .logo:hover {
-      box-shadow: 4px 0 15px -5px #001d4c; }
     .logoset .logos .logo a {
       padding: 5px;
       display: block;
