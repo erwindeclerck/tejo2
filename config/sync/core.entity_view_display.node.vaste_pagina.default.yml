@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.vaste_pagina.field_oproep
     - field.field.node.vaste_pagina.field_pdf
     - field.field.node.vaste_pagina.field_video
-    - image.style.letterbox_1600x1000
+    - image.style.letterbox_1600x800
     - node.type.vaste_pagina
   module:
     - ds
@@ -126,7 +126,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: letterbox_1600x1000
+      image_style: letterbox_1600x800
       image_loading:
         attribute: lazy
     third_party_settings:

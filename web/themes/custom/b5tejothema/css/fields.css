@@ -4,7 +4,7 @@ album
 .field--name-field-album
 {
 }
-.field--name-field-album .field__items
+.field--name-field-album.field__items
 {
   display: flex;
   flex-direction: row;
@@ -12,14 +12,14 @@ album
   gap: 8px;
   margin-bottom: 30px;
 }
-.field--name-field-album .field__items .field__item
+.field--name-field-album.field__items .field__item
 {
   width: 146px;
 }
-.field--name-field-album .field__items .field__item A.colorbox
+.field--name-field-album.field__items .field__item A.colorbox
 {
 }
-.field--name-field-album .field__items .field__item A.colorbox IMG
+.field--name-field-album.field__items .field__item A.colorbox IMG
 {
 }
 

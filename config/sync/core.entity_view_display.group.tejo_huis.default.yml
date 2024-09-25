@@ -507,7 +507,7 @@ content:
     region: main
   field_sponsor:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: gelinkt_logo
       link: false

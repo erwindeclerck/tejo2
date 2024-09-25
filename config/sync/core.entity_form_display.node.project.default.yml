@@ -1,0 +1,126 @@
+uuid: 9ef74984-251f-493c-a708-e2db52d3c1f5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_album
+    - field.field.node.project.field_hero
+    - field.field.node.project.field_projectlinks
+    - field.field.node.project.field_wat_de_pers_schrijft
+    - image.style.medium
+    - node.type.project
+  module:
+    - focal_point
+    - link
+    - paragraphs
+    - path
+    - text
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_album:
+    type: image_focal_point
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: albumcrop
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings:
+      filefield_sources:
+        filefield_sources:
+          sources:
+            upload: true
+            remote: false
+            clipboard: false
+            reference: false
+            attach: false
+          source_reference:
+            autocomplete: '0'
+            search_all_fields: '0'
+          source_attach:
+            path: file_attach
+            absolute: 0
+            attach_mode: move
+  field_hero:
+    type: image_focal_point
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+  field_projectlinks:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_wat_de_pers_schrijft:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Paragraaf
+      title_plural: Paragrafen
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

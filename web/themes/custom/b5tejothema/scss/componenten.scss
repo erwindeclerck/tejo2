@@ -46,6 +46,29 @@ h2 {
   color:white;
 }
 
+.tejobluebutton a {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: $tejoblauw;
+  color: $tejowit;
+  border: 1px solid $tejoblauw;
+  border-radius: 50px;
+  padding: 16px 32px;
+}
+
+
+.tejobluebutton a:hover {
+  background-color:$tejorood;
+  color:white;
+}
+
 /* big blue ordered list bullets */
 /* https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ */
 

@@ -9083,6 +9083,24 @@
   .ck-content .tejobutton a:hover {
     background-color: #DF3725;
     color: white; }
+  .ck-content .tejobluebutton a {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #0c3f7c;
+    color: white;
+    border: 1px solid #0c3f7c;
+    border-radius: 50px;
+    padding: 16px 32px; }
+  .ck-content .tejobluebutton a:hover {
+    background-color: #e03726;
+    color: white; }
   .ck-content ol.blueball {
     counter-reset: li;
     margin-left: 0;

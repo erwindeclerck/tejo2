@@ -11133,6 +11133,26 @@ h2, .h2 {
   background-color: #DF3725;
   color: white; }
 
+.tejobluebutton a {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #0c3f7c;
+  color: white;
+  border: 1px solid #0c3f7c;
+  border-radius: 50px;
+  padding: 16px 32px; }
+
+.tejobluebutton a:hover {
+  background-color: #e03726;
+  color: white; }
+
 /* big blue ordered list bullets */
 /* https://www.456bereastreet.com/archive/201105/styling_ordered_list_numbers/ */
 ol.blueball {

@@ -1,0 +1,39 @@
+uuid: 770b092b-aa03-4528-b74e-f1bd78284069
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.body
+    - field.field.node.project.field_album
+    - field.field.node.project.field_hero
+    - field.field.node.project.field_projectlinks
+    - field.field.node.project.field_wat_de_pers_schrijft
+    - node.type.project
+  module:
+    - text
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_album: true
+  field_hero: true
+  field_projectlinks: true
+  field_wat_de_pers_schrijft: true
+  langcode: true

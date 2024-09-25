@@ -1,0 +1,22 @@
+uuid: dbf4bf7a-112c-40f6-9e6a-b62ad6920ec7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.project
+id: node.project.promote
+field_name: promote
+entity_type: node
+bundle: project
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,111 @@
+uuid: ce61c2ed-c4a0-460e-8cde-5e43e477e790
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_wat_de_pers_schrijft
+    - node.type.project
+    - paragraphs.paragraphs_type.p03
+    - paragraphs.paragraphs_type.p04
+  module:
+    - entity_reference_revisions
+id: node.project.field_wat_de_pers_schrijft
+field_name: field_wat_de_pers_schrijft
+entity_type: node
+bundle: project
+label: 'Wat de pers schrijft'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      p03: p03
+      p04: p04
+    negate: 0
+    target_bundles_drag_drop:
+      bp_accordion:
+        weight: 28
+        enabled: false
+      bp_accordion_section:
+        weight: 29
+        enabled: false
+      bp_blank:
+        weight: 30
+        enabled: false
+      bp_block:
+        weight: 31
+        enabled: false
+      bp_callout:
+        weight: 32
+        enabled: false
+      bp_card:
+        weight: 33
+        enabled: false
+      bp_carousel:
+        weight: 34
+        enabled: false
+      bp_column_wrapper:
+        weight: 35
+        enabled: false
+      bp_columns:
+        weight: 36
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 37
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 38
+        enabled: false
+      bp_image:
+        weight: 39
+        enabled: false
+      bp_modal:
+        weight: 40
+        enabled: false
+      bp_simple:
+        weight: 41
+        enabled: false
+      bp_tab_section:
+        weight: 42
+        enabled: false
+      bp_tabs:
+        weight: 43
+        enabled: false
+      bp_view:
+        weight: 44
+        enabled: false
+      p00:
+        weight: 45
+        enabled: false
+      p01:
+        weight: 46
+        enabled: false
+      p01_card_hor:
+        weight: 47
+        enabled: false
+      p01_quote:
+        weight: 48
+        enabled: false
+      p02:
+        weight: 49
+        enabled: false
+      p03:
+        weight: 50
+        enabled: true
+      p04:
+        weight: 51
+        enabled: true
+      p05:
+        weight: 52
+        enabled: false
+      p10:
+        weight: 53
+        enabled: false
+      p11:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions
