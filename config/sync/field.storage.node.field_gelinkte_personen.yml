@@ -1,0 +1,19 @@
+uuid: 0bb1ca4b-4f07-40e5-bab8-a38b92e67b03
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_gelinkte_personen
+field_name: field_gelinkte_personen
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

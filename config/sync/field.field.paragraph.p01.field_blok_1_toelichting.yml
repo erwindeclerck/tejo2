@@ -1,0 +1,24 @@
+uuid: 2d1459ef-1cc8-4ca5-b5e1-dc95d6e12c96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blok_1_toelichting
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.p01
+  module:
+    - text
+id: paragraph.p01.field_blok_1_toelichting
+field_name: field_blok_1_toelichting
+entity_type: paragraph
+bundle: p01
+label: 'Blok 1 toelichting'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

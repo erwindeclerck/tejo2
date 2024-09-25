@@ -1,0 +1,24 @@
+uuid: b51da069-a30d-443e-ad83-9a7b19e71692
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extra
+    - filter.format.full_html
+    - node.type.vaste_pagina
+  module:
+    - text
+id: node.vaste_pagina.field_extra
+field_name: field_extra
+entity_type: node
+bundle: vaste_pagina
+label: Extra
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,14 @@
+uuid: 5e8b4d94-8363-4dc7-a8f4-3e5db68fb640
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+id: tejo_huis-admin
+label: Admin
+weight: 100
+admin: true
+scope: individual
+global_role: null
+group_type: tejo_huis
+permissions: {  }

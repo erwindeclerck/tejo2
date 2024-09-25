@@ -1,0 +1,10 @@
+uuid: 41e65ec2-372d-4481-a0a1-dc9b75c54976
+langcode: en
+status: true
+dependencies: {  }
+id: p03
+label: P03
+icon_uuid: null
+icon_default: null
+description: "Drie kaarten naast elkaar\r\nFoto/video tekst link\r\n- wit of lichtblauw"
+behavior_plugins: {  }

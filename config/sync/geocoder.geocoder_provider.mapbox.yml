@@ -1,0 +1,18 @@
+uuid: 432b47a0-71a8-48a3-b3b3-27a007f8f49a
+langcode: nl
+status: true
+dependencies: {  }
+id: mapbox
+label: Mapbox
+plugin: mapbox
+configuration:
+  throttle:
+    period: null
+    limit: null
+  geocoder:
+    locale: ''
+  accessToken: pk.eyJ1IjoiZXJ3aW5kZWNsZXJjayIsImEiOiJjbHh0bGw3ajMwNnR6MnFzY2djdDRxbW4zIn0.IYL-k1rpkvBqcMDrX7VcAg
+  country: Be
+  geocodingMode: mapbox.places
+  location_type: address
+  fuzzy_match: false

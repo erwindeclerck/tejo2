@@ -1,0 +1,24 @@
+uuid: 07f7beba-1258-4357-909a-5cd03ae70b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_openingsuren
+    - filter.format.basic_html
+    - group.type.tejo_huis
+  module:
+    - text
+id: group.tejo_huis.field_openingsuren
+field_name: field_openingsuren
+entity_type: group
+bundle: tejo_huis
+label: Openingsuren
+description: 'Gebruik dit veld om de openingsuren en -dagen op te sommen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

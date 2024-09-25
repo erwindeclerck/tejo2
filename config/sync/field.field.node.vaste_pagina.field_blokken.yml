@@ -1,0 +1,173 @@
+uuid: 693ec34a-aeb9-4e10-811a-e38260ea6cf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blokken
+    - node.type.vaste_pagina
+    - paragraphs.paragraphs_type.p00
+    - paragraphs.paragraphs_type.p01
+    - paragraphs.paragraphs_type.p01_card_hor
+    - paragraphs.paragraphs_type.p01_quote
+    - paragraphs.paragraphs_type.p02
+    - paragraphs.paragraphs_type.p03
+    - paragraphs.paragraphs_type.p05
+    - paragraphs.paragraphs_type.p10
+    - paragraphs.paragraphs_type.p11
+  module:
+    - entity_reference_revisions
+id: node.vaste_pagina.field_blokken
+field_name: field_blokken
+entity_type: node
+bundle: vaste_pagina
+label: Blokken
+description: 'Gebruik dit veld om rijen met velden toe te voegen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      p00: p00
+      p01: p01
+      p01_card_hor: p01_card_hor
+      p01_quote: p01_quote
+      p02: p02
+      p03: p03
+      p05: p05
+      p10: p10
+      p11: p11
+    negate: 0
+    target_bundles_drag_drop:
+      blauwblok_brick_2_kolommen_text:
+        weight: -85
+        enabled: false
+      bp_accordion:
+        weight: -71
+        enabled: false
+      bp_accordion_section:
+        weight: -70
+        enabled: false
+      bp_blank:
+        weight: -69
+        enabled: false
+      bp_block:
+        weight: -68
+        enabled: false
+      bp_callout:
+        weight: -67
+        enabled: false
+      bp_card:
+        weight: -66
+        enabled: false
+      bp_carousel:
+        weight: -65
+        enabled: false
+      bp_column_wrapper:
+        weight: -61
+        enabled: false
+      bp_columns:
+        weight: -64
+        enabled: false
+      bp_columns_three_uneven:
+        weight: -63
+        enabled: false
+      bp_columns_two_uneven:
+        weight: -62
+        enabled: false
+      bp_image:
+        weight: -60
+        enabled: false
+      bp_modal:
+        weight: -59
+        enabled: false
+      bp_simple:
+        weight: -58
+        enabled: false
+      bp_tab_section:
+        weight: -56
+        enabled: false
+      bp_tabs:
+        weight: -57
+        enabled: false
+      bp_view:
+        weight: -55
+        enabled: false
+      drie_kolommen_steekkaarten:
+        weight: -86
+        enabled: false
+      duoblok_ag_lichtblauw_tx_blauw:
+        weight: -79
+        enabled: false
+      duoblok_ag_lichtblauw_tx_wit:
+        weight: -78
+        enabled: false
+      edc1:
+        weight: -54
+        enabled: false
+      grootblauw_brick:
+        weight: -77
+        enabled: false
+      horizontaal_l_foto_r_tekst:
+        weight: -84
+        enabled: false
+      horizontaal_l_tekst_r_foto:
+        weight: -83
+        enabled: false
+      p00:
+        weight: -53
+        enabled: true
+      p01:
+        weight: -52
+        enabled: true
+      p01_card_hor:
+        weight: -51
+        enabled: true
+      p01_quote:
+        weight: -50
+        enabled: true
+      p02:
+        weight: -49
+        enabled: true
+      p03:
+        weight: -48
+        enabled: true
+      p05:
+        weight: -47
+        enabled: true
+      p10:
+        weight: -46
+        enabled: true
+      p11:
+        weight: -45
+        enabled: true
+      quote_block_l_foto_r_quote:
+        weight: -82
+        enabled: false
+      quote_block_l_quote_r_foto:
+        weight: -81
+        enabled: false
+      spacer_ag_blauw_tx_wit:
+        weight: -76
+        enabled: false
+      spacer_ag_wit_tx_blauw:
+        weight: -75
+        enabled: false
+      test_paragraph:
+        weight: -74
+        enabled: false
+      twee_horizontaal_foto_titel_teks:
+        weight: -80
+        enabled: false
+      wave_top_blauw_bot_wit:
+        weight: -73
+        enabled: false
+      wave_top_wit_bot_blauw:
+        weight: -72
+        enabled: false
+      witblok_brick_2_kolommen_text_be:
+        weight: -87
+        enabled: false
+field_type: entity_reference_revisions

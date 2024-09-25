@@ -1,0 +1,19 @@
+uuid: 39cc02f8-fa3b-4d38-b292-1aca7f4f8c44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blok_4_titel
+    - paragraphs.paragraphs_type.p04
+id: paragraph.p04.field_blok_4_titel
+field_name: field_blok_4_titel
+entity_type: paragraph
+bundle: p04
+label: 'Blok 4 titel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

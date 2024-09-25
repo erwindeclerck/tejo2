@@ -1,0 +1,25 @@
+uuid: 8cf9a181-1530-4967-97ca-397a54548a18
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.voetmenu-links
+  module:
+    - system
+  theme:
+    - b5tejothema
+id: b5tejothema_voetmenulinks
+theme: b5tejothema
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:voetmenu-links'
+settings:
+  id: 'system_menu_block:voetmenu-links'
+  label: HULPAANBOD
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

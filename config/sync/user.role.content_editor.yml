@@ -1,0 +1,63 @@
+uuid: 64b852e9-6138-41e3-a00a-61fd79156f52
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.aankondiging
+    - node.type.article
+    - node.type.homepagina
+    - node.type.oproep
+    - node.type.organisatie
+    - node.type.persoon
+    - node.type.vacature
+    - node.type.vaste_pagina
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - filter
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: Redacteur
+weight: -8
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer url aliases'
+  - 'create aankondiging content'
+  - 'create article content'
+  - 'create homepagina content'
+  - 'create oproep content'
+  - 'create organisatie content'
+  - 'create persoon content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create vacature content'
+  - 'create vaste_pagina content'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'edit any aankondiging content'
+  - 'edit any article content'
+  - 'edit any homepagina content'
+  - 'edit any oproep content'
+  - 'edit any organisatie content'
+  - 'edit any persoon content'
+  - 'edit any vacature content'
+  - 'edit any vaste_pagina content'
+  - 'edit own comments'
+  - 'edit terms in tags'
+  - 'use text format full_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

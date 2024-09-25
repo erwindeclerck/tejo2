@@ -1,0 +1,541 @@
+uuid: 300570c3-7f70-449d-8d5a-1282b07178ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p01_quote.field_blok_1_afbeelding
+    - field.field.paragraph.p01_quote.field_blok_1_link
+    - field.field.paragraph.p01_quote.field_blok_1_titel
+    - field.field.paragraph.p01_quote.field_blok_1_toelichting
+    - field.field.paragraph.p01_quote.field_blok_1_video
+    - field.field.paragraph.p01_quote.field_links_rechts
+    - field.field.paragraph.p01_quote.field_sectie_link
+    - field.field.paragraph.p01_quote.field_sectie_titel
+    - field.field.paragraph.p01_quote.field_sectie_toelichting
+    - field.field.paragraph.p01_quote.field_sectievoet
+    - field.field.paragraph.p01_quote.field_vormgeving
+    - image.style.square_1600x1600
+    - paragraphs.paragraphs_type.p01_quote
+  module:
+    - ds
+    - field_group
+    - image
+    - link
+    - text
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_sectie:
+      children:
+        - field_sectie_titel
+        - field_sectie_toelichting
+      label: Sectiekop
+      parent_name: group_col
+      region: main
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: sectiekop
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_blok_1:
+      children:
+        - field_blok_1_afbeelding
+        - field_blok_1_video
+      label: 'Blok A'
+      parent_name: group_blokken
+      region: main
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: 'blok blok1'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_blokken:
+      children:
+        - group_blok_1
+        - group_blok_2
+      label: Blokken
+      parent_name: group_col
+      region: main
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: blokken
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_sectievoet:
+      children:
+        - field_sectievoet
+        - field_sectie_link
+      label: Sectievoet
+      parent_name: group_col
+      region: main
+      weight: 4
+      format_type: html_element
+      format_settings:
+        classes: sectievoet
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_blok_2:
+      children:
+        - field_blok_1_titel
+        - field_blok_1_toelichting
+        - field_blok_1_link
+      label: 'Blok B'
+      parent_name: group_blokken
+      region: main
+      weight: 3
+      format_type: html_element
+      format_settings:
+        classes: 'blok2 blok'
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_break_out:
+      children:
+        - group_container
+      label: Break-out
+      parent_name: ''
+      region: main
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: break-out
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_container:
+      children:
+        - group_row
+      label: Container
+      parent_name: group_break_out
+      region: main
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: container
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_col:
+      children:
+        - group_sectie
+        - group_blokken
+        - group_sectievoet
+      label: Col
+      parent_name: group_row
+      region: main
+      weight: 21
+      format_type: html_element
+      format_settings:
+        classes: col
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_row:
+      children:
+        - group_col
+      label: Row
+      parent_name: group_container
+      region: main
+      weight: 20
+      format_type: html_element
+      format_settings:
+        classes: row
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 0
+            attributes: 'class|[paragraph:field_links_rechts:value]'
+    regions:
+      main:
+        - group_break_out
+        - group_sectie
+        - field_sectie_titel
+        - field_sectie_toelichting
+        - group_blokken
+        - group_blok_1
+        - group_blok_2
+        - field_blok_1_afbeelding
+        - group_sectievoet
+        - field_blok_1_video
+        - field_sectievoet
+        - field_sectie_link
+        - field_blok_1_titel
+        - field_blok_1_toelichting
+        - field_blok_1_link
+        - group_container
+        - group_row
+        - group_col
+id: paragraph.p01_quote.default
+targetEntityType: paragraph
+bundle: p01_quote
+mode: default
+content:
+  field_blok_1_afbeelding:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: square_1600x1600
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 4
+    region: main
+  field_blok_1_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: link
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 10
+    region: main
+  field_blok_1_titel:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: h3
+            fis-cl: titel
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 8
+    region: main
+  field_blok_1_toelichting:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: toelichting
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 9
+    region: main
+  field_blok_1_video:
+    type: video_embed_field_video
+    label: hidden
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 5
+    region: main
+  field_sectie_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: link
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 7
+    region: main
+  field_sectie_titel:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: h2
+            fis-cl: titel
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 1
+    region: main
+  field_sectie_toelichting:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: toelichting
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 2
+    region: main
+  field_sectievoet:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: ''
+            fis-cl: voet
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 6
+    region: main
+hidden:
+  field_links_rechts: true
+  field_vormgeving: true

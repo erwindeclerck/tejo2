@@ -1,0 +1,10 @@
+uuid: 3f6289b3-1458-4458-b6dc-80a3e3a3ef8b
+langcode: en
+status: true
+dependencies: {  }
+id: p01_card_hor
+label: 'P01 Card Hor'
+icon_uuid: null
+icon_default: null
+description: "Horizontaal. \r\nAfbeelding/video en tekst\r\nEenvoudig\r\n- Links en rechts omwisselbaar\r\n- Blauw of wit"
+behavior_plugins: {  }

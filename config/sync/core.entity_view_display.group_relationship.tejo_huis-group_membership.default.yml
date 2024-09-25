@@ -1,0 +1,24 @@
+uuid: 2c46e954-6a3d-4d26-872b-4576447a8149
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.tejo_huis-group_membership.group_roles
+    - group.relationship_type.tejo_huis-group_membership
+id: group_relationship.tejo_huis-group_membership.default
+targetEntityType: group_relationship
+bundle: tejo_huis-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  langcode: true
+  uid: true

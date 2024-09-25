@@ -1,0 +1,19 @@
+uuid: 519f9993-e769-4c15-98ac-32114eae3b27
+langcode: nl
+status: true
+dependencies:
+  module:
+    - group
+    - link
+id: group.field_top_link
+field_name: field_top_link
+entity_type: group
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

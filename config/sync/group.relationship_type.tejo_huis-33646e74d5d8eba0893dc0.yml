@@ -1,0 +1,19 @@
+uuid: 5ad1864d-f36e-4929-be8e-3090331da091
+langcode: nl
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - group_content_menu.group_content_menu_type.tejo_gids
+  module:
+    - group_content_menu
+id: tejo_huis-33646e74d5d8eba0893dc0
+group_type: tejo_huis
+content_plugin: 'group_content_menu:tejo_gids'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false
+  auto_create_group_menu: true
+  auto_create_home_link: true
+  auto_create_home_link_title: 'Ons huis'

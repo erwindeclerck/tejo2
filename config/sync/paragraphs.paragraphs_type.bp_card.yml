@@ -1,0 +1,12 @@
+uuid: 5d29d5b1-fdc0-4dbe-bebe-a44acc78a856
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-eUDDOX_m6--ly2p5rUvBaU7XHs4cTqFTACss9d21N0'
+id: bp_card
+label: Card
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: cbadf9d4-c635-4e91-9485-2621126e645b
+langcode: en
+status: true
+dependencies: {  }
+id: p00
+label: P00
+icon_uuid: null
+icon_default: null
+description: 'Houder voor alle bestaande paragraafvelden'
+behavior_plugins: {  }

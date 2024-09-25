@@ -1,0 +1,19 @@
+uuid: 55913ae4-400e-43a8-b0d3-99275d8bc287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blok_2_titel
+    - paragraphs.paragraphs_type.p00
+id: paragraph.p00.field_blok_2_titel
+field_name: field_blok_2_titel
+entity_type: paragraph
+bundle: p00
+label: 'Blok 2 titel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 42cee51f-93e4-42a6-8d9e-76c049015343
+langcode: nl
+status: true
+dependencies:
+  module:
+    - focal_point
+name: albumcrop
+label: 'AlbumCrop (150x150)'
+effects:
+  1cbba9c3-f497-43de-9577-7bc1bc7de984:
+    uuid: 1cbba9c3-f497-43de-9577-7bc1bc7de984
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      crop_type: focal_point

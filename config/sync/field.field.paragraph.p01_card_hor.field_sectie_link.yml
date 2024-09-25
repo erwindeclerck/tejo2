@@ -1,0 +1,23 @@
+uuid: 50a66e8c-dc44-4bc1-b784-14458e7cb9d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sectie_link
+    - paragraphs.paragraphs_type.p01_card_hor
+  module:
+    - link
+id: paragraph.p01_card_hor.field_sectie_link
+field_name: field_sectie_link
+entity_type: paragraph
+bundle: p01_card_hor
+label: Sectie-link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

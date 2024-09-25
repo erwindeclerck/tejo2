@@ -1,0 +1,24 @@
+uuid: cdf63229-a3f3-449b-a019-3d8202d76235
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.webform
+_core:
+  default_config_hash: FvXJkxryo6J_0TQRlb5Z77Ge-sim5GHzCI1Ft3kZu-4
+id: node.webform.promote
+field_name: promote
+entity_type: node
+bundle: webform
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,17 @@
+uuid: 080c3516-d3f1-4581-881a-dab46b5fa0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - node.type.article
+  module:
+    - gnode
+    - node
+id: tejo_huis-group_node-article
+group_type: tejo_huis
+content_plugin: 'group_node:article'
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

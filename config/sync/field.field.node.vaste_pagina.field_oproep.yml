@@ -1,0 +1,29 @@
+uuid: f93f6ac9-d723-4bd9-a8b8-4af0b7cd3212
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oproep
+    - node.type.oproep
+    - node.type.vaste_pagina
+id: node.vaste_pagina.field_oproep
+field_name: field_oproep
+entity_type: node
+bundle: vaste_pagina
+label: Oproep
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oproep: oproep
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

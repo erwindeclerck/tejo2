@@ -1,0 +1,25 @@
+uuid: 598a247c-9366-4f2c-a0fc-282c65e4a499
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.vaste_pagina
+  module:
+    - video_embed_field
+id: node.vaste_pagina.field_video
+field_name: field_video
+entity_type: node
+bundle: vaste_pagina
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube_playlist: youtube_playlist
+    youtube: youtube
+field_type: video_embed_field

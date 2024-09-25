@@ -1,0 +1,15 @@
+uuid: 0e92480d-227d-4cf6-8867-3aafa91738dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - user.role.authenticated
+id: tejo_huis-member
+label: Member
+weight: -100
+admin: false
+scope: insider
+global_role: authenticated
+group_type: tejo_huis
+permissions: {  }

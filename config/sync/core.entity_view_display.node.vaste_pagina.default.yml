@@ -1,0 +1,183 @@
+uuid: f95fb637-8bd7-4106-b569-2be86c50cebf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vaste_pagina.body
+    - field.field.node.vaste_pagina.field_album
+    - field.field.node.vaste_pagina.field_bijlage
+    - field.field.node.vaste_pagina.field_blokken
+    - field.field.node.vaste_pagina.field_extra
+    - field.field.node.vaste_pagina.field_gelinkte_personen
+    - field.field.node.vaste_pagina.field_hero
+    - field.field.node.vaste_pagina.field_links
+    - field.field.node.vaste_pagina.field_oproep
+    - field.field.node.vaste_pagina.field_pdf
+    - field.field.node.vaste_pagina.field_video
+    - image.style.letterbox_1600x1000
+    - node.type.vaste_pagina
+  module:
+    - ds
+    - entity_reference_revisions
+    - file
+    - image
+    - link
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_hero
+        - node_title
+        - body
+        - field_extra
+        - field_blokken
+        - field_video
+        - field_album
+        - field_bijlage
+        - field_gelinkte_personen
+        - field_links
+        - field_oproep
+        - field_pdf
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: h1
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.vaste_pagina.default
+targetEntityType: node
+bundle: vaste_pagina
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_album:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_bijlage:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_blokken:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_extra:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_gelinkte_personen:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: letterbox_1600x1000
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 0
+    region: content
+  field_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_oproep:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_pdf:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_video:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  links: true

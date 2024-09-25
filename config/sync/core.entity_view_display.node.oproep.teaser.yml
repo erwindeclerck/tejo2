@@ -1,0 +1,41 @@
+uuid: a17d8172-b775-47f9-9356-8d0d7a3f9c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oproep.body
+    - field.field.node.oproep.field_call_to_action
+    - field.field.node.oproep.field_hero
+    - field.field.node.oproep.field_kort
+    - field.field.node.oproep.field_links
+    - field.field.node.oproep.field_omschrijving
+    - node.type.oproep
+  module:
+    - text
+    - user
+id: node.oproep.teaser
+targetEntityType: node
+bundle: oproep
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_call_to_action: true
+  field_hero: true
+  field_kort: true
+  field_links: true
+  field_omschrijving: true
+  langcode: true

@@ -1,0 +1,10 @@
+uuid: c83a2b7e-3793-41df-8266-32f19d75ed60
+langcode: nl
+status: true
+dependencies: {  }
+id: p10
+label: 'P10 - Kop met Q&A'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

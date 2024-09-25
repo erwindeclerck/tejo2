@@ -1,0 +1,18 @@
+uuid: 42ad39fa-918c-41fb-afd4-c43145c0b524
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+id: group.field_e_mail
+field_name: field_e_mail
+entity_type: group
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 02c2bdda-8a0d-42d8-a276-c9efc2d5a668
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_beschrijving
+    - filter.format.basic_html
+    - group.type.tejo_huis
+  module:
+    - text
+id: group.tejo_huis.field_beschrijving
+field_name: field_beschrijving
+entity_type: group
+bundle: tejo_huis
+label: Beschrijving
+description: "Beschrijf dit TEJO-huis, in welke regio en/of in welke wijk het ligt.<br>\r\nWaar het huis vandaan komt welke diensten en faciliteiten er voorhanden zijn."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

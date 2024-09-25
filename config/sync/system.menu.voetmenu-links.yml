@@ -1,0 +1,8 @@
+uuid: 26951f3d-d8f0-4137-96a7-ec041d405a38
+langcode: nl
+status: true
+dependencies: {  }
+id: voetmenu-links
+label: 'Voetmenu links'
+description: ''
+locked: false

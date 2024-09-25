@@ -1,0 +1,19 @@
+uuid: 755bfb8b-9f7d-4cfb-9431-246a96b50edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sectie_titel
+    - paragraphs.paragraphs_type.p02
+id: paragraph.p02.field_sectie_titel
+field_name: field_sectie_titel
+entity_type: paragraph
+bundle: p02
+label: Sectie-titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

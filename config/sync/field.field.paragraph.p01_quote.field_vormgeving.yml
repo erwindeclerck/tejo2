@@ -1,0 +1,21 @@
+uuid: 8ac0a5f5-9453-4f31-b862-3112c2aba14c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_vormgeving
+    - paragraphs.paragraphs_type.p01_quote
+  module:
+    - options
+id: paragraph.p01_quote.field_vormgeving
+field_name: field_vormgeving
+entity_type: paragraph
+bundle: p01_quote
+label: Vormgeving
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

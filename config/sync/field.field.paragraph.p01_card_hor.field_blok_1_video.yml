@@ -1,0 +1,25 @@
+uuid: 1e59df20-5856-4dfd-a030-89a501097d0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blok_1_video
+    - paragraphs.paragraphs_type.p01_card_hor
+  module:
+    - video_embed_field
+id: paragraph.p01_card_hor.field_blok_1_video
+field_name: field_blok_1_video
+entity_type: paragraph
+bundle: p01_card_hor
+label: 'Blok 1 video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube_playlist: youtube_playlist
+    youtube: youtube
+field_type: video_embed_field

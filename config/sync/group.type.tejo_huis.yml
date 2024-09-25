@@ -1,0 +1,12 @@
+uuid: f691a635-c11a-46c1-96a1-eb78d7978f8c
+langcode: en
+status: true
+dependencies: {  }
+id: tejo_huis
+label: TEJO-huis
+description: ''
+new_revision: true
+creator_membership: true
+creator_wizard: false
+creator_roles:
+  - tejo_huis-admin

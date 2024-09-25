@@ -1,0 +1,10 @@
+uuid: e465a7cc-be46-4e39-9ecf-ff5ec8e8a7f0
+langcode: nl
+status: true
+dependencies: {  }
+id: p11
+label: 'P11 - Kop met Body'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

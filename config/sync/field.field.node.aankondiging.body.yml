@@ -1,0 +1,26 @@
+uuid: 3439f0c4-5381-4ee4-8192-0d56953ae0a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - node.type.aankondiging
+  module:
+    - text
+id: node.aankondiging.body
+field_name: body
+entity_type: node
+bundle: aankondiging
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

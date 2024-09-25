@@ -1,0 +1,22 @@
+uuid: 91d04604-f584-4690-a897-edb1a1ef7730
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b5tejothema
+_core:
+  default_config_hash: CLSs3J9JRJifpWi9moNkLaCdJ922sU6OLvlScSGHMVw
+id: b5tejothema_breadcrumbs
+theme: b5tejothema
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 6fcc8f0d-ae28-44b7-8744-3bc0eadef00d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.voetmenu-rechts
+  module:
+    - system
+  theme:
+    - b5tejothema
+id: b5tejothema_voetmenurechts
+theme: b5tejothema
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:voetmenu-rechts'
+settings:
+  id: 'system_menu_block:voetmenu-rechts'
+  label: 'INFORMATIE EN ACTUALITEIT'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

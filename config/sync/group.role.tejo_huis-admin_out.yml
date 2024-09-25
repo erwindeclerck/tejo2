@@ -1,0 +1,15 @@
+uuid: bdf9fbdf-7442-4437-b5f2-70b833fbf9cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.tejo_huis
+    - user.role.administrator
+id: tejo_huis-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: tejo_huis
+permissions: {  }

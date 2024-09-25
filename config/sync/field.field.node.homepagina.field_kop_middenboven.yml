@@ -1,0 +1,19 @@
+uuid: b774cd42-c9c7-4e64-bf02-a427ed68cad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kop_middenboven
+    - node.type.homepagina
+id: node.homepagina.field_kop_middenboven
+field_name: field_kop_middenboven
+entity_type: node
+bundle: homepagina
+label: 'Kop middenboven'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,29 @@
+uuid: 485e2ca9-47f7-4153-b92f-97960d53e58e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - group
+  theme:
+    - b5tejothema
+_core:
+  default_config_hash: DUNWrp_PkAetQM9YEv_CLtwQ7Uje6OAH_ILsa8ZLohA
+id: b5tejothema_page_title
+theme: b5tejothema
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: true
+    context_mapping:
+      group: '@group.group_route_context:group'
+    bundles:
+      tejo_huis: tejo_huis

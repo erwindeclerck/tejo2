@@ -1,0 +1,24 @@
+uuid: 56db547e-6f17-4f2d-bf23-dd6226479a5b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sectievoet
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.p02
+  module:
+    - text
+id: paragraph.p02.field_sectievoet
+field_name: field_sectievoet
+entity_type: paragraph
+bundle: p02
+label: Sectie-voet
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

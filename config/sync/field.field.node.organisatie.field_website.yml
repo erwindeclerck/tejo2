@@ -1,0 +1,23 @@
+uuid: 073d69cf-9ed8-45b1-aa03-f33f67a1fcc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website
+    - node.type.organisatie
+  module:
+    - link
+id: node.organisatie.field_website
+field_name: field_website
+entity_type: node
+bundle: organisatie
+label: Website
+description: "Voer één of meerdere url's in van relevante websites, betrokken bij of gekoppeld aan deze organisatie."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

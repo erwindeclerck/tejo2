@@ -1,0 +1,34 @@
+uuid: 300ab41e-106d-422e-a01a-9df3a730516f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.aankondiging
+    - node.type.article
+    - node.type.oproep
+    - node.type.organisatie
+    - node.type.persoon
+    - node.type.vacature
+    - node.type.vaste_pagina
+    - node.type.webformpagina
+  module:
+    - filter
+    - group
+    - node
+id: adminredacteur
+label: Adminredacteur
+weight: -7
+is_admin: null
+permissions:
+  - 'access group overview'
+  - 'create tejo_huis group'
+  - 'delete any aankondiging content'
+  - 'delete any article content'
+  - 'delete any oproep content'
+  - 'delete any organisatie content'
+  - 'delete any persoon content'
+  - 'delete any vacature content'
+  - 'delete any vaste_pagina content'
+  - 'delete any webformpagina content'
+  - 'use text format full_html'

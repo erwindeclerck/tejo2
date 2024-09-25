@@ -1,0 +1,194 @@
+uuid: 1f0e6dad-433c-45c6-81c6-706fd4c6f5cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_album
+    - field.field.node.article.field_breedte
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_hoofdtekst
+    - field.field.node.article.field_kandidaat_homepagina
+    - field.field.node.article.field_links
+    - field.field.node.article.field_oproep
+    - field.field.node.article.field_persoon
+    - field.field.node.article.field_samenvatting
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_video
+    - image.style.albumcrop
+    - image.style.letterbox_1600x600
+    - node.type.article
+  module:
+    - colorbox
+    - ds
+    - image
+    - link
+    - text
+    - user
+    - video_embed_field
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: 'class|[node:field_breedte:value]'
+    regions:
+      main:
+        - node_title
+        - field_hero
+        - field_hoofdtekst
+        - field_album
+        - field_oproep
+        - field_video
+        - field_persoon
+        - field_tags
+        - field_links
+        - 'bundle_field:node'
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+      'bundle_field:node':
+        plugin_id: 'bundle_field:node'
+        weight: 9
+        label: hidden
+        formatter: default
+_core:
+  default_config_hash: br6izr-iGEu--JvNbCJNtOBpRnxpFLXfoV5y61U9Nqc
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  field_album:
+    type: colorbox
+    label: above
+    settings:
+      colorbox_node_style: albumcrop
+      colorbox_node_style_first: ''
+      colorbox_image_style: ''
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 3
+    region: main
+  field_hero:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: letterbox_1600x600
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 1
+    region: main
+  field_hoofdtekst:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: main
+  field_links:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: main
+  field_oproep:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: main
+  field_persoon:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: persooninset
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    weight: 6
+    region: main
+  field_tags:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: main
+  field_video:
+    type: video_embed_field_video
+    label: above
+    settings:
+      autoplay: true
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 5
+    region: main
+hidden:
+  body: true
+  comment: true
+  field_breedte: true
+  field_kandidaat_homepagina: true
+  field_samenvatting: true
+  langcode: true
+  links: true

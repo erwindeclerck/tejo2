@@ -1,0 +1,19 @@
+uuid: a108cb8a-5560-4c95-9559-6b21105e2e49
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sectie_titel
+    - paragraphs.paragraphs_type.p11
+id: paragraph.p11.field_sectie_titel
+field_name: field_sectie_titel
+entity_type: paragraph
+bundle: p11
+label: Sectie-titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

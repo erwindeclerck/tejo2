@@ -1,0 +1,29 @@
+uuid: c001f322-79e9-4b22-a430-4b6dd67f87b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gelinkte_personen
+    - node.type.organisatie
+    - node.type.persoon
+id: node.organisatie.field_gelinkte_personen
+field_name: field_gelinkte_personen
+entity_type: node
+bundle: organisatie
+label: 'Gelinkte personen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      persoon: persoon
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

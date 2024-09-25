@@ -1,0 +1,249 @@
+uuid: ae51a9db-72c9-4889-8882-45c04e82b232
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p03.field_blok_1_afbeelding
+    - field.field.paragraph.p03.field_blok_1_link
+    - field.field.paragraph.p03.field_blok_1_titel
+    - field.field.paragraph.p03.field_blok_1_toelichting
+    - field.field.paragraph.p03.field_blok_1_video
+    - field.field.paragraph.p03.field_blok_2_afbeelding
+    - field.field.paragraph.p03.field_blok_2_link
+    - field.field.paragraph.p03.field_blok_2_titel
+    - field.field.paragraph.p03.field_blok_2_toelichting
+    - field.field.paragraph.p03.field_blok_2_video
+    - field.field.paragraph.p03.field_blok_3_afbeelding
+    - field.field.paragraph.p03.field_blok_3_link
+    - field.field.paragraph.p03.field_blok_3_titel
+    - field.field.paragraph.p03.field_blok_3_toelichting
+    - field.field.paragraph.p03.field_blok_3_video
+    - field.field.paragraph.p03.field_sectie_link
+    - field.field.paragraph.p03.field_sectie_titel
+    - field.field.paragraph.p03.field_sectie_toelichting
+    - field.field.paragraph.p03.field_sectievoet
+    - field.field.paragraph.p03.field_vormgeving
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.p03
+  module:
+    - field_group
+    - image
+    - link
+    - text
+    - video_embed_field
+third_party_settings:
+  field_group:
+    group_blok_1:
+      children:
+        - field_blok_1_titel
+        - field_blok_1_toelichting
+        - field_blok_1_afbeelding
+        - field_blok_1_video
+        - field_blok_1_link
+      label: 'Blok 1'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+    group_blok_2:
+      children:
+        - field_blok_2_titel
+        - field_blok_2_toelichting
+        - field_blok_2_afbeelding
+        - field_blok_2_video
+        - field_blok_2_link
+      label: 'Blok 2'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+    group_blok_3:
+      children:
+        - field_blok_3_titel
+        - field_blok_3_toelichting
+        - field_blok_3_afbeelding
+        - field_blok_3_video
+        - field_blok_3_link
+      label: 'Blok 3'
+      region: content
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+        required_fields: true
+id: paragraph.p03.default
+targetEntityType: paragraph
+bundle: p03
+mode: default
+content:
+  field_blok_1_afbeelding:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_blok_1_link:
+    type: link_default
+    weight: 8
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_blok_1_titel:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_1_toelichting:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_1_video:
+    type: video_embed_field_textfield
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_blok_2_afbeelding:
+    type: image_image
+    weight: 14
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_blok_2_link:
+    type: link_default
+    weight: 16
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_blok_2_titel:
+    type: string_textfield
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_2_toelichting:
+    type: text_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_2_video:
+    type: video_embed_field_textfield
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_blok_3_afbeelding:
+    type: image_image
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_blok_3_link:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_blok_3_titel:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_3_toelichting:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_blok_3_video:
+    type: video_embed_field_textfield
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sectie_link:
+    type: link_default
+    weight: 8
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sectie_titel:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sectie_toelichting:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_sectievoet:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_vormgeving:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
