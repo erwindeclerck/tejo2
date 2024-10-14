@@ -12897,6 +12897,9 @@ P03 drie KEER FOTO/TEKST
       background-color: #e03726;
       color: white; }
 
+.field--name-field-hero-video, .field--name-field-hero {
+  margin-bottom: 2rem; }
+
 .view-projecten .views-view-responsive-grid__item-inner {
   background: white;
   border-radius: 2rem;

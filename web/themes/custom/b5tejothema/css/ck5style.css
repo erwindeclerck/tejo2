@@ -10711,6 +10711,8 @@
     font-size: 1.5rem;
     font-style: italic; }
   .ck-content .field--name-field-projectlinks {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-evenly; }
     .ck-content .field--name-field-projectlinks a {
@@ -10727,6 +10729,8 @@
       .ck-content .field--name-field-projectlinks a:hover {
         background-color: #e03726;
         color: white; }
+  .ck-content .field--name-field-hero-video, .ck-content .field--name-field-hero {
+    margin-bottom: 2rem; }
   .ck-content .view-projecten .views-view-responsive-grid__item-inner {
     background: white;
     border-radius: 2rem;
