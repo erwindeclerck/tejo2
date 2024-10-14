@@ -11,7 +11,7 @@ dependencies:
 id: b5tejothema_voetmenumidden
 theme: b5tejothema
 region: footer
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:voetmenu-midden'
 settings:

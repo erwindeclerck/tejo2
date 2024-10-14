@@ -68,6 +68,7 @@
         "drupal/ui_suite_bootstrap": "^5.0@alpha",
         "drupal/url_embed": "^2.0@alpha",
         "drupal/video_embed_field": "^2.5",
+        "drupal/view_mode_selector": "^1.1",
         "drupal/views_conditional": "^1.10",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/vite": "^1.1",

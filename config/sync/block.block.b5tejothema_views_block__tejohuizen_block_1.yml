@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.tejohuizen
   module:
+    - user
     - views
   theme:
     - b5tejothema
@@ -21,4 +22,11 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      adminredacteur: adminredacteur

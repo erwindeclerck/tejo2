@@ -22,6 +22,7 @@ module:
   dblog: 0
   devel: 0
   devel_generate: 0
+  ds_switch_view_mode: 0
   dummyimage: 0
   dynamic_page_cache: 0
   easy_breadcrumb: 0
@@ -89,6 +90,7 @@ module:
   user: 0
   variationcache: 0
   video_embed_field: 0
+  view_mode_selector: 0
   views_conditional: 0
   views_ui: 0
   viewsreference: 0

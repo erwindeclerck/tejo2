@@ -11,7 +11,7 @@ dependencies:
 id: b5tejothema_voetmenulinks
 theme: b5tejothema
 region: footer
-weight: -7
+weight: -8
 provider: null
 plugin: 'system_menu_block:voetmenu-links'
 settings:

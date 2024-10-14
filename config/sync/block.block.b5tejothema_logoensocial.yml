@@ -1,0 +1,25 @@
+uuid: 1e432ed0-5757-4995-b89a-b477ee67992b
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5eb79786-a3b9-4bf9-9c77-83f64e4c5f1f'
+  module:
+    - block_content
+  theme:
+    - b5tejothema
+id: b5tejothema_logoensocial
+theme: b5tejothema
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:5eb79786-a3b9-4bf9-9c77-83f64e4c5f1f'
+settings:
+  id: 'block_content:5eb79786-a3b9-4bf9-9c77-83f64e4c5f1f'
+  label: 'Logo en social'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

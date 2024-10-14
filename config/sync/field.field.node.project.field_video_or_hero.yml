@@ -1,0 +1,26 @@
+uuid: 26063cb1-0048-48ed-ba5d-9785ac445428
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_or_hero
+    - node.type.project
+  module:
+    - view_mode_selector
+id: node.project.field_video_or_hero
+field_name: field_video_or_hero
+entity_type: node
+bundle: project
+label: 'Video or hero'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  view_modes:
+    default:
+      enable: true
+      hide_title: false
+      icon: {  }
+field_type: view_mode_selector

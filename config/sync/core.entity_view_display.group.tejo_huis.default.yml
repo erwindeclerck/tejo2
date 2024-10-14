@@ -397,8 +397,8 @@ content:
         zoomFiner: 0
       icon:
         iconType: marker
-        iconUrl: /themes/custom/b5tejothema/resources/bol.png
-        shadowUrl: /themes/custom/b5tejothema/resources/bolshadow.png
+        iconUrl: /themes/custom/b5tejothema/resources/redpin30.png
+        shadowUrl: /themes/custom/b5tejothema/resources/redpinS30.png
         className: ''
         iconSize:
           x: ''

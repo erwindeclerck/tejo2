@@ -26,17 +26,36 @@
   }
 
 
-  #block-b5tejothema-logoensocial{
-    table{
-      width: 100%;
-      tr{
-        td{
-          padding: 10px !important;
+  #block-b5tejothema-logoensocial {
+    max-width:217px !important;
+    .footcol {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .footrow.first {
+        .logo {
+          img {
+            // border: 1px solid white;
+          }
         }
+
+      }
+      .footrow.second {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+        gap: 1em;
+        flex-wrap: nowrap;
+        .icon {
+          img {
+            // border: 1px solid white;
+          }
+        }
+
       }
     }
-    color: white;
   }
+
 
 }
 

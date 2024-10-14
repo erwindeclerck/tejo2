@@ -24,6 +24,7 @@
   /* rtl:begin:remove */
   /* rtl:end:remove */
   @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
   /* koppen h1,2,3,4,5*/
   /* Buttons en links */
   /* big blue ordered list bullets */
@@ -9042,6 +9043,8 @@
     color: #000; }
   .ck-content code {
     overflow-y: auto; }
+  .ck-content :root {
+    --bs-font-sans-serif: "Inter", sans-serif; }
   .ck-content h1, .ck-content .h1 {
     font-size: 2.4rem;
     text-align: center;
@@ -9442,6 +9445,43 @@
         align-items: center;
         justify-content: center;
         font-size: 0.8rem; }
+  .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form {
+    margin: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group {
+      padding: 0; }
+      .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .mc-field-group input {
+        border-radius: 20px !important;
+        border: 1px solid #0c3f7c;
+        height: 40px;
+        margin-bottom: -10px;
+        padding: 20px !important; }
+    .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear {
+      display: flex;
+      color: white !important; }
+      .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear input {
+        background-color: #e03726;
+        border-radius: 30px;
+        border: none;
+        padding: 0px 20px;
+        height: 45px;
+        line-height: auto;
+        margin-top: 0;
+        margin-right: 15px; }
+        .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear input:hover {
+          background-color: white;
+          color: #e03726; }
+      .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear .asterisk {
+        color: red; }
+      .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear .verplicht {
+        color: white;
+        padding-top: 5px;
+        font-size: 0.8rem; }
+    .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .kleinelettertjes {
+      font-size: 0.8rem;
+      color: white !important; }
   .ck-content .herotriplet {
     margin-bottom: 60px;
     display: flex;
@@ -9450,9 +9490,7 @@
     justify-content: space-around;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: -60px;
-    display: flex;
-    flex-direction: column; }
+    margin-top: -60px; }
     @media (min-width: 992px) {
       .ck-content .herotriplet {
         width: 100%;
@@ -9491,6 +9529,7 @@
           color: #0c3f7c; }
           .ck-content .herotriplet > * .link a:after {
             content: "\25B6";
+            font-family: 'Roboto', 'sans-serif';
             width: 50px;
             height: 50px;
             margin-left: 0;
@@ -10352,7 +10391,9 @@
             border-radius: 50%; }
         .ck-content .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details .faqfield-answer {
           border: none;
-          padding: 2rem 1rem; }
+          padding: 2rem 1rem;
+          width: 60%;
+          margin-left: 15%; }
         .ck-content .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details::after {
           content: "\25bc";
           position: absolute;
@@ -10669,6 +10710,23 @@
     padding: 1em;
     font-size: 1.5rem;
     font-style: italic; }
+  .ck-content .field--name-field-projectlinks {
+    display: flex;
+    justify-content: space-evenly; }
+    .ck-content .field--name-field-projectlinks a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      width: 25rem;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      background-color: #0c3f7c;
+      color: white;
+      transition: 0.3s; }
+      .ck-content .field--name-field-projectlinks a:hover {
+        background-color: #e03726;
+        color: white; }
   .ck-content .view-projecten .views-view-responsive-grid__item-inner {
     background: white;
     border-radius: 2rem;
@@ -10793,10 +10851,16 @@
           .ck-content .region-footer > * ul li a {
             padding: 3px; }
     .ck-content .region-footer #block-b5tejothema-logoensocial {
-      color: white; }
-      .ck-content .region-footer #block-b5tejothema-logoensocial table {
-        width: 100%; }
-        .ck-content .region-footer #block-b5tejothema-logoensocial table tr td {
-          padding: 10px !important; }
+      max-width: 217px !important; }
+      .ck-content .region-footer #block-b5tejothema-logoensocial .footcol {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem; }
+        .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between !important;
+          gap: 1em;
+          flex-wrap: nowrap; }
 
 /*# sourceMappingURL=ck5style.css.map */

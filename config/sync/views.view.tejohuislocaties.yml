@@ -421,21 +421,21 @@ display:
           weight: ''
           icon:
             iconType: marker
-            iconUrl: /themes/custom/b5tejothema/resources/bol.png
-            shadowUrl: /themes/custom/b5tejothema/resources/bolshadow.png
+            iconUrl: /themes/custom/b5tejothema/resources/redpin30.png
+            shadowUrl: /themes/custom/b5tejothema/resources/redpinS30.png
             className: ''
             iconSize:
               x: ''
               'y': ''
             iconAnchor:
-              x: 23px
-              'y': 76px
+              x: 16px
+              'y': 65px
             shadowSize:
-              x: 64px
-              'y': 72px
+              x: ''
+              'y': ''
             shadowAnchor:
-              x: 18px
-              'y': 72px
+              x: 16px
+              'y': 63px
             popupAnchor:
               x: ''
               'y': ''

@@ -6,11 +6,15 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.project.body
     - field.field.node.project.field_album
+    - field.field.node.project.field_blokken
     - field.field.node.project.field_hero
+    - field.field.node.project.field_hero_video
     - field.field.node.project.field_periode
     - field.field.node.project.field_projectlinks
+    - field.field.node.project.field_video_or_hero
     - field.field.node.project.field_wat_de_pers_schrijft
     - image.style.albumcrop
+    - image.style.letterbox_1600x800
     - node.type.project
   module:
     - colorbox
@@ -49,6 +53,7 @@ third_party_settings:
         - body
         - field_projectlinks
         - field_album
+        - field_blokken
         - field_wat_de_pers_schrijft
 id: node.project.full
 targetEntityType: node
@@ -84,15 +89,31 @@ content:
             classes: {  }
     weight: 4
     region: main
+  field_blokken:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: main
   field_hero:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: letterbox_1600x800
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
     region: main
   field_periode:
@@ -157,9 +178,9 @@ content:
           id: expert
           settings:
             lb: ''
-            lbw: false
-            lbw-el: ''
-            lbw-cl: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: h2
             lbw-at: ''
             lb-col: false
             ow: false
@@ -173,15 +194,17 @@ content:
             fis-cl: ''
             fis-at: ''
             fis-def-at: false
-            fi: true
-            fi-el: h2
-            fi-cl: h2
+            fi: false
+            fi-el: ''
+            fi-cl: ''
             fi-at: ''
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 5
+    weight: 6
     region: main
 hidden:
+  field_hero_video: true
+  field_video_or_hero: true
   langcode: true
   links: true

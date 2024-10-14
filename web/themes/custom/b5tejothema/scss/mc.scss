@@ -49,3 +49,63 @@
 
 
 
+#block-b5tejothema-nieuwsbrief {
+
+  #mc_embed_shell {
+    #mc_embed_signup {
+      form {
+        margin: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        #mc_embed_signup_scroll {
+          .mc-field-group {
+            padding: 0;
+            label {}
+            input {
+              border-radius: 20px!important;
+              border: 1px solid $tejoblauw;
+              height: 40px;
+              margin-bottom: -10px;
+              padding: 20px !important;
+            }
+          }
+          .clear {
+            display: flex;
+            color: $tejowit!important;
+
+            input {
+              background-color: $tejorood;
+              border-radius: $borderradius;
+              border: none;
+              padding: 0px 20px;
+              height: 45px;
+              line-height: auto;
+              margin-top: 0;
+              margin-right: 15px;
+              &:hover {
+                background-color: $tejowit;
+                color: $tejorood;
+              }
+            }
+            .asterisk {
+              color: red;
+            }
+            .verplicht {
+              color: $tejowit;
+              padding-top:5px;
+              font-size: 0.8rem;
+            }
+
+          }
+          .kleinelettertjes {
+            font-size: 0.8rem;
+            color: $tejowit!important;
+          }
+        }
+      }
+    }
+  }
+
+}

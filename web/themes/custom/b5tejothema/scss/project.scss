@@ -3,3 +3,11 @@
   font-size: 1.5rem;
   font-style: italic;
 }
+.field--name-field-projectlinks {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  @include tejolink($tejoblauw,$tejorood,$tejowit,$tejowit,25rem);
+}

@@ -1,0 +1,25 @@
+uuid: 2a55da25-c77e-44b7-8cb7-e6ca01ab4990
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:704b5143-7480-481a-9586-697ecd7955eb'
+  module:
+    - block_content
+  theme:
+    - b5tejothema
+id: b5tejothema_nieuwsbrief
+theme: b5tejothema
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:704b5143-7480-481a-9586-697ecd7955eb'
+settings:
+  id: 'block_content:704b5143-7480-481a-9586-697ecd7955eb'
+  label: Nieuwsbrief
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

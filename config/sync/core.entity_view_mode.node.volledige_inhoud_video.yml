@@ -1,0 +1,11 @@
+uuid: f33e7463-91a3-440a-b302-15a946ab10de
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.volledige_inhoud_video
+label: 'Volledige inhoud Video'
+description: 'Toon deze inhoud met video'
+targetEntityType: node
+cache: true

@@ -11,8 +11,6 @@
   padding-left:2rem;
   padding-right:2rem;
   margin-top: -60px;
-  display:flex;
-  flex-direction: column;
   @include media-breakpoint-up('lg'){
     width: 100%;
     // padding-left: 0;
@@ -56,6 +54,7 @@
         color:$tejoblauw;
         &:after {
           content: "\25B6";
+          font-family: 'Roboto', 'sans-serif';
           width: 50px;
           height: 50px;
           margin-left: 0;
