@@ -1,0 +1,22 @@
+uuid: d18286a9-15f3-40c4-b6cf-a3b1ee3b4808
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: vaste_pagina
+label: 'Vaste pagina'
+type: 'canonical_entities:node'
+pattern: '/[node:title]'
+selection_criteria:
+  d5f2bdc8-9fa9-4a8a-9649-1a93ecac3a64:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d5f2bdc8-9fa9-4a8a-9649-1a93ecac3a64
+    context_mapping:
+      node: node
+    bundles:
+      vaste_pagina: vaste_pagina
+selection_logic: and
+weight: -5
+relationships: {  }

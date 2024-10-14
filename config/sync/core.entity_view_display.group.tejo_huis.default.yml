@@ -404,14 +404,14 @@ content:
           x: ''
           'y': ''
         iconAnchor:
-          x: 23px
-          'y': 76px
+          x: 14px
+          'y': 64px
         shadowSize:
-          x: 64px
-          'y': 72px
+          x: ''
+          'y': ''
         shadowAnchor:
-          x: 18px
-          'y': 72px
+          x: 13px
+          'y': 63px
         popupAnchor:
           x: ''
           'y': ''

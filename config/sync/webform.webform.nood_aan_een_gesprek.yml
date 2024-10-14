@@ -50,7 +50,9 @@ elements: |-
     '#type': webform_entity_select
     '#title': TEJO-huis
     '#title_display': invisible
+    '#prepopulate': true
     '#empty_option': 'Kies een TEJO-huis in je buurt'
+    '#default_value': '[current-page:url:unaliased:args:value:1]'
     '#target_type': group
     '#selection_handler': 'default:group'
     '#selection_settings':

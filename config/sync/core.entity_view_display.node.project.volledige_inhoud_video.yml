@@ -145,9 +145,9 @@ content:
           id: expert
           settings:
             lb: ''
-            lbw: false
-            lbw-el: ''
-            lbw-cl: ''
+            lbw: true
+            lbw-el: h2
+            lbw-cl: h2
             lbw-at: ''
             lb-col: false
             ow: false
@@ -161,9 +161,9 @@ content:
             fis-cl: ''
             fis-at: ''
             fis-def-at: false
-            fi: true
-            fi-el: h2
-            fi-cl: h2
+            fi: false
+            fi-el: ''
+            fi-cl: ''
             fi-at: ''
             fi-def-at: false
             prefix: ''

@@ -12867,6 +12867,52 @@ P03 drie KEER FOTO/TEKST
         background-color: var(--tejorood);
         color: white; }
 
+.view-tejohuizen .views-view-responsive-grid__item-inner {
+  background-color: white;
+  border-radius: 30px;
+  text-align: center; }
+  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel {
+    margin-bottom: 1rem; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel img {
+      border-radius: 2rem; }
+  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-label {
+    color: #0c3f7c; }
+  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-adres {
+    color: #0c3f7c;
+    font-style: italic; }
+  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 15rem;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: white;
+    color: #0c3f7c;
+    transition: 0.3s; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a:hover {
+      background-color: #0c3f7c;
+      color: white; }
+  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 {
+    text-align: center; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
+      display: block;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #0c3f7c; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:after {
+        content: "\25B6";
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+        text-decoration: none;
+        display: inline-block;
+        color: #e03726; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:hover {
+        color: #e03726; }
+
 .page-node-type-article .bs-region--top-left {
   width: 66%; }
 .page-node-type-article .bs-region--top-right {

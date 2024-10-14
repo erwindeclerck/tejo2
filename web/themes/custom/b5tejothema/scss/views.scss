@@ -112,6 +112,19 @@ div.ritghtpersoon.persoonsveld .persoon {
 
 /* --- tejohuizen --- */
 
+//.field--name-field-projectlinks {
+//  padding-top: 2rem;
+//  padding-bottom: 2rem;
+//  display: flex;
+//  justify-content: space-evenly;
+//  @include tejolink($tejoblauw,$tejorood,$tejowit,$tejowit,25rem);
+//}
+//
+//.field--name-field-hero-video,
+//.field--name-field-hero {
+//  margin-bottom: 2rem;
+//}
+
 .view-tejohuizen {
   .views-view-responsive-grid__item-inner {
     background-color: $tejowit;
@@ -141,3 +154,4 @@ div.ritghtpersoon.persoonsveld .persoon {
     }
   }
 }
+

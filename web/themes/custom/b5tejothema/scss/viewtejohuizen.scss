@@ -25,3 +25,33 @@
     }
   }
 }
+
+.view-tejohuizen {
+  .views-view-responsive-grid__item-inner {
+    background-color: $tejowit;
+    border-radius: $borderradius;
+
+    text-align: center;
+    .views-field-field-gevel {
+      img {
+        border-radius: 2rem;
+      }
+      margin-bottom: 1rem;
+    }
+    .views-field-label {
+      color: $tejoblauw;
+    }
+    .views-field-field-adres {
+      color: $tejoblauw;
+      font-style: italic;
+
+    }
+    .views-field-nothing {
+      @include tejolink($tejowit,$tejoblauw,$tejoblauw,$tejowit,15rem);
+
+    }
+    .views-field-view-group-1 {
+      @include pijlbutton;
+    }
+  }
+}
