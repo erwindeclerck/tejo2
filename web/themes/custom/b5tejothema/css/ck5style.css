@@ -10731,6 +10731,8 @@
         color: white; }
   .ck-content .field--name-field-hero-video, .ck-content .field--name-field-hero {
     margin-bottom: 2rem; }
+  .ck-content .image-style-albumcrop {
+    border-radius: 2rem; }
   .ck-content .view-projecten .views-view-responsive-grid__item-inner {
     background: white;
     border-radius: 2rem;
