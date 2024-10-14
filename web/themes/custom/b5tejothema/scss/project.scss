@@ -13,6 +13,9 @@
 .field--name-field-hero-video,.field--name-field-hero{
   margin-bottom: 2rem;
 }
-.image-style-albumcrop {
-  border-radius:2rem;
+.field--name-field-album{
+  margin-bottom: 4rem;
+  .image-style-albumcrop {
+    border-radius:2rem;
+  }
 }

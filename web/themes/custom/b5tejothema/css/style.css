@@ -12900,8 +12900,10 @@ P03 drie KEER FOTO/TEKST
 .field--name-field-hero-video, .field--name-field-hero {
   margin-bottom: 2rem; }
 
-.image-style-albumcrop {
-  border-radius: 2rem; }
+.field--name-field-album {
+  margin-bottom: 4rem; }
+  .field--name-field-album .image-style-albumcrop {
+    border-radius: 2rem; }
 
 .view-projecten .views-view-responsive-grid__item-inner {
   background: white;
