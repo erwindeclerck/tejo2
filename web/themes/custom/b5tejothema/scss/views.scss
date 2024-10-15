@@ -126,7 +126,7 @@ div.ritghtpersoon.persoonsveld .persoon {
 //}
 
 .view-tejohuizen {
-  .views-view-responsive-grid__item-inner {
+  //.views-view-responsive-grid__item-inner {
     background-color: $tejowit;
     border-radius: $borderradius;
 
@@ -152,6 +152,6 @@ div.ritghtpersoon.persoonsveld .persoon {
     .views-field-view-group-1 {
       @include pijlbutton;
     }
-  }
+  //}
 }
 
