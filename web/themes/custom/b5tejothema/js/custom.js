@@ -51,7 +51,9 @@ jQuery(document).bind('leaflet.map', function(event, map, lMap) {
     lat = value.features[0].lat;
     lon = value.features[0].lon;
     name = value.features[0].popup.value;
-  listing += "<li data-id=" + key +" data-lat=" + lat + " data-lon=" + lon + ">" + name + "</li>";
+    if(name !== undefined){
+      listing += "<li data-id=" + key +" data-lat=" + lat + " data-lon=" + lon + ">" + name + "</li>";
+    }
   });
   listing += "</ul>";
   jQuery(target).html(listing);
