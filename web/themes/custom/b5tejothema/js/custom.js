@@ -55,17 +55,23 @@ jQuery(document).bind('leaflet.map', function(event, map, lMap) {
       listing += "<li data-id=" + key +" data-lat=" + lat + " data-lon=" + lon + ">" + name + "</li>";
     }
   });
+  listing += "<li data-id=x data-lat=51.157833891  data-lon=4.1396312676664>Reset</li>";
   listing += "</ul>";
   jQuery(target).html(listing);
   var lijst = jQuery("#printer ul li");
+  var zoom = 14;
   lijst.each(
     function(){
       jQuery(this).hover(
         function(){
           jQuery(this).css('text-decoration','underline');
           jQuery(this).css('cursor','hand');
-          lMap.setZoom(15);
-          lMap.flyTo([this.dataset.lat,this.dataset.lon],14,{animate:true,duration:1.5});
+          if(this.dataset.id === "x"){
+            zoom = 8;
+          }else{
+            zoom = 14;
+          }
+          lMap.flyTo([this.dataset.lat,this.dataset.lon],zoom,{animate:true,duration:1.5});
         },
       function(){
         jQuery(this).css('text-decoration','none');
