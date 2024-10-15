@@ -66,7 +66,8 @@
   /*
   P03 drie KEER FOTO/TEKST
   */
-  /* protoype van alle velden */ }
+  /* protoype van alle velden */
+  /* knoppen boven de tejohuizen */ }
   .ck-content :root {
     --bs-body-text-align: null;
     --bs-dropdown-item-border-radius: null;
@@ -10589,6 +10590,19 @@
         .ck-content .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out .view-footer a:hover {
           background-color: white;
           color: #e03726; }
+  .ck-content .view-display-id-block_1 .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; }
+    .ck-content .view-display-id-block_1 .view-content .views-row a {
+      text-decoration: none;
+      border: 1px solid #0c3f7c;
+      background-color: white;
+      border-radius: 2rem;
+      padding: .4rem 1rem; }
+      .ck-content .view-display-id-block_1 .view-content .views-row a:hover, .ck-content .view-display-id-block_1 .view-content .views-row a.active-link {
+        background-color: #e03726;
+        color: white; }
   .ck-content .grouphead {
     text-align: center;
     padding-top: 3rem;

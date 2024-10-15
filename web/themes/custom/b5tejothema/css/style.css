@@ -12750,6 +12750,21 @@ P03 drie KEER FOTO/TEKST
         background-color: white;
         color: #e03726; }
 
+/* knoppen boven de tejohuizen */
+.view-display-id-block_1 .view-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; }
+  .view-display-id-block_1 .view-content .views-row a {
+    text-decoration: none;
+    border: 1px solid #0c3f7c;
+    background-color: white;
+    border-radius: 2rem;
+    padding: .4rem 1rem; }
+    .view-display-id-block_1 .view-content .views-row a:hover, .view-display-id-block_1 .view-content .views-row a.active-link {
+      background-color: #e03726;
+      color: white; }
+
 .grouphead {
   text-align: center;
   padding-top: 3rem;

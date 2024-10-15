@@ -114,3 +114,29 @@
 
   }
 }
+
+
+/* knoppen boven de tejohuizen */
+
+.view-display-id-block_1{
+  .view-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .views-row{
+      a{
+        text-decoration: none;
+        border: 1px solid $tejoblauw;
+        background-color: $tejowit;
+        border-radius: 2rem;
+        padding: .4rem 1rem;
+        &:hover,&.active-link{
+          background-color: $tejorood;
+          color: $tejowit;
+        }
+      }
+    }
+  }
+}
+
+
