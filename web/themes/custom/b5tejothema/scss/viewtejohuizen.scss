@@ -1,32 +1,10 @@
-
 .view-tejohuizen
 {
   padding-bottom:8px;
   padding-left:8px;
   padding-right:8px;
-  ul li
-  {
-    display: inline-block;
-    margin-bottom: 16px;
-    margin-left: 0px;
-    margin-right: 8px;
-    a
-    {
-      text-decoration: none;
-      padding: 6px 12px;
-      border: 1px solid var(--tejoblauw);
-      border-radius: 20px;
-      &:hover,&.active-link
-      {
-        background-color: var(--tejorood);
-        color: white;
-      }
 
-    }
-  }
-}
 
-.view-tejohuizen {
   .views-view-responsive-grid__item-inner {
     background-color: $tejowit;
     border-radius: $borderradius;
@@ -47,11 +25,10 @@
     .views-field-field-adres {
       color: $tejoblauw;
       font-style: italic;
-
     }
     .views-field-nothing {
       @include tejolink($tejowit,$tejoblauw,$tejoblauw,$tejowit,15rem);
-
+      a{border: 2px solid $tejoblauw;}
     }
     .views-field-view-group-1 {
       @include pijlbutton;

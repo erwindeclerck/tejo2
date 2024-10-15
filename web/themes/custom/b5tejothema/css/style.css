@@ -12603,14 +12603,12 @@ P03 drie KEER FOTO/TEKST
 .field.field--name-field-nieuws {
   padding: 3rem; }
 
-.views-element-container.contextual-region .viewsreference--view-title {
-  font-size: 2rem;
-  color: #0c3f7c;
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold; }
-.views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner,
-.views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner {
+.view-tejonieuws .view-header h2.titel, .view-tejonieuws .view-header .titel.h2,
+.view-tejonieuws-per-afdeling .view-header h2.titel,
+.view-tejonieuws-per-afdeling .view-header .titel.h2 {
+  border: 1px solid green; }
+.view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner,
+.view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner {
   border: 2px solid transparent;
   transition: box-shadow 0.2s;
   background-color: white;
@@ -12618,15 +12616,16 @@ P03 drie KEER FOTO/TEKST
   min-height: 800px;
   display: flex;
   flex-direction: column; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner:hover,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner:hover {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner:hover,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner:hover {
     border: 2px solid #0c3f7c; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-hero .field-content a img,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-hero .field-content a img {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-hero .field-content a img,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-hero .field-content a img {
     border-radius: 30px 30px 0 0; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a, .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a,
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a {
     display: block;
     padding: 2rem 0 1rem;
     text-align: center;
@@ -12634,43 +12633,45 @@ P03 drie KEER FOTO/TEKST
     text-decoration: none;
     color: #e03726;
     font-size: 1.2rem; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:before, .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:before,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:before,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:before {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:before,
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:before,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:before,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:before {
     content: "- "; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:after, .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:after,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:after,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:after {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:after,
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:after,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .tejohuisreferentie a:after,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field-gid a:after {
     content: " -"; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content, .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content, .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 {
     padding: 1rem;
     text-align: center; }
-    .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content a, .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a,
-    .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content a,
-    .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a {
+    .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content a, .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a,
+    .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title h3.field-content a,
+    .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a {
       text-decoration: none;
       color: #0c3f7c; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content {
     padding: 1rem; }
-    .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content p,
-    .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content p {
+    .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content p,
+    .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content p {
       color: #001d4c; }
-  .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton {
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton {
     margin-top: auto;
     text-align: center; }
-    .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a,
-    .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a {
+    .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a,
+    .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a {
       display: block;
       padding: 1rem 0;
       font-weight: bold;
       font-size: 1.4rem;
       color: #0c3f7c; }
-      .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after,
-      .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after {
+      .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after,
+      .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after {
         content: "\25B6";
         width: 50px;
         height: 50px;
@@ -12678,14 +12679,14 @@ P03 drie KEER FOTO/TEKST
         text-decoration: none;
         display: inline-block;
         color: #e03726; }
-      .views-element-container.contextual-region .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover,
-      .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover {
+      .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover,
+      .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover {
         color: #e03726; }
-.views-element-container.contextual-region .view-tejonieuws .view-footer,
-.views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-footer {
+.view-tejonieuws .view-footer,
+.view-tejonieuws-per-afdeling .view-footer {
   padding: 3rem; }
-  .views-element-container.contextual-region .view-tejonieuws .view-footer a,
-  .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-footer a {
+  .view-tejonieuws .view-footer a,
+  .view-tejonieuws-per-afdeling .view-footer a {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -12696,13 +12697,15 @@ P03 drie KEER FOTO/TEKST
     background-color: #e03726;
     color: white;
     transition: 0.3s; }
-    .views-element-container.contextual-region .view-tejonieuws .view-footer a:hover,
-    .views-element-container.contextual-region .view-tejonieuws-per-afdeling .view-footer a:hover {
+    .view-tejonieuws .view-footer a:hover,
+    .view-tejonieuws-per-afdeling .view-footer a:hover {
       background-color: white;
       color: #e03726; }
-.views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out {
+.view-tejonieuws.view-display-id-block_1 .break-out,
+.view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out {
   background-color: #0c3f7c; }
-  .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:after {
+  .view-tejonieuws.view-display-id-block_1 .break-out:after,
+  .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out:after {
     position: absolute;
     display: block;
     background-image: url("/themes/custom/b5tejothema/resources/BottomGolf.svg");
@@ -12713,7 +12716,8 @@ P03 drie KEER FOTO/TEKST
     height: 85px;
     content: "";
     z-index: -1; }
-  .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out:before {
+  .view-tejonieuws.view-display-id-block_1 .break-out:before,
+  .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out:before {
     position: absolute;
     display: block;
     background-image: url("/themes/custom/b5tejothema/resources/TopGolf.svg");
@@ -12726,9 +12730,11 @@ P03 drie KEER FOTO/TEKST
     content: "";
     top: -80px;
     z-index: -1; }
-  .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out .view-footer {
+  .view-tejonieuws.view-display-id-block_1 .break-out .view-footer,
+  .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out .view-footer {
     padding: 3rem; }
-    .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out .view-footer a {
+    .view-tejonieuws.view-display-id-block_1 .break-out .view-footer a,
+    .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out .view-footer a {
       display: block;
       text-align: center;
       text-decoration: none;
@@ -12739,7 +12745,8 @@ P03 drie KEER FOTO/TEKST
       background-color: #e03726;
       color: white;
       transition: 0.3s; }
-      .views-element-container.contextual-region .view-tejonieuws.view-display-id-block_1 .break-out .view-footer a:hover {
+      .view-tejonieuws.view-display-id-block_1 .break-out .view-footer a:hover,
+      .view-tejonieuws-per-afdeling.view-display-id-block_1 .break-out .view-footer a:hover {
         background-color: white;
         color: #e03726; }
 
@@ -12865,71 +12872,59 @@ div.map {
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px; }
-  .view-tejohuizen ul li {
-    display: inline-block;
-    margin-bottom: 16px;
-    margin-left: 0px;
-    margin-right: 8px; }
-    .view-tejohuizen ul li a {
-      text-decoration: none;
-      padding: 6px 12px;
-      border: 1px solid var(--tejoblauw);
-      border-radius: 20px; }
-      .view-tejohuizen ul li a:hover, .view-tejohuizen ul li a.active-link {
-        background-color: var(--tejorood);
-        color: white; }
-
-.view-tejohuizen .views-view-responsive-grid__item-inner {
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  height: 600px;
-  text-align: center; }
-  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel {
-    margin-bottom: 1rem; }
-    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel img {
-      border-radius: 1rem; }
-  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-label {
-    color: #0c3f7c; }
-  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-adres {
-    color: #0c3f7c;
-    font-style: italic; }
-  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    width: 15rem;
-    margin: 1rem auto;
-    padding: 1rem 2rem;
-    border-radius: 30px;
+  .view-tejohuizen .views-view-responsive-grid__item-inner {
     background-color: white;
-    color: #0c3f7c;
-    transition: 0.3s; }
-    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a:hover {
-      background-color: #0c3f7c;
-      color: white; }
-  .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 {
-    text-align: center;
-    margin-top: auto; }
-    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
-      display: block;
-      padding: 1rem 0;
-      font-weight: bold;
-      font-size: 1.4rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    text-align: center; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel {
+      margin-bottom: 1rem; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel img {
+        border-radius: 1rem; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-label {
       color: #0c3f7c; }
-      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:after {
-        content: "\25B6";
-        width: 50px;
-        height: 50px;
-        margin-left: 0;
-        text-decoration: none;
-        display: inline-block;
-        color: #e03726; }
-      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:hover {
-        color: #e03726; }
-    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
-      font-size: 1.2em; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-adres {
+      color: #0c3f7c;
+      font-style: italic; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      width: 15rem;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      background-color: white;
+      color: #0c3f7c;
+      transition: 0.3s; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a:hover {
+        background-color: #0c3f7c;
+        color: white; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-nothing a {
+      border: 2px solid #0c3f7c; }
+    .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 {
+      text-align: center;
+      margin-top: auto; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
+        display: block;
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: #0c3f7c; }
+        .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:after {
+          content: "\25B6";
+          width: 50px;
+          height: 50px;
+          margin-left: 0;
+          text-decoration: none;
+          display: inline-block;
+          color: #e03726; }
+        .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:hover {
+          color: #e03726; }
+      .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
+        font-size: 1.2em; }
 
 .page-node-type-article .bs-region--top-left {
   width: 66%; }
