@@ -10716,11 +10716,14 @@
   .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner {
     background-color: white;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
     text-align: center; }
     .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel {
       margin-bottom: 1rem; }
       .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel img {
-        border-radius: 2rem; }
+        border-radius: 1rem; }
     .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-label {
       color: #0c3f7c; }
     .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-adres {
@@ -10741,7 +10744,8 @@
         background-color: #0c3f7c;
         color: white; }
     .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 {
-      text-align: center; }
+      text-align: center;
+      margin-top: auto; }
       .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
         display: block;
         padding: 1rem 0;
@@ -10758,6 +10762,8 @@
           color: #e03726; }
         .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:hover {
           color: #e03726; }
+      .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
+        font-size: 1.2em; }
   .ck-content .page-node-type-article .bs-region--top-left {
     width: 66%; }
   .ck-content .page-node-type-article .bs-region--top-right {

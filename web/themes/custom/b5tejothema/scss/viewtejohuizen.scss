@@ -30,11 +30,14 @@
   .views-view-responsive-grid__item-inner {
     background-color: $tejowit;
     border-radius: $borderradius;
+    display:flex;
+    flex-direction: column;
+    height: 600px;
 
     text-align: center;
     .views-field-field-gevel {
       img {
-        border-radius: 2rem;
+        border-radius: 1rem;
       }
       margin-bottom: 1rem;
     }
@@ -52,6 +55,8 @@
     }
     .views-field-view-group-1 {
       @include pijlbutton;
+      a{font-size: 1.2em;}
+      margin-top: auto;
     }
   }
 }
