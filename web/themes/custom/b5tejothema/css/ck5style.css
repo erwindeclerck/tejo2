@@ -10694,8 +10694,8 @@
       overflow-y: auto;
       width: 15%;
       font-size: 0.8em; }
-    .ck-content div.map #leaflet-map-view-tejohuislocaties-block-1 {
-      width: 85%; }
+    .ck-content div.map #rightpane {
+      flex-grow: 1; }
   .ck-content .view-tejohuizen {
     padding-bottom: 8px;
     padding-left: 8px;

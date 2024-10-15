@@ -12858,8 +12858,8 @@ div.map {
     overflow-y: auto;
     width: 15%;
     font-size: 0.8em; }
-  div.map #leaflet-map-view-tejohuislocaties-block-1 {
-    width: 85%; }
+  div.map #rightpane {
+    flex-grow: 1; }
 
 .view-tejohuizen {
   padding-bottom: 8px;
