@@ -1,33 +1,6 @@
 .region-footer {
-  display: flex !important;
-  flex-direction: row !important;
-
-
-  & > * {
-    flex: 1;
-    nav {
-      flex-basis: 100%;
-    }
-    h5 {
-      color: white;
-      font-size: 1.1em;
-      margin-bottom: 1rem
-    }
-    ul {
-      color: white;
-      margin-left: -8px;
-      li {
-        padding: 0;
-        a {
-          padding:3px;
-        }
-      }
-    }
-  }
-
-
   #block-b5tejothema-logoensocial {
-    max-width:217px !important;
+    //max-width:217px !important;
     .footcol {
       display: flex;
       flex-direction: column;
@@ -55,7 +28,103 @@
       }
     }
   }
+}
 
+
+
+.region-footer {
+  //border: 1px solid red;
+
+  & > * {
+    //border: 1px solid white;
+    padding: 0;
+    flex-basis: 300px;
+    flex-grow: 0;
+    h5 {
+      color: $tejowit;
+      font-size: 1em;
+      margin-bottom: 1rem;
+    }
+    ul {
+      font-size: 0.9em;
+      color: white;
+      margin-left: -8px;
+      li {
+        padding: 0;
+        a {
+          padding: 3px;
+        }
+      }
+    }
+  }
+
+  #block-b5tejothema-logoensocial {
+    .footrow.first {
+      width:200px;
+      margin:0 auto;
+      img {
+      }
+    }
+    .footrow.second{
+      width:200px;
+      margin: 0 auto;
+    }
+  }
+  #block-b5tejothema-nieuwsbrief {
+    padding: 0 8px;
+  }
 
 }
 
+@include media-breakpoint-up(xs) {
+  .region-footer {
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    & > * {
+      flex-basis: 300px;
+      margin: 0 auto;
+    }
+
+    #block-b5tejothema-nieuwsbrief {
+      padding: 0;
+      // flex-grow:1;
+    }
+
+  }
+}
+@include media-breakpoint-up(xl) {
+
+  .region-footer {
+    display: flex;
+    flex-direction: row!important;
+    flex-wrap: nowrap;
+
+    gap: 1rem;
+
+    & > * {
+      padding: 0;
+      flex-basis: 300px;
+      flex-grow: 0;
+      h5 {
+        color: $tejowit;
+        font-size: 1em;
+        margin-bottom: 1rem;
+      }
+      ul {
+        font-size: 0.9em;
+        color: white;
+        margin-left: -8px;
+        li {
+          padding: 0;
+          a {
+            padding: 3px;
+          }
+        }
+      }
+    }
+
+  }
+}

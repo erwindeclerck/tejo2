@@ -55,7 +55,7 @@ jQuery(document).bind('leaflet.map', function(event, map, lMap) {
       listing += "<li data-id=" + key +" data-lat=" + lat + " data-lon=" + lon + ">" + name + "</li>";
     }
   });
-  listing += "<li data-id=x data-lat=51.157833891  data-lon=4.1396312676664>Reset</li>";
+  listing += "<li data-id=x data-lat=51.157833891  data-lon=4.1396312676664>Alle Tejohuizen</li>";
   listing += "</ul>";
   jQuery(target).html(listing);
   var lijst = jQuery("#printer ul li");
