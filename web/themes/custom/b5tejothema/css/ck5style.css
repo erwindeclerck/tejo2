@@ -9489,7 +9489,8 @@
         font-size: 0.8rem; }
     .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .kleinelettertjes {
       font-size: 0.8rem;
-      color: white !important; }
+      color: white !important;
+      margin-bottom: 1em; }
   .ck-content .herotriplet {
     margin-bottom: 60px;
     display: flex;
