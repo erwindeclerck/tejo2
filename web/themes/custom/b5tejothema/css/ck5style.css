@@ -9271,6 +9271,11 @@
       background-position: center center;
       background-size: contain;
       padding: 3rem; }
+  .ck-content p.krantnaam {
+    text-align: center;
+    color: #acceed;
+    display: block;
+    font-weight: bold; }
   .ck-content .navbar .d-flex .region-nav-branding .block-system-branding-block .navbar-brand A.site-logo IMG {
     height: 80px; }
   .ck-content .focus .focusable {
@@ -9446,6 +9451,8 @@
         align-items: center;
         justify-content: center;
         font-size: 0.8rem; }
+      .ck-content #mc_embed_shell #mc_embed_signup form #mc_embed_signup_scroll .clear .button {
+        margin-bottom: 1em; }
   .ck-content #block-b5tejothema-nieuwsbrief #mc_embed_shell #mc_embed_signup form {
     margin: auto;
     width: 100%;
@@ -10444,10 +10451,6 @@
         color: #e03726; }
   .ck-content .field.field--name-field-nieuws {
     padding: 3rem; }
-  .ck-content .view-tejonieuws .view-header h2.titel, .ck-content .view-tejonieuws .view-header .titel.h2,
-  .ck-content .view-tejonieuws-per-afdeling .view-header h2.titel,
-  .ck-content .view-tejonieuws-per-afdeling .view-header .titel.h2 {
-    border: 1px solid green; }
   .ck-content .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner,
   .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner {
     border: 2px solid transparent;
@@ -10513,13 +10516,14 @@
         color: #0c3f7c; }
         .ck-content .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after,
         .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:after {
-          content: "\25B6";
-          width: 50px;
+          content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
+          position: relative;
+          width: 20px;
           height: 50px;
-          margin-left: 0;
+          right: -10px;
+          top: 4px;
           text-decoration: none;
-          display: inline-block;
-          color: #e03726; }
+          display: inline-block; }
         .ck-content .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover,
         .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-view-node.pijlbutton a:hover {
           color: #e03726; }
@@ -10603,6 +10607,30 @@
       .ck-content .view-display-id-block_1 .view-content .views-row a:hover, .ck-content .view-display-id-block_1 .view-content .views-row a.active-link {
         background-color: #e03726;
         color: white; }
+  .ck-content .map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 600px !important;
+    margin-bottom: 3rem; }
+    @media (min-width: 576px) {
+      .ck-content .map {
+        flex-direction: row; } }
+    .ck-content .map #leftpane #form input {
+      width: 60px;
+      letter-spacing: 0.1em; }
+    .ck-content .map #leftpane #locations ul li {
+      color: #0c3f7c;
+      font-size: 0.9em; }
+      .ck-content .map #leftpane #locations ul li:hover {
+        background-color: #e03726;
+        color: white;
+        cursor: pointer; }
+      .ck-content .map #leftpane #locations ul li.tejorood {
+        background-color: #e03726;
+        color: white; }
+    .ck-content .map #rightpane {
+      flex-grow: 1; }
   .ck-content .grouphead {
     text-align: center;
     padding-top: 3rem;
@@ -10706,17 +10734,6 @@
           width: 100%;
           height: 100%;
           object-fit: contain; }
-  .ck-content div.map {
-    width: 100%;
-    display: flex;
-    height: 600px !important;
-    margin-bottom: 3rem; }
-    .ck-content div.map #printer {
-      overflow-y: auto;
-      width: 15%;
-      font-size: 0.8em; }
-    .ck-content div.map #rightpane {
-      flex-grow: 1; }
   .ck-content .view-tejohuizen {
     padding-bottom: 8px;
     padding-left: 8px;
@@ -10726,7 +10743,6 @@
       border-radius: 30px;
       display: flex;
       flex-direction: column;
-      height: 600px;
       text-align: center; }
       .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-field-gevel {
         margin-bottom: 1rem; }
@@ -10763,13 +10779,14 @@
           font-size: 1.4rem;
           color: #0c3f7c; }
           .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:after {
-            content: "\25B6";
-            width: 50px;
+            content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
+            position: relative;
+            width: 20px;
             height: 50px;
-            margin-left: 0;
+            right: -10px;
+            top: 4px;
             text-decoration: none;
-            display: inline-block;
-            color: #e03726; }
+            display: inline-block; }
           .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a:hover {
             color: #e03726; }
         .ck-content .view-tejohuizen .views-view-responsive-grid__item-inner .views-field-view-group-1 a {
@@ -10778,16 +10795,24 @@
     width: 66%; }
   .ck-content .page-node-type-article .bs-region--top-right {
     width: 34%; }
-  .ck-content .field--name-field-periode {
-    padding: 1em;
-    font-size: 1.5rem;
-    font-style: italic; }
-  .ck-content .field--name-field-projectlinks {
+  .ck-content .page-node-type-project .field--name-field-periode {
+    text-align: center;
+    color: #e03726;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 2em;
+    margin-top: -2em; }
+  .ck-content .page-node-type-project .field--name-field-hero-video, .ck-content .page-node-type-project .field--name-field-hero {
+    margin-bottom: 2rem; }
+  .ck-content .page-node-type-project .field--name-body {
+    width: 60%;
+    margin: 0 auto; }
+  .ck-content .page-node-type-project .field--name-field-projectlinks {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     justify-content: space-evenly; }
-    .ck-content .field--name-field-projectlinks a {
+    .ck-content .page-node-type-project .field--name-field-projectlinks a {
       display: block;
       text-align: center;
       text-decoration: none;
@@ -10798,14 +10823,14 @@
       background-color: #0c3f7c;
       color: white;
       transition: 0.3s; }
-      .ck-content .field--name-field-projectlinks a:hover {
+      .ck-content .page-node-type-project .field--name-field-projectlinks a:hover {
         background-color: #e03726;
         color: white; }
-  .ck-content .field--name-field-hero-video, .ck-content .field--name-field-hero {
-    margin-bottom: 2rem; }
-  .ck-content .field--name-field-album {
+  .ck-content .page-node-type-project .field--name-field-album {
+    width: 60%;
+    margin: 0 auto;
     margin-bottom: 4rem; }
-    .ck-content .field--name-field-album .image-style-albumcrop {
+    .ck-content .page-node-type-project .field--name-field-album .image-style-albumcrop {
       border-radius: 2rem; }
   .ck-content .view-projecten .views-view-responsive-grid__item-inner {
     background: white;
@@ -10837,13 +10862,14 @@
         font-size: 1.4rem;
         color: #0c3f7c; }
         .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node a:after {
-          content: "\25B6";
-          width: 50px;
+          content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
+          position: relative;
+          width: 20px;
           height: 50px;
-          margin-left: 0;
+          right: -10px;
+          top: 4px;
           text-decoration: none;
-          display: inline-block;
-          color: #e03726; }
+          display: inline-block; }
         .ck-content .view-projecten .views-view-responsive-grid__item-inner .views-field-view-node a:hover {
           color: #e03726; }
   .ck-content .notendop {
@@ -10912,71 +10938,93 @@
         .ck-content .notendop .field--name-field-noot {
           width: 40%;
           margin: -10px; } }
+  .ck-content #mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
+    height: 60px; }
+    .ck-content #mc_embed_signup #mc_embed_signup_scroll .mc-field-group input {
+      width: 100% !important; }
+  .ck-content .region-footer {
+    display: flex;
+    flex-direction: row !important;
+    flex-basis: 200px;
+    flex-wrap: wrap !important; }
+    .ck-content .region-footer > * {
+      width: 200px;
+      margin-bottom: 4rem; }
+      .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
+        color: white;
+        text-align: center;
+        font-weight: bold; }
+      .ck-content .region-footer > * ul li {
+        min-height: 1.6em; }
+    .ck-content .region-footer > :nth-of-type(1) {
+      width: 100%; }
+    .ck-content .region-footer > :nth-of-type(2) {
+      width: 100%;
+      text-align: center; }
+    .ck-content .region-footer > :nth-of-type(3) {
+      width: 100%;
+      text-align: center; }
+    .ck-content .region-footer > :nth-of-type(4) {
+      width: 100%; }
+  @media (min-width: 768px) {
+    .ck-content .region-footer {
+      display: flex;
+      flex-direction: row !important;
+      flex-basis: 300px;
+      flex-wrap: wrap !important; }
+      .ck-content .region-footer > * {
+        width: 200px; }
+      .ck-content .region-footer > :nth-of-type(1) {
+        width: 100%; }
+        .ck-content .region-footer > :nth-of-type(1) img {
+          width: 100%;
+          height: auto; }
+      .ck-content .region-footer > :nth-of-type(2) {
+        width: 50%; }
+      .ck-content .region-footer > :nth-of-type(3) {
+        width: 50%; }
+      .ck-content .region-footer > :nth-of-type(4) {
+        width: 100%; } }
+  @media (min-width: 992px) {
+    .ck-content .region-footer {
+      display: flex;
+      flex-direction: row !important;
+      flex-basis: 300px;
+      flex-wrap: nowrap !important; }
+      .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
+        color: white;
+        text-align: left; }
+      .ck-content .region-footer > * ul li {
+        margin-left: -0.5rem;
+        text-align: left; }
+      .ck-content .region-footer > :nth-of-type(1) {
+        width: 100%; }
+        .ck-content .region-footer > :nth-of-type(1) img {
+          width: 75%;
+          height: auto; }
+      .ck-content .region-footer > :nth-of-type(2) {
+        width: 100%; }
+      .ck-content .region-footer > :nth-of-type(3) {
+        width: 100%; }
+      .ck-content .region-footer > :nth-of-type(4) {
+        width: 100%; } }
   .ck-content .region-footer #block-b5tejothema-logoensocial .footcol {
+    width: 200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first {
+      width: 200px; }
+      .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first .logo img {
+        width: 100%;
+        height: auto; }
     .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
+      width: 200px;
       display: flex;
       flex-direction: row;
       justify-content: space-between !important;
       gap: 1em;
       flex-wrap: nowrap; }
-  .ck-content .region-footer > * {
-    padding: 0;
-    flex-basis: 300px;
-    flex-grow: 0; }
-    .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
-      color: white;
-      font-size: 1em;
-      margin-bottom: 1rem; }
-    .ck-content .region-footer > * ul {
-      font-size: 0.9em;
-      color: white;
-      margin-left: -8px; }
-      .ck-content .region-footer > * ul li {
-        padding: 0; }
-        .ck-content .region-footer > * ul li a {
-          padding: 3px; }
-  .ck-content .region-footer #block-b5tejothema-logoensocial .footrow.first {
-    width: 200px;
-    margin: 0 auto; }
-  .ck-content .region-footer #block-b5tejothema-logoensocial .footrow.second {
-    width: 200px;
-    margin: 0 auto; }
-  .ck-content .region-footer #block-b5tejothema-nieuwsbrief {
-    padding: 0 8px; }
-  .ck-content .region-footer {
-    display: flex;
-    flex-direction: row !important;
-    flex-wrap: wrap;
-    gap: 1rem; }
-    .ck-content .region-footer > * {
-      flex-basis: 300px;
-      margin: 0 auto; }
-    .ck-content .region-footer #block-b5tejothema-nieuwsbrief {
-      padding: 0; }
-  @media (min-width: 1200px) {
-    .ck-content .region-footer {
-      display: flex;
-      flex-direction: row !important;
-      flex-wrap: nowrap;
-      gap: 1rem; }
-      .ck-content .region-footer > * {
-        padding: 0;
-        flex-basis: 300px;
-        flex-grow: 0; }
-        .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
-          color: white;
-          font-size: 1em;
-          margin-bottom: 1rem; }
-        .ck-content .region-footer > * ul {
-          font-size: 0.9em;
-          color: white;
-          margin-left: -8px; }
-          .ck-content .region-footer > * ul li {
-            padding: 0; }
-            .ck-content .region-footer > * ul li a {
-              padding: 3px; } }
 
 /*# sourceMappingURL=ck5style.css.map */

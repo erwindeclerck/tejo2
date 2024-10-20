@@ -151,13 +151,14 @@
     font-size: 1.4rem;
     color: $tejoblauw;
     &:after {
-      content: "\25B6";
-      width: 50px;
+      content:url("/themes/custom/b5tejothema/resources/trianglered.svg");
+      position:relative;
+      width: 20px;
       height: 50px;
-      margin-left: 0;
+      right: -10px;
+      top: 4px;
       text-decoration: none;
       display: inline-block;
-      color: $tejorood;
     }
     &:hover {
       color: $tejorood;
@@ -165,3 +166,4 @@
   }
 
 }
+

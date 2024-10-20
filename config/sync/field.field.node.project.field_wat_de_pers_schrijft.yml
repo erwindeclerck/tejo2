@@ -5,8 +5,15 @@ dependencies:
   config:
     - field.storage.node.field_wat_de_pers_schrijft
     - node.type.project
+    - paragraphs.paragraphs_type.p01
+    - paragraphs.paragraphs_type.p01_card_hor
+    - paragraphs.paragraphs_type.p01_quote
+    - paragraphs.paragraphs_type.p02
     - paragraphs.paragraphs_type.p03
     - paragraphs.paragraphs_type.p04
+    - paragraphs.paragraphs_type.p05
+    - paragraphs.paragraphs_type.p10
+    - paragraphs.paragraphs_type.p11
   module:
     - entity_reference_revisions
 id: node.project.field_wat_de_pers_schrijft
@@ -23,8 +30,15 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      p01: p01
+      p01_card_hor: p01_card_hor
+      p01_quote: p01_quote
+      p02: p02
       p03: p03
       p04: p04
+      p05: p05
+      p10: p10
+      p11: p11
     negate: 0
     target_bundles_drag_drop:
       bp_accordion:
@@ -83,16 +97,16 @@ settings:
         enabled: false
       p01:
         weight: 46
-        enabled: false
+        enabled: true
       p01_card_hor:
         weight: 47
-        enabled: false
+        enabled: true
       p01_quote:
         weight: 48
-        enabled: false
+        enabled: true
       p02:
         weight: 49
-        enabled: false
+        enabled: true
       p03:
         weight: 50
         enabled: true
@@ -101,11 +115,11 @@ settings:
         enabled: true
       p05:
         weight: 52
-        enabled: false
+        enabled: true
       p10:
         weight: 53
-        enabled: false
+        enabled: true
       p11:
         weight: 54
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

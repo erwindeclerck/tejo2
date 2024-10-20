@@ -7,12 +7,12 @@ dependencies:
 id: vaste_pagina
 label: 'Vaste pagina'
 type: 'canonical_entities:node'
-pattern: '/[node:title]'
+pattern: '[node:title]'
 selection_criteria:
-  d5f2bdc8-9fa9-4a8a-9649-1a93ecac3a64:
+  f7b689a1-f962-4153-bc2c-683123e80fa6:
     id: 'entity_bundle:node'
     negate: false
-    uuid: d5f2bdc8-9fa9-4a8a-9649-1a93ecac3a64
+    uuid: f7b689a1-f962-4153-bc2c-683123e80fa6
     context_mapping:
       node: node
     bundles:

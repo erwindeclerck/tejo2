@@ -15,26 +15,25 @@ settings:
     items:
       - bold
       - italic
-      - strikethrough
-      - superscript
-      - subscript
-      - removeFormat
+      - underline
       - '|'
       - link
       - '|'
       - bulletedList
       - numberedList
+      - alignment
       - '|'
       - blockQuote
       - drupalInsertImage
       - insertTable
       - horizontalLine
       - '|'
-      - alignment
       - style
       - heading
+      - showBlocks
       - '|'
       - sourceEditing
+      - removeFormat
   plugins:
     ckeditor5_alignment:
       enabled_alignments:
@@ -84,6 +83,9 @@ settings:
         -
           label: BigBubbles
           element: '<ul class="bigbubble">'
+        -
+          label: Krantnaam
+          element: '<p class="krantnaam">'
     editor_advanced_image_image:
       disable_balloon: false
       default_class: ''

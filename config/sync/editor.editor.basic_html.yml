@@ -11,19 +11,30 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
-      - heading
       - bold
       - italic
       - '|'
       - link
-      - blockQuote
+      - '|'
       - bulletedList
       - numberedList
-      - sourceEditing
-      - tokenBrowser
-      - showBlocks
+      - alignment
+      - '|'
+      - blockQuote
+      - '|'
       - style
+      - heading
+      - showBlocks
+      - '|'
+      - sourceEditing
+      - removeFormat
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_heading:
       enabled_headings:
         - heading2
@@ -58,7 +69,8 @@ settings:
         -
           label: SUB
           element: '<span class="sub">'
-    token_filter_token_browser:
-      token_types: {  }
+        -
+          label: Krantnaam
+          element: '<p class="krantnaam">'
 image_upload:
   status: false

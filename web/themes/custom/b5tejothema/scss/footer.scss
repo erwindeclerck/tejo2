@@ -1,19 +1,239 @@
+//.region-footer {
+//  #block-b5tejothema-logoensocial {
+//    //max-width:217px !important;
+//    .footcol {
+//      display: flex;
+//      flex-direction: column;
+//      gap: 3rem;
+//      .footrow.first {
+//        .logo {
+//          img {
+//            // border: 1px solid white;
+//          }
+//        }
+//
+//      }
+//      .footrow.second {
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: space-between !important;
+//        gap: 1em;
+//        flex-wrap: nowrap;
+//        .icon {
+//          img {
+//            // border: 1px solid white;
+//          }
+//        }
+//
+//      }
+//    }
+//  }
+//}
+//
+//
+//
+//.region-footer {
+//  //border: 1px solid red;
+//
+//  & > * {
+//    //border: 1px solid white;
+//    padding: 0;
+//    flex-basis: 300px;
+//    flex-grow: 0;
+//    h5 {
+//      color: $tejowit;
+//      font-size: 1em;
+//      margin-bottom: 1rem;
+//    }
+//    ul {
+//      font-size: 0.9em;
+//      color: white;
+//      margin-left: -8px;
+//      li {
+//        padding: 0;
+//        a {
+//          padding: 3px;
+//        }
+//      }
+//    }
+//  }
+//
+//  #block-b5tejothema-logoensocial {
+//    .footrow.first {
+//      width:200px;
+//      margin:0 auto;
+//      img {
+//      }
+//    }
+//    .footrow.second{
+//      width:200px;
+//      margin: 0 auto;
+//    }
+//  }
+//  #block-b5tejothema-nieuwsbrief {
+//    padding: 0 8px;
+//  }
+//
+//}
+//
+//@include media-breakpoint-up(xs) {
+//  .region-footer {
+//    display: flex;
+//    flex-direction: row!important;
+//    flex-wrap: wrap;
+//    gap: 1rem;
+//
+//    & > * {
+//      flex-basis: 300px;
+//      margin: 0 auto;
+//    }
+//
+//    #block-b5tejothema-nieuwsbrief {
+//      padding: 0;
+//      // flex-grow:1;
+//    }
+//
+//  }
+//}
+//@include media-breakpoint-up(xl) {
+//
+//  .region-footer {
+//    display: flex;
+//    flex-direction: row!important;
+//    flex-wrap: nowrap;
+//
+//    gap: 1rem;
+//
+//    & > * {
+//      padding: 0;
+//      flex-basis: 300px;
+//      flex-grow: 0;
+//      h5 {
+//        color: $tejowit;
+//        font-size: 1em;
+//        margin-bottom: 1rem;
+//      }
+//      ul {
+//        font-size: 0.9em;
+//        color: white;
+//        margin-left: -8px;
+//        li {
+//          padding: 0;
+//          a {
+//            padding: 3px;
+//          }
+//        }
+//      }
+//    }
+//
+//  }
+//}
+
+
+
+
+
+
+#mc_embed_signup #mc_embed_signup_scroll .mc-field-group{
+  height: 60px;
+  input{
+    width:100%!important;
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .region-footer{
+    display: flex;
+    flex-direction: row!important;
+    flex-basis: 200px;
+    flex-wrap: wrap!important;
+    & > * {
+      width:200px;
+      margin-bottom: 4rem;
+      // border:1px solid white;
+      h5{
+        color:white;
+        text-align: center;
+        font-weight: bold;
+      }
+      ul li{
+        min-height: 1.6em;
+      }
+    }
+    & > :nth-of-type(1){width:100%;}
+    & > :nth-of-type(2){width:100%;text-align: center;}
+    & > :nth-of-type(3){width:100%;text-align: center;}
+    & > :nth-of-type(4){width:100%}
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  .region-footer{
+    display: flex;
+    flex-direction: row!important;
+    flex-basis: 300px;
+    flex-wrap: wrap!important;
+    & > * {
+      width:200px;
+      // border:1px solid white;
+    }
+    & > :nth-of-type(1){width:100%;img{width: 100%;height:auto;}}
+    & > :nth-of-type(2){width:50%;}
+    & > :nth-of-type(3){width:50%;}
+    & > :nth-of-type(4){width:100%;}
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .region-footer{
+    display: flex;
+    flex-direction: row!important;
+    flex-basis: 300px;
+    flex-wrap: nowrap!important;
+    & > * {
+      // width:100px;
+      // border:1px solid white;
+      h5{
+        color:white;
+        text-align: left;
+      }
+      ul li{
+        margin-left: -0.5rem;
+        text-align: left;
+      }
+    }
+    & > :nth-of-type(1){width:100%;img{width: 75%;height:auto;}}
+    & > :nth-of-type(2){width:100%;}
+    & > :nth-of-type(3){width:100%;}
+    & > :nth-of-type(4){width:100%;}
+  }
+}
+
+
+
 .region-footer {
   #block-b5tejothema-logoensocial {
     //max-width:217px !important;
     .footcol {
+      width:200px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 3rem;
       .footrow.first {
+        width: 200px;
         .logo {
           img {
+            width: 100%;
+            height: auto;
             // border: 1px solid white;
           }
         }
 
       }
       .footrow.second {
+        width:200px;
         display: flex;
         flex-direction: row;
         justify-content: space-between !important;
@@ -27,104 +247,5 @@
 
       }
     }
-  }
-}
-
-
-
-.region-footer {
-  //border: 1px solid red;
-
-  & > * {
-    //border: 1px solid white;
-    padding: 0;
-    flex-basis: 300px;
-    flex-grow: 0;
-    h5 {
-      color: $tejowit;
-      font-size: 1em;
-      margin-bottom: 1rem;
-    }
-    ul {
-      font-size: 0.9em;
-      color: white;
-      margin-left: -8px;
-      li {
-        padding: 0;
-        a {
-          padding: 3px;
-        }
-      }
-    }
-  }
-
-  #block-b5tejothema-logoensocial {
-    .footrow.first {
-      width:200px;
-      margin:0 auto;
-      img {
-      }
-    }
-    .footrow.second{
-      width:200px;
-      margin: 0 auto;
-    }
-  }
-  #block-b5tejothema-nieuwsbrief {
-    padding: 0 8px;
-  }
-
-}
-
-@include media-breakpoint-up(xs) {
-  .region-footer {
-    display: flex;
-    flex-direction: row!important;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-    & > * {
-      flex-basis: 300px;
-      margin: 0 auto;
-    }
-
-    #block-b5tejothema-nieuwsbrief {
-      padding: 0;
-      // flex-grow:1;
-    }
-
-  }
-}
-@include media-breakpoint-up(xl) {
-
-  .region-footer {
-    display: flex;
-    flex-direction: row!important;
-    flex-wrap: nowrap;
-
-    gap: 1rem;
-
-    & > * {
-      padding: 0;
-      flex-basis: 300px;
-      flex-grow: 0;
-      h5 {
-        color: $tejowit;
-        font-size: 1em;
-        margin-bottom: 1rem;
-      }
-      ul {
-        font-size: 0.9em;
-        color: white;
-        margin-left: -8px;
-        li {
-          padding: 0;
-          a {
-            padding: 3px;
-          }
-        }
-      }
-    }
-
   }
 }

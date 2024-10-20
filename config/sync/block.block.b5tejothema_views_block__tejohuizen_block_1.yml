@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.tejohuizen
   module:
+    - group
     - user
     - views
   theme:
@@ -29,4 +30,13 @@ visibility:
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
+      content_editor: content_editor
       adminredacteur: adminredacteur
+      administrator: administrator
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+    bundles:
+      tejo_huis: tejo_huis

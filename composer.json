@@ -55,6 +55,8 @@
         "drupal/image_link_formatter": "^2.2",
         "drupal/layout_paragraphs": "^2.0",
         "drupal/leaflet": "^10.2",
+        "drupal/leaflet_more_maps": "^2.2",
+        "drupal/masquerade": "^2.0",
         "drupal/menu_item_extras": "^3.0",
         "drupal/paragraph_skins": "^3.0",
         "drupal/paragraphs": "^1.17",

@@ -1,9 +1,9 @@
-uuid: 2a55da25-c77e-44b7-8cb7-e6ca01ab4990
+uuid: 17b60096-26e2-4e22-9b77-7431400116f9
 langcode: nl
 status: true
 dependencies:
   content:
-    - 'block_content:basic:704b5143-7480-481a-9586-697ecd7955eb'
+    - 'block_content:basic:25b008c0-062e-4d2b-860d-276b924083f6'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: b5tejothema
 region: footer
 weight: 0
 provider: null
-plugin: 'block_content:704b5143-7480-481a-9586-697ecd7955eb'
+plugin: 'block_content:25b008c0-062e-4d2b-860d-276b924083f6'
 settings:
-  id: 'block_content:704b5143-7480-481a-9586-697ecd7955eb'
+  id: 'block_content:25b008c0-062e-4d2b-860d-276b924083f6'
   label: Nieuwsbrief
   label_display: '0'
   provider: block_content

@@ -14,3 +14,4 @@ global_role: anonymous
 group_type: tejo_huis
 permissions:
   - 'view group'
+  - 'view group_node:article entity'

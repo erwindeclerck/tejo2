@@ -1,0 +1,11 @@
+uuid: f779c435-d2d4-4f82-9adb-7de9976a0bd6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.vaste_pagina
+id: node.vaste_pagina
+target_entity_type_id: node
+target_bundle: vaste_pagina
+default_langcode: site_default
+language_alterable: false

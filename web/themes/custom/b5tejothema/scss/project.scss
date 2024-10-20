@@ -1,21 +1,38 @@
-.field--name-field-periode {
-  padding: 1em;
-  font-size: 1.5rem;
-  font-style: italic;
-}
-.field--name-field-projectlinks {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  display: flex;
-  justify-content: space-evenly;
-  @include tejolink($tejoblauw,$tejorood,$tejowit,$tejowit,25rem);
-}
-.field--name-field-hero-video,.field--name-field-hero{
-  margin-bottom: 2rem;
-}
-.field--name-field-album{
-  margin-bottom: 4rem;
-  .image-style-albumcrop {
-    border-radius:2rem;
+
+
+
+.page-node-type-project {
+  .field--name-field-periode {
+    text-align: center;
+    color: $tejorood;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 2em;
+    margin-top: -2em;
+  }
+  .field--name-field-hero-video,.field--name-field-hero{
+    margin-bottom: 2rem;
+  }
+
+  .field--name-body {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .field--name-field-projectlinks {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    @include tejolink($tejoblauw,$tejorood,$tejowit,$tejowit,25rem);
+  }
+
+  .field--name-field-album {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    .image-style-albumcrop {
+      border-radius:2rem;
+    }
   }
 }

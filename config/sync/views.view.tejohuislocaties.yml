@@ -3,11 +3,16 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.storage.group.field_adres
+    - field.storage.group.field_gevel
     - field.storage.group.field_locatie
     - group.type.tejo_huis
+    - image.style.medium
   module:
+    - address
     - geofield
     - group
+    - image
     - leaflet
     - leaflet_views
 id: tejohuislocaties
@@ -383,15 +388,15 @@ display:
           data_source:
             field_locatie: field_locatie
           entity_source: __base_table
-          name_field: ''
+          name_field: field_locatie
           leaflet_tooltip:
-            value: label
+            value: ''
             options: '{"permanent":false,"direction":"center"}'
           leaflet_popup:
-            value: ''
+            value: '#rendered_view_fields'
             options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
             view_mode: token
-          leaflet_map: 'OSM Mapnik'
+          leaflet_map: mapbox-light
           height: '600'
           height_unit: px
           hide_empty_map: false
@@ -399,13 +404,13 @@ display:
           gesture_handling: false
           fitbounds_options: '{"padding":[0,0]}'
           reset_map:
-            control: false
+            control: true
             options: '{"position":"topleft","title":"Reset View"}'
           map_scale:
             control: true
             options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
           locate:
-            control: true
+            control: false
             options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
             automatic: false
           map_position:
@@ -750,7 +755,7 @@ display:
           entity_field: label
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -813,7 +818,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -857,8 +862,8 @@ display:
           type: leaflet_formatter_default
           settings:
             multiple_map: false
-            leaflet_map: 'OSM Mapnik'
-            height: 500
+            leaflet_map: mapbox-light
+            height: 400
             height_unit: px
             hide_empty_map: false
             disable_wheel: false
@@ -871,11 +876,11 @@ display:
               control: false
               options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
             locate:
-              control: true
+              control: false
               options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
-              automatic: true
+              automatic: false
             leaflet_tooltip:
-              value: ''
+              value: 'tooltip source'
               options: '{"permanent":false,"direction":"center"}'
             leaflet_popup:
               control: '1'
@@ -887,7 +892,7 @@ display:
                 lat: 0.0
                 lon: 0.0
               zoomControlPosition: topleft
-              zoom: 10
+              zoom: 5
               minZoom: 1
               maxZoom: 18
               zoomFiner: 0
@@ -949,6 +954,187 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_gevel:
+          id: field_gevel
+          table: group__field_gevel
+          field: field_gevel
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: medium
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_adres:
+          id: field_adres
+          table: group__field_adres
+          field: field_adres
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        view_group:
+          id: view_group
+          table: groups_field_revision
+          field: view_group
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: group
+          plugin_id: entity_link
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'Naar dit Tejo-huis'
+          output_url_as_text: false
+          absolute: false
       defaults:
         fields: false
       display_extenders: {  }
@@ -958,4 +1144,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
+        - 'config:field.storage.group.field_adres'
+        - 'config:field.storage.group.field_gevel'
         - 'config:field.storage.group.field_locatie'

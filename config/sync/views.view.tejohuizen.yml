@@ -264,104 +264,13 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      enabled: true
       style:
-        type: leaflet_map
+        type: default
         options:
           grouping: {  }
-          uses_fields: false
-          data_source: ''
-          entity_source: __base_table
-          name_field: ''
-          leaflet_tooltip:
-            value: ''
-            options: '{"permanent":false,"direction":"center"}'
-          leaflet_popup:
-            value: ''
-            options: '{"maxWidth":"300","minWidth":"50", "autoPan": true}'
-            view_mode: full
-            control: false
-            content: ''
-          leaflet_map: 'OSM Mapnik'
-          height: '400'
-          height_unit: px
-          hide_empty_map: false
-          disable_wheel: false
-          gesture_handling: false
-          fitbounds_options: '{"padding":[0,0]}'
-          reset_map:
-            control: false
-            options: '{"position": "topleft", "title": "Reset View"}'
-          map_scale:
-            control: false
-            options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
-          locate:
-            control: false
-            options: '{"position": "topright", "setView": "untilPanOrZoom", "returnToPrevBounds":true, "keepCurrentZoomLevel": true, "strings": {"title": "Locate my position"}}'
-            automatic: false
-          map_position:
-            force: false
-            center:
-              lat: 0.0
-              lon: 0.0
-            zoomControlPosition: topleft
-            zoom: 5
-            minZoom: 1
-            maxZoom: 18
-            zoomFiner: 0
-          weight: null
-          icon:
-            iconType: marker
-            iconUrl: ''
-            shadowUrl: ''
-            className: ''
-            iconSize:
-              x: null
-              'y': null
-            iconAnchor:
-              x: null
-              'y': null
-            shadowSize:
-              x: null
-              'y': null
-            shadowAnchor:
-              x: null
-              'y': null
-            popupAnchor:
-              x: null
-              'y': null
-            html: '<div></div>'
-            html_class: leaflet-map-divicon
-            circle_marker_options: '{"radius": 100, "color": "red", "fillColor": "#f03", "fillOpacity": 0.5}'
-          leaflet_markercluster:
-            control: false
-            include_path: false
-            options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
-            excluded: false
-          fullscreen:
-            control: false
-            options: '{"position":"topleft","pseudoFullscreen":false}'
-          path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
-          geocoder:
-            control: false
-            settings:
-              autocomplete:
-                placeholder: 'Search Address'
-                title: 'Search an Address on the Map'
-              position: topright
-              input_size: 20
-              providers: {  }
-              min_terms: 4
-              delay: 800
-              zoom: 16
-              popup: false
-              options: ''
-          map_lazy_load:
-            lazy_load: false
-          multiple_map: false
-          popup: false
-          popup_content: ''
-          feature_properties:
-            values: ''
+          row_class: ''
+          default_row_class: true
       row:
         type: fields
         options: {  }
@@ -810,16 +719,13 @@ display:
           output_url_as_text: false
           absolute: false
       style:
-        type: grid
+        type: grid_responsive
         options:
           grouping: {  }
-          columns: 4
-          automatic_width: true
+          columns: 3
+          cell_min_width: 250
+          grid_gutter: 16
           alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
       row:
         type: fields
         options: {  }
@@ -843,6 +749,19 @@ display:
     display_plugin: block
     position: 3
     display_options:
+      enabled: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options: {  }
+      defaults:
+        style: false
+        row: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

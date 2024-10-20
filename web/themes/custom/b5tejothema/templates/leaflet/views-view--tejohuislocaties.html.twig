@@ -65,7 +65,14 @@
     <div class="view-content">
 
       <div class="map">
-        <div id="printer" width="150px"></div>
+        <div id="leftpane" >
+          <div id=form>
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" >
+            <button type="button" id="wis">Wis</button>
+          </div>
+          <div id="locations"></div>
+        </div>
         <div id="rightpane" style=" {% if height is not empty %}height: {{ height }}{% endif %}">
           {{ rows }}
         </div>

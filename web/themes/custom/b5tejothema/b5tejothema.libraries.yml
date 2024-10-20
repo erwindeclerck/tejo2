@@ -12,6 +12,8 @@ global-styling:
     component:
       scss/style.scss: {}
   js:
+    https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js: { type: external, minified: true }
+    data/pcbelgie.js: {}
     js/custom.js: {}
 
   dependencies:
