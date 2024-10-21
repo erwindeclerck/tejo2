@@ -46,26 +46,27 @@
     }
     .link {
       margin-top: auto;
-      a {
-        display: block;
-        padding: 30px 0 30px 0;
-        font-weight: bold;
-        font-size: 1.4em;
-        color:$tejoblauw;
-        &:after {
-          content: "\25B6";
-          font-family: 'Roboto', 'sans-serif';
-          width: 50px;
-          height: 50px;
-          margin-left: 0;
-          text-decoration: none;
-          display: inline-block;
-          color: $tejorood;
-        }
-        &:hover {
-          color: $tejorood;
-        }
-      }
+      @include pijlbutton();
+      //a {
+      //  display: block;
+      //  padding: 30px 0 30px 0;
+      //  font-weight: bold;
+      //  font-size: 1.4em;
+      //  color:$tejoblauw;
+      //  &:after {
+      //    content: "\25B6";
+      //    font-family: 'Roboto', 'sans-serif';
+      //    width: 50px;
+      //    height: 50px;
+      //    margin-left: 0;
+      //    text-decoration: none;
+      //    display: inline-block;
+      //    color: $tejorood;
+      //  }
+      //  &:hover {
+      //    color: $tejorood;
+      //  }
+      //}
     }
   }
 

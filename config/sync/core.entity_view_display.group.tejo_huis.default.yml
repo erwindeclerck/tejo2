@@ -397,21 +397,21 @@ content:
         zoomFiner: 0
       icon:
         iconType: marker
-        iconUrl: /themes/custom/b5tejothema/resources/redpin30.png
-        shadowUrl: /themes/custom/b5tejothema/resources/redpinS30.png
+        iconUrl: /themes/custom/b5tejothema/resources/redbluepin30.png
+        shadowUrl: /themes/custom/b5tejothema/resources/redbluepin30shad.png
         className: ''
         iconSize:
           x: ''
           'y': ''
         iconAnchor:
-          x: 14px
-          'y': 64px
+          x: '4'
+          'y': '42'
         shadowSize:
           x: ''
           'y': ''
         shadowAnchor:
-          x: 13px
-          'y': 63px
+          x: '4'
+          'y': '42'
         popupAnchor:
           x: ''
           'y': ''

@@ -9529,22 +9529,23 @@
         font-size: 1.1em;
         line-height: 1.3; }
       .ck-content .herotriplet > * .link {
-        margin-top: auto; }
+        margin-top: auto;
+        text-align: center; }
         .ck-content .herotriplet > * .link a {
           display: block;
-          padding: 30px 0 30px 0;
+          padding: 1rem 0;
           font-weight: bold;
-          font-size: 1.4em;
+          font-size: 1.4rem;
           color: #0c3f7c; }
           .ck-content .herotriplet > * .link a:after {
-            content: "\25B6";
-            font-family: 'Roboto', 'sans-serif';
-            width: 50px;
+            content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
+            position: relative;
+            width: 20px;
             height: 50px;
-            margin-left: 0;
+            right: -10px;
+            top: 4px;
             text-decoration: none;
-            display: inline-block;
-            color: #e03726; }
+            display: inline-block; }
           .ck-content .herotriplet > * .link a:hover {
             color: #e03726; }
   .ck-content .page-node-type-homepagina {
@@ -10404,20 +10405,21 @@
           width: 60%;
           margin-left: 15%; }
         .ck-content .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details::after {
-          content: "\25bc";
+          content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+          transition: transform .2s;
+          transform: rotate(90deg);
           position: absolute;
-          right: 30px;
-          top: 30px;
-          color: #e03726;
-          font-size: 2rem;
+          width: 25px;
+          top: 2em;
+          right: 50px;
           z-index: -1; }
         .ck-content .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details:not([open])::after {
-          content: "\25b6";
+          content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+          transform: rotate(0deg);
           position: absolute;
-          right: 30px;
-          top: 30px;
-          color: #e03726;
-          font-size: 2rem;
+          width: 25px;
+          top: 2em;
+          right: 44px;
           z-index: -1; }
   .ck-content .contact-message-form,
   .ck-content .webform-submission-nood-aan-een-gesprek-form {
@@ -10498,6 +10500,11 @@
       .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a {
         text-decoration: none;
         color: #0c3f7c; }
+    .ck-content .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-created,
+    .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-created {
+      text-align: center;
+      font-size: 0.9em;
+      font-style: italic; }
     .ck-content .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content,
     .ck-content .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content {
       padding: 1rem; }
@@ -10943,6 +10950,23 @@
     height: 60px; }
     .ck-content #mc_embed_signup #mc_embed_signup_scroll .mc-field-group input {
       width: 100% !important; }
+  .ck-content .region-footer #block-b5tejothema-logoensocial .footcol {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; }
+    .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first .logo img {
+      width: 100%;
+      height: auto; }
+    .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between !important;
+      gap: 1em;
+      flex-wrap: nowrap; }
+      .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second .icon img {
+        width: 50px; }
   .ck-content .region-footer {
     display: flex;
     flex-direction: row !important;
@@ -10954,9 +10978,10 @@
       .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
         color: white;
         text-align: center;
-        font-weight: bold; }
-      .ck-content .region-footer > * ul li {
-        min-height: 1.6em; }
+        font-weight: bold;
+        margin-bottom: 1.2em; }
+      .ck-content .region-footer > * ul li a.nav-link, .ck-content .region-footer > * ul li .media-library-view--widget .view-header a, .ck-content .media-library-view--widget .view-header .region-footer > * ul li a {
+        padding: 0.25em 0; }
     .ck-content .region-footer > :nth-of-type(1) {
       width: 100%; }
     .ck-content .region-footer > :nth-of-type(2) {
@@ -10977,13 +11002,12 @@
         width: 200px; }
       .ck-content .region-footer > :nth-of-type(1) {
         width: 100%; }
-        .ck-content .region-footer > :nth-of-type(1) img {
-          width: 100%;
-          height: auto; }
       .ck-content .region-footer > :nth-of-type(2) {
-        width: 50%; }
-      .ck-content .region-footer > :nth-of-type(3) {
-        width: 50%; }
+        width: 50%;
+        text-align: left; }
+      .ck-content .region-footer > :nth-of-type(2) {
+        width: 50%;
+        text-align: left; }
       .ck-content .region-footer > :nth-of-type(4) {
         width: 100%; } }
   @media (min-width: 992px) {
@@ -10993,39 +11017,16 @@
       flex-basis: 300px;
       flex-wrap: nowrap !important; }
       .ck-content .region-footer > * h5, .ck-content .region-footer > * .h5 {
-        color: white;
-        text-align: left; }
-      .ck-content .region-footer > * ul li {
-        margin-left: -0.5rem;
         text-align: left; }
       .ck-content .region-footer > :nth-of-type(1) {
         width: 100%; }
-        .ck-content .region-footer > :nth-of-type(1) img {
-          width: 75%;
-          height: auto; }
       .ck-content .region-footer > :nth-of-type(2) {
-        width: 100%; }
-      .ck-content .region-footer > :nth-of-type(3) {
-        width: 100%; }
-      .ck-content .region-footer > :nth-of-type(4) {
-        width: 100%; } }
-  .ck-content .region-footer #block-b5tejothema-logoensocial .footcol {
-    width: 200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; }
-    .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first {
-      width: 200px; }
-      .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first .logo img {
         width: 100%;
-        height: auto; }
-    .ck-content .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between !important;
-      gap: 1em;
-      flex-wrap: nowrap; }
+        text-align: left; }
+      .ck-content .region-footer > :nth-of-type(3) {
+        width: 100%;
+        text-align: left; }
+      .ck-content .region-footer > :nth-of-type(4) {
+        width: 200%; } }
 
 /*# sourceMappingURL=ck5style.css.map */

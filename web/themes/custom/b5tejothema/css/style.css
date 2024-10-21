@@ -11657,22 +11657,23 @@ footer.mt-auto {
       font-size: 1.1em;
       line-height: 1.3; }
     .herotriplet > * .link {
-      margin-top: auto; }
+      margin-top: auto;
+      text-align: center; }
       .herotriplet > * .link a {
         display: block;
-        padding: 30px 0 30px 0;
+        padding: 1rem 0;
         font-weight: bold;
-        font-size: 1.4em;
+        font-size: 1.4rem;
         color: #0c3f7c; }
         .herotriplet > * .link a:after {
-          content: "\25B6";
-          font-family: 'Roboto', 'sans-serif';
-          width: 50px;
+          content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
+          position: relative;
+          width: 20px;
           height: 50px;
-          margin-left: 0;
+          right: -10px;
+          top: 4px;
           text-decoration: none;
-          display: inline-block;
-          color: #e03726; }
+          display: inline-block; }
         .herotriplet > * .link a:hover {
           color: #e03726; }
 
@@ -12561,20 +12562,21 @@ P03 drie KEER FOTO/TEKST
         width: 60%;
         margin-left: 15%; }
       .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details::after {
-        content: "\25bc";
+        content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+        transition: transform .2s;
+        transform: rotate(90deg);
         position: absolute;
-        right: 30px;
-        top: 30px;
-        color: #e03726;
-        font-size: 2rem;
+        width: 25px;
+        top: 2em;
+        right: 50px;
         z-index: -1; }
       .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details:not([open])::after {
-        content: "\25b6";
+        content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+        transform: rotate(0deg);
         position: absolute;
-        right: 30px;
-        top: 30px;
-        color: #e03726;
-        font-size: 2rem;
+        width: 25px;
+        top: 2em;
+        right: 44px;
         z-index: -1; }
 
 .contact-message-form,
@@ -12658,6 +12660,11 @@ P03 drie KEER FOTO/TEKST
     .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-title .field-content.h3 a {
       text-decoration: none;
       color: #0c3f7c; }
+  .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-created,
+  .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-created {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic; }
   .view-tejonieuws .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content,
   .view-tejonieuws-per-afdeling .view-content .views-view-responsive-grid.views-view-responsive-grid--horizontal .views-view-responsive-grid__item-inner .views-field.views-field-field-samenvatting .field-content {
     padding: 1rem; }
@@ -13116,6 +13123,24 @@ P03 drie KEER FOTO/TEKST
   #mc_embed_signup #mc_embed_signup_scroll .mc-field-group input {
     width: 100% !important; }
 
+.region-footer #block-b5tejothema-logoensocial .footcol {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; }
+  .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first .logo img {
+    width: 100%;
+    height: auto; }
+  .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    gap: 1em;
+    flex-wrap: nowrap; }
+    .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second .icon img {
+      width: 50px; }
+
 .region-footer {
   display: flex;
   flex-direction: row !important;
@@ -13127,9 +13152,10 @@ P03 drie KEER FOTO/TEKST
     .region-footer > * h5, .region-footer > * .h5 {
       color: white;
       text-align: center;
-      font-weight: bold; }
-    .region-footer > * ul li {
-      min-height: 1.6em; }
+      font-weight: bold;
+      margin-bottom: 1.2em; }
+    .region-footer > * ul li a.nav-link, .region-footer > * ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header .region-footer > * ul li a {
+      padding: 0.25em 0; }
   .region-footer > :nth-of-type(1) {
     width: 100%; }
   .region-footer > :nth-of-type(2) {
@@ -13151,13 +13177,12 @@ P03 drie KEER FOTO/TEKST
       width: 200px; }
     .region-footer > :nth-of-type(1) {
       width: 100%; }
-      .region-footer > :nth-of-type(1) img {
-        width: 100%;
-        height: auto; }
     .region-footer > :nth-of-type(2) {
-      width: 50%; }
-    .region-footer > :nth-of-type(3) {
-      width: 50%; }
+      width: 50%;
+      text-align: left; }
+    .region-footer > :nth-of-type(2) {
+      width: 50%;
+      text-align: left; }
     .region-footer > :nth-of-type(4) {
       width: 100%; } }
 @media (min-width: 992px) {
@@ -13167,39 +13192,16 @@ P03 drie KEER FOTO/TEKST
     flex-basis: 300px;
     flex-wrap: nowrap !important; }
     .region-footer > * h5, .region-footer > * .h5 {
-      color: white;
-      text-align: left; }
-    .region-footer > * ul li {
-      margin-left: -0.5rem;
       text-align: left; }
     .region-footer > :nth-of-type(1) {
       width: 100%; }
-      .region-footer > :nth-of-type(1) img {
-        width: 75%;
-        height: auto; }
     .region-footer > :nth-of-type(2) {
-      width: 100%; }
-    .region-footer > :nth-of-type(3) {
-      width: 100%; }
-    .region-footer > :nth-of-type(4) {
-      width: 100%; } }
-.region-footer #block-b5tejothema-logoensocial .footcol {
-  width: 200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem; }
-  .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first {
-    width: 200px; }
-    .region-footer #block-b5tejothema-logoensocial .footcol .footrow.first .logo img {
       width: 100%;
-      height: auto; }
-  .region-footer #block-b5tejothema-logoensocial .footcol .footrow.second {
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between !important;
-    gap: 1em;
-    flex-wrap: nowrap; }
+      text-align: left; }
+    .region-footer > :nth-of-type(3) {
+      width: 100%;
+      text-align: left; }
+    .region-footer > :nth-of-type(4) {
+      width: 200%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -426,21 +426,21 @@ display:
           weight: ''
           icon:
             iconType: marker
-            iconUrl: /themes/custom/b5tejothema/resources/redpin30.png
-            shadowUrl: /themes/custom/b5tejothema/resources/redpinS30.png
+            iconUrl: /themes/custom/b5tejothema/resources/redbluepin30.png
+            shadowUrl: /themes/custom/b5tejothema/resources/redbluepin30shad.png
             className: ''
             iconSize:
-              x: ''
-              'y': ''
+              x: '25'
+              'y': '45'
             iconAnchor:
-              x: 16px
-              'y': 65px
+              x: '4'
+              'y': '42'
             shadowSize:
-              x: ''
-              'y': ''
+              x: '25'
+              'y': '45'
             shadowAnchor:
-              x: 16px
-              'y': 63px
+              x: '4'
+              'y': '42'
             popupAnchor:
               x: ''
               'y': ''

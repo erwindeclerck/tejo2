@@ -1,4 +1,5 @@
 
+
 .paragraph--type-p10 {
   margin-top: 2rem;
   .bs-region--main {
@@ -71,22 +72,23 @@
           }
 
           &::after {
-            content: "\25bc";
+            content:url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+            transition: transform .2s;
+            transform: rotate(90deg);
             position: absolute;
-            right: 30px;
-            top: 30px;
-            color: $tejorood;
-            font-size: 2rem;
-            z-index: -1
+            width: 25px;
+            top: 2em;
+            right: 50px;
+            z-index: -1;
           }
           &:not([open])::after {
-            content: "\25b6";
+            content:url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+            transform: rotate(0deg);
             position: absolute;
-            right: 30px;
-            top: 30px;
-            color: $tejorood;
-            font-size: 2rem;
-            z-index: -1
+            width: 25px;
+            top: 2em;
+            right: 44px;
+            z-index: -1;
           }
 
         }
@@ -96,3 +98,4 @@
     }
   }
 }
+

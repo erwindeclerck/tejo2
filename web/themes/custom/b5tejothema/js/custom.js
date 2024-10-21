@@ -40,6 +40,8 @@ wrap(document.querySelector('a.wrap_me'), document.createElement('div'));
 jQuery(document).bind('leaflet.map', function(event, map, lMap) {
 
   var id = lMap._container.id;
+  var url = window.location.href;
+  if (url.search('tejo-huis-jouw-buurt') < 0 ){return;}
   var settingsElement = document.querySelector('script[type="application/json"][data-drupal-selector="drupal-settings-json"]');
   var drupalSettings = JSON.parse(settingsElement.textContent);
   var leafletset = drupalSettings.leaflet;
