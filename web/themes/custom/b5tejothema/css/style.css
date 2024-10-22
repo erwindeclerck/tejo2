@@ -12562,7 +12562,7 @@ P03 drie KEER FOTO/TEKST
         width: 60%;
         margin-left: 15%; }
       .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details::after {
-        content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+        content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
         transition: transform .2s;
         transform: rotate(90deg);
         position: absolute;
@@ -12571,7 +12571,7 @@ P03 drie KEER FOTO/TEKST
         right: 50px;
         z-index: -1; }
       .paragraph--type-p10 .bs-region--main .field.field--name-field-vraag-en-antwoord .field__item details.faqfield-details:not([open])::after {
-        content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+        content: url("/themes/custom/b5tejothema/resources/trianglered.svg");
         transform: rotate(0deg);
         position: absolute;
         width: 25px;
