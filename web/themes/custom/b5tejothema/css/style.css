@@ -12787,19 +12787,66 @@ P03 drie KEER FOTO/TEKST
   @media (min-width: 576px) {
     .map {
       flex-direction: row; } }
-  .map #leftpane #form input {
-    width: 60px;
-    letter-spacing: 0.1em; }
-  .map #leftpane #locations ul li {
-    color: #0c3f7c;
-    font-size: 0.9em; }
-    .map #leftpane #locations ul li:hover {
-      background-color: #e03726;
-      color: white;
-      cursor: pointer; }
-    .map #leftpane #locations ul li.tejorood {
-      background-color: #e03726;
-      color: white; }
+  .map #leftpane {
+    height: 600px !important; }
+    .map #leftpane #form {
+      padding: 5px; }
+      .map #leftpane #form input {
+        width: 60px;
+        letter-spacing: 0.1em;
+        border-radius: 2em;
+        border: 1px solid #0c3f7c;
+        text-align: center; }
+      .map #leftpane #form label {
+        color: #0c3f7c; }
+      .map #leftpane #form button {
+        width: 60px;
+        letter-spacing: 0.1em;
+        border-radius: 2em;
+        border: 1px solid #0c3f7c; }
+        .map #leftpane #form button:hover {
+          background-color: #e03726;
+          color: white; }
+    .map #leftpane #locations {
+      height: 569px;
+      overflow: auto; }
+      .map #leftpane #locations img {
+        display: block;
+        width: 50px;
+        margin: 5rem auto; }
+      .map #leftpane #locations ul {
+        list-style: none;
+        padding-left: 0; }
+        .map #leftpane #locations ul li {
+          border: 1px solid silver;
+          padding: 5px;
+          color: #0c3f7c;
+          font-size: 0.9em; }
+          .map #leftpane #locations ul li .name {
+            font-weight: bold; }
+          .map #leftpane #locations ul li div.nameaddress:hover {
+            background-color: #e03726;
+            color: white;
+            cursor: pointer; }
+          .map #leftpane #locations ul li.tejorood {
+            background-color: #e03726;
+            color: white; }
+          .map #leftpane #locations ul li a {
+            display: block;
+            padding: 10px 5px;
+            margin: -5px;
+            color: #0c3f7c;
+            font-weight: bold; }
+            .map #leftpane #locations ul li a:hover {
+              color: #e03726;
+              background-color: white; }
+            .map #leftpane #locations ul li a:after {
+              content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+              width: 10px;
+              height: 10px;
+              position: relative;
+              display: inline-block;
+              right: -5px; }
   .map #rightpane {
     flex-grow: 1; }
 

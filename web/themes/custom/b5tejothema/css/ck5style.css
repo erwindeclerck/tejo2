@@ -10624,19 +10624,66 @@
     @media (min-width: 576px) {
       .ck-content .map {
         flex-direction: row; } }
-    .ck-content .map #leftpane #form input {
-      width: 60px;
-      letter-spacing: 0.1em; }
-    .ck-content .map #leftpane #locations ul li {
-      color: #0c3f7c;
-      font-size: 0.9em; }
-      .ck-content .map #leftpane #locations ul li:hover {
-        background-color: #e03726;
-        color: white;
-        cursor: pointer; }
-      .ck-content .map #leftpane #locations ul li.tejorood {
-        background-color: #e03726;
-        color: white; }
+    .ck-content .map #leftpane {
+      height: 600px !important; }
+      .ck-content .map #leftpane #form {
+        padding: 5px; }
+        .ck-content .map #leftpane #form input {
+          width: 60px;
+          letter-spacing: 0.1em;
+          border-radius: 2em;
+          border: 1px solid #0c3f7c;
+          text-align: center; }
+        .ck-content .map #leftpane #form label {
+          color: #0c3f7c; }
+        .ck-content .map #leftpane #form button {
+          width: 60px;
+          letter-spacing: 0.1em;
+          border-radius: 2em;
+          border: 1px solid #0c3f7c; }
+          .ck-content .map #leftpane #form button:hover {
+            background-color: #e03726;
+            color: white; }
+      .ck-content .map #leftpane #locations {
+        height: 569px;
+        overflow: auto; }
+        .ck-content .map #leftpane #locations img {
+          display: block;
+          width: 50px;
+          margin: 5rem auto; }
+        .ck-content .map #leftpane #locations ul {
+          list-style: none;
+          padding-left: 0; }
+          .ck-content .map #leftpane #locations ul li {
+            border: 1px solid silver;
+            padding: 5px;
+            color: #0c3f7c;
+            font-size: 0.9em; }
+            .ck-content .map #leftpane #locations ul li .name {
+              font-weight: bold; }
+            .ck-content .map #leftpane #locations ul li div.nameaddress:hover {
+              background-color: #e03726;
+              color: white;
+              cursor: pointer; }
+            .ck-content .map #leftpane #locations ul li.tejorood {
+              background-color: #e03726;
+              color: white; }
+            .ck-content .map #leftpane #locations ul li a {
+              display: block;
+              padding: 10px 5px;
+              margin: -5px;
+              color: #0c3f7c;
+              font-weight: bold; }
+              .ck-content .map #leftpane #locations ul li a:hover {
+                color: #e03726;
+                background-color: white; }
+              .ck-content .map #leftpane #locations ul li a:after {
+                content: url("http://tejo2.hetwerkhuis.be/themes/custom/b5tejothema/resources/trianglered.svg");
+                width: 10px;
+                height: 10px;
+                position: relative;
+                display: inline-block;
+                right: -5px; }
     .ck-content .map #rightpane {
       flex-grow: 1; }
   .ck-content .grouphead {
