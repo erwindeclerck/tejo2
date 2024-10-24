@@ -416,8 +416,8 @@ display:
           map_position:
             force: true
             center:
-              lat: 51.525834
-              lon: 4.644823
+              lat: 51.157833891
+              lon: 4.1396312676664
             zoomControlPosition: topleft
             zoom: 8
             minZoom: 1

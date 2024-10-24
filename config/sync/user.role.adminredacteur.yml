@@ -9,6 +9,7 @@ dependencies:
     - node.type.oproep
     - node.type.organisatie
     - node.type.persoon
+    - node.type.project
     - node.type.vacature
     - node.type.vaste_pagina
     - node.type.webformpagina
@@ -22,13 +23,16 @@ weight: -7
 is_admin: null
 permissions:
   - 'access group overview'
+  - 'create project content'
   - 'create tejo_huis group'
   - 'delete any aankondiging content'
   - 'delete any article content'
   - 'delete any oproep content'
   - 'delete any organisatie content'
   - 'delete any persoon content'
+  - 'delete any project content'
   - 'delete any vacature content'
   - 'delete any vaste_pagina content'
   - 'delete any webformpagina content'
+  - 'edit any project content'
   - 'use text format full_html'

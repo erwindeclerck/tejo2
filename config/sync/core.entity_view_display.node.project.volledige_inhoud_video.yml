@@ -48,13 +48,20 @@ third_party_settings:
             attributes: ''
     regions:
       main:
-        - field_hero_video
+        - node_title
         - field_periode
+        - field_hero_video
         - body
         - field_projectlinks
         - field_album
         - field_blokken
         - field_wat_de_pers_schrijft
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
   layout_builder:
     enabled: false
     allow_custom: false
@@ -68,7 +75,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: main
   field_album:
     type: colorbox
@@ -90,7 +97,7 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
-    weight: 4
+    weight: 5
     region: main
   field_blokken:
     type: entity_reference_revisions_entity_view
@@ -99,7 +106,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: main
   field_hero_video:
     type: video_embed_field_video
@@ -110,7 +117,7 @@ content:
       width: 854
       height: 480
     third_party_settings: {  }
-    weight: 0
+    weight: 2
     region: main
   field_periode:
     type: string
@@ -130,7 +137,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: main
   field_wat_de_pers_schrijft:
     type: entity_reference_revisions_entity_view
@@ -168,7 +175,7 @@ content:
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 6
+    weight: 7
     region: main
 hidden:
   field_hero: true
