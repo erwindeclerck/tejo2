@@ -24,14 +24,14 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
         throw new Error(`Response status: ${response.status}`);
       }
       const tejohuizenjson = await response.json();
-      var output = myfunction(currentpc, tejohuizenjson);
+      getlocations(currentpc, tejohuizenjson);
       //console.log(output);
     } catch (error) {
       console.error(error.message);
     }
   }
 
-  function myfunction(pclocation, json) {
+  function getlocations(pclocation, json) {
     //json met tejohuizen is ontvangen
     locations = [];
     for (var key in json.data) {
@@ -85,7 +85,7 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
     console.log(pclocation, locations);
 
     var listing = "<ul>";
-    for (var key in locations) {
+    for ( key in locations) {
       var obj = locations[key];
       var googlemap = "";
       if (obj.routeuri !== ""){
@@ -156,7 +156,7 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
         //getData(tejolocation);
       }else{
         console.log(pclocation);
-        field.css('color',"green");
+        field.css('color',"rgb(0,0,255)");
         getData(pclocation);
       }
     }
@@ -164,8 +164,10 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
     if(field.css('color') == 'rgb(255, 0, 0)' ){
       field.val('').css('color','');
     }
-    if(field.css('color') == 'rgb(0, 255, 0)' ){
-      field.val('').css('color','');
+    if(field.css('color') == 'rgb(0, 0, 255)' ){
+    }
+    if (!field.inputmask("isComplete")){
+      field.css('color','');
     }
   });
   jQuery("#form #wis").click(function () {
