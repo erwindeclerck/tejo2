@@ -162,12 +162,10 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
     }
   }).keyup(function () {
     if(field.css('color') == 'rgb(255, 0, 0)' ){
-      field.val('').css('color','');
-    }
-    if(field.css('color') == 'rgb(0, 0, 255)' ){
-    }
-    if (!field.inputmask("isComplete")){
-      field.css('color','');
+      field
+        .shake(3,5,1)
+        .val('').css('color','').focus()
+      ;
     }
   });
   jQuery("#form #wis").click(function () {
@@ -178,3 +176,14 @@ jQuery(document).bind('leaflet.map', function (event, map, lMap) {
 
 
 });
+jQuery.fn.shake = function(intShakes, intDistance, intDuration) {
+  this.each(function() {
+    jQuery(this).css("position","relative");
+    for (var x=1; x<=intShakes; x++) {
+      jQuery(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
+        .animate({left:intDistance}, ((intDuration/intShakes)/2))
+        .animate({left:0}, (((intDuration/intShakes)/4)));
+    }
+  });
+  return this;
+};
